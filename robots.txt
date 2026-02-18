@@ -1,0 +1,9 @@
+# robots.txt for firmenrundgang-karlsruhe.de
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://firmenrundgang-karlsruhe.de/sitemap.xml
+
+# Block thank you page from indexing
+Disallow: /danke.html

@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <title>360° Firmenrundgang Karlsruhe | Beck360 - Virtuelle Touren</title>
+    <meta name="description" content="Professionelle 360° Firmenrundgänge für Hotels, Restaurants, Showrooms & Fitnessstudios. Matterport Partner. Ab 799€. Kostenlose Beratung.">
+    <meta name="author" content="Eugen Beck - Beck360">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://firmenrundgang-karlsruhe.de/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://firmenrundgang-karlsruhe.de/">
+    <meta property="og:title" content="360° Firmenrundgang | Virtuelle Touren für Ihr Unternehmen">
+    <meta property="og:description" content="Professionelle 360° Rundgänge für Hotels, Restaurants, Showrooms und mehr.">
+    <meta property="og:locale" content="de_DE">
+
+    <meta name="geo.region" content="DE-BW">
+    <meta name="geo.placename" content="Karlsruhe">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Beck360 - Firmenrundgänge",
+        "image": "https://firmenrundgang-karlsruhe.de/images/eugen-beck.jpg",
+        "description": "Professionelle 360° virtuelle Rundgänge für Unternehmen in Karlsruhe",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ettlingen",
+            "addressRegion": "Baden-Württemberg",
+            "addressCountry": "DE"
+        },
+        "telephone": "+491734682501",
+        "priceRange": "€€",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "15"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --text: #111827;
+            --text-secondary: #6b7280;
+            --bg: #ffffff;
+            --bg-soft: #f9fafb;
+            --border: #e5e7eb;
+            --accent: #059669;
+            --accent-hover: #047857;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        section { padding: 100px 0; }
+
+        h1, h2, h3 { font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; }
+        h1 { font-size: clamp(36px, 5vw, 48px); }
+        h2 { font-size: clamp(28px, 4vw, 36px); margin-bottom: 16px; }
+        h3 { font-size: 18px; margin-bottom: 8px; }
+        p { color: var(--text-secondary); }
+
+        .section-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 16px 0;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        .nav { display: flex; gap: 32px; align-items: center; }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav a:hover { color: var(--text); }
+        .nav-cta {
+            background: var(--text);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+        .nav-cta:hover { background: var(--accent); }
+
+        @media (max-width: 768px) {
+            .nav a:not(.nav-cta) { display: none; }
+        }
+
+        /* Hero */
+        .hero {
+            padding: 140px 0 80px;
+            background: var(--bg-soft);
+            border-bottom: 1px solid var(--border);
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 500px;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-content h1 { margin-bottom: 20px; }
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 28px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: var(--text);
+            color: white;
+        }
+        .btn-primary:hover { background: var(--accent); }
+        .btn-secondary {
+            background: transparent;
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { border-color: var(--text); }
+
+        .hero-trust {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .hero-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .hero-trust-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent);
+        }
+
+        .hero-demo {
+            position: relative;
+        }
+        .hero-demo-wrapper {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+            border: 1px solid var(--border);
+        }
+        .hero-demo iframe {
+            width: 100%;
+            aspect-ratio: 4/3;
+            border: none;
+            display: block;
+        }
+        .hero-price {
+            position: absolute;
+            top: -16px;
+            right: -16px;
+            background: var(--accent);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+        }
+        .hero-price span {
+            display: block;
+            font-size: 11px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 900px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-ctas { justify-content: center; }
+            .hero-trust { justify-content: center; }
+            .hero-demo { max-width: 500px; margin: 0 auto; }
+            .hero-price { right: 0; }
+        }
+
+        /* Industries */
+        .industries { background: var(--bg); }
+        .industries-header { text-align: center; max-width: 600px; margin: 0 auto 60px; }
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .industry-card {
+            padding: 32px 24px;
+            background: var(--bg-soft);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+        .industry-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+        .industry-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--text);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+        .industry-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: white;
+            stroke-width: 1.5;
+            fill: none;
+        }
+        .industry-card h3 { margin-bottom: 8px; }
+        .industry-card p { font-size: 14px; margin-bottom: 16px; }
+        .industry-link {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .industries-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .industries-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Portfolio */
+        .portfolio {
+            background: var(--bg-soft);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .portfolio-header { text-align: center; max-width: 600px; margin: 0 auto 60px; }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+        .portfolio-item {
+            background: var(--bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .portfolio-iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border: none;
+        }
+        .portfolio-info {
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .portfolio-info h4 { font-size: 15px; font-weight: 600; }
+        .portfolio-info span {
+            background: var(--bg-soft);
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 900px) {
+            .portfolio-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Benefits */
+        .benefits { background: var(--bg); }
+        .benefits-header { text-align: center; margin-bottom: 60px; }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+        .benefit-card { text-align: center; }
+        .benefit-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        .benefit-card h4 { font-size: 16px; margin-bottom: 8px; }
+        .benefit-card p { font-size: 14px; }
+
+        @media (max-width: 900px) {
+            .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* Reviews */
+        .reviews {
+            background: var(--text);
+            color: white;
+        }
+        .reviews .section-label { color: rgba(255,255,255,0.6); }
+        .reviews h2 { color: white; }
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .reviews-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+        .reviews-stars { color: #fbbf24; font-size: 24px; }
+        .reviews-rating span { color: rgba(255,255,255,0.6); font-size: 14px; }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .review-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 32px;
+        }
+        .review-stars { color: #fbbf24; margin-bottom: 16px; }
+        .review-text {
+            color: rgba(255,255,255,0.9);
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .review-author h4 { font-size: 15px; color: white; margin-bottom: 4px; }
+        .review-author p { font-size: 13px; color: rgba(255,255,255,0.5); }
+
+        @media (max-width: 900px) {
+            .reviews-grid { grid-template-columns: 1fr; }
+        }
+
+        /* About */
+        .about {
+            background: var(--bg-soft);
+            border-top: 1px solid var(--border);
+        }
+        .about .container {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 12px;
+        }
+        .about-content h2 { margin-bottom: 8px; }
+        .about-title {
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .about-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        .about-credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+        .credential {
+            padding: 10px 16px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 900px) {
+            .about .container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .about-image { max-width: 250px; margin: 0 auto; }
+        }
+
+        /* Pricing */
+        .pricing { background: var(--bg); }
+        .pricing-header { text-align: center; max-width: 500px; margin: 0 auto 48px; }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .pricing-card {
+            padding: 40px 32px;
+            background: var(--bg-soft);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            text-align: center;
+        }
+        .pricing-card.featured {
+            border: 2px solid var(--text);
+            position: relative;
+        }
+        .pricing-card.featured::before {
+            content: 'Beliebt';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--text);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+        .pricing-card h3 { margin-bottom: 8px; }
+        .pricing-card > p { font-size: 14px; margin-bottom: 24px; }
+        .price {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .price-note { font-size: 13px; margin-bottom: 24px; }
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+        .pricing-features li {
+            padding: 10px 0;
+            font-size: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .pricing-features li:last-child { border-bottom: none; }
+        .pricing-cta {
+            width: 100%;
+            padding: 14px;
+            background: var(--text);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        .pricing-cta:hover { background: var(--accent); }
+
+        @media (max-width: 900px) {
+            .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+        }
+
+        /* Contact */
+        .contact {
+            background: var(--bg-soft);
+            border-top: 1px solid var(--border);
+        }
+        .contact .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+        .contact-info h2 { margin-bottom: 16px; }
+        .contact-info > p { font-size: 16px; margin-bottom: 32px; }
+        .contact-details p {
+            font-size: 16px;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+        .contact-details a {
+            color: var(--text);
+            text-decoration: none;
+        }
+        .contact-details a:hover { color: var(--accent); }
+
+        .contact-form {
+            background: var(--bg);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 16px;
+            font-family: inherit;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--text);
+        }
+        .form-group textarea { min-height: 100px; resize: vertical; }
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            background: var(--text);
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .form-submit:hover { background: var(--accent); }
+
+        /* Form Error Display */
+        .form-error {
+            display: none;
+            padding: 12px 16px;
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: 6px;
+            color: #dc2626;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        /* Form Spinner */
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 0.8s linear infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 900px) {
+            .contact .container { grid-template-columns: 1fr; gap: 48px; }
+        }
+
+        /* Footer */
+        footer {
+            padding: 24px 0;
+            background: var(--text);
+            text-align: center;
+        }
+        footer p { font-size: 13px; color: rgba(255,255,255,0.6); }
+        footer a { color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: white; }
+
+        /* Accessibility: Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--text);
+            color: white;
+            padding: 8px 16px;
+            z-index: 1000;
+            text-decoration: none;
+            border-radius: 0 0 8px 0;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Accessibility: Focus States */
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        /* Accessibility: Touch Targets */
+        .nav a {
+            padding: 12px 20px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        footer a {
+            padding: 10px 8px;
+            display: inline-block;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Accessibility: Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">Beck<span>360</span></a>
+                <nav class="nav" aria-label="Hauptnavigation">
+                    <a href="#branchen">Branchen</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#preise">Preise</a>
+                    <a href="#kontakt" class="nav-cta">Anfrage</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="section-label">Für Unternehmen</p>
+                <h1>360° Rundgang für Ihr Geschäft</h1>
+                <p>Öffnen Sie Ihre Türen für die ganze Welt – 24 Stunden am Tag, 7 Tage die Woche. Virtuelle Rundgänge mit Matterport-Technologie.</p>
+                <div class="hero-ctas">
+                    <a href="#kontakt" class="btn btn-primary">Kostenlos beraten lassen</a>
+                    <a href="tel:+491734682501" class="btn btn-secondary">0173 468 2501</a>
+                </div>
+                <div class="hero-trust">
+                    <div class="hero-trust-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        5,0 Sterne
+                    </div>
+                    <div class="hero-trust-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Matterport Partner
+                    </div>
+                    <div class="hero-trust-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        50+ Projekte
+                    </div>
+                </div>
+            </div>
+            <div class="hero-demo">
+                <div class="hero-price">
+                    <span>Ab</span>
+                    799€
+                </div>
+                <div class="hero-demo-wrapper">
+                    <iframe src="https://my.matterport.com/show/?m=eisanxEDSWw&play=1&qs=1" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="industries" id="branchen">
+        <div class="container">
+            <div class="industries-header">
+                <p class="section-label">Branchen</p>
+                <h2>Für wen eignet sich ein virtueller Rundgang?</h2>
+                <p>Überall dort, wo Räume und Atmosphäre überzeugen sollen.</p>
+            </div>
+            <div class="industries-grid">
+                <a href="/blog/360-rundgang-hotel-mehr-buchungen.html" class="industry-card fade-in">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0H5m14 0h2m-16 0H3"/><path d="M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 6v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3"/></svg>
+                    </div>
+                    <h3>Hotels & Pensionen</h3>
+                    <p>Gäste buchen, was sie sehen können. Zeigen Sie Zimmer und Wellness-Bereich.</p>
+                    <span class="industry-link">Mehr erfahren →</span>
+                </a>
+                <a href="/blog/restaurant-virtuelle-tour-gaeste-gewinnen.html" class="industry-card fade-in">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
+                    </div>
+                    <h3>Restaurants & Cafés</h3>
+                    <p>Ambiente ist alles. Lassen Sie Gäste virtuell Platz nehmen.</p>
+                    <span class="industry-link">Mehr erfahren →</span>
+                </a>
+                <a href="/blog/autohaus-showroom-360-virtuell.html" class="industry-card fade-in">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2-5H8L6 10l-2.5 1.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                    </div>
+                    <h3>Showrooms & Autohäuser</h3>
+                    <p>Präsentieren Sie Ihre Ausstellung rund um die Uhr.</p>
+                    <span class="industry-link">Mehr erfahren →</span>
+                </a>
+                <a href="/blog/fitnessstudio-360-grad-mitglieder.html" class="industry-card fade-in">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24"><path d="M6.5 6.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 1 0-7 0M2 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg>
+                    </div>
+                    <h3>Fitnessstudios</h3>
+                    <p>Neue Mitglieder wollen sehen, wo sie trainieren werden.</p>
+                    <span class="industry-link">Mehr erfahren →</span>
+                </a>
+                <a href="/blog/zahnarztpraxis-virtuell-vertrauen.html" class="industry-card fade-in">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 6v4"/><path d="M14 14h-4"/><path d="M14 18h-4"/><path d="M14 8h-4"/><path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h2"/><path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18"/></svg>
+                    </div>
+                    <h3>Arzt- & Zahnarztpraxen</h3>
+                    <p>Ein virtueller Rundgang schafft Vertrauen bei neuen Patienten.</p>
+                    <span class="industry-link">Mehr erfahren →</span>
+                </a>
+                <a href="/blog/einzelhandel-online-offline-verbinden.html" class="industry-card fade-in">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    </div>
+                    <h3>Einzelhandel & Boutiquen</h3>
+                    <p>Bringen Sie Ihr Geschäft online – ohne aufwendigen E-Commerce.</p>
+                    <span class="industry-link">Mehr erfahren →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio-header">
+                <p class="section-label">Portfolio</p>
+                <h2>Referenzen aus der Region</h2>
+                <p>Entdecken Sie echte 360° Rundgänge – klicken Sie sich durch!</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in">
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=eisanxEDSWw" allowfullscreen></iframe>
+                    <div class="portfolio-info">
+                        <h4>Autohaus Lounge Wackenhut</h4>
+                        <span>Autohaus</span>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=VSzj77WVRrn" allowfullscreen></iframe>
+                    <div class="portfolio-info">
+                        <h4>CrossFit BuffaloBox Ettlingen</h4>
+                        <span>Fitness</span>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=uaNAUuR2ynk" allowfullscreen></iframe>
+                    <div class="portfolio-info">
+                        <h4>Bärle am Friedrichplatz</h4>
+                        <span>Einzelhandel</span>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=A6oKq1AGzqS" allowfullscreen></iframe>
+                    <div class="portfolio-info">
+                        <h4>Produktionshalle</h4>
+                        <span>Industrie</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-header">
+                <p class="section-label">Vorteile</p>
+                <h2>Warum 360° Rundgänge funktionieren</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-number">+40%</div>
+                    <h4>Mehr Anfragen</h4>
+                    <p>Unternehmen mit virtuellem Rundgang erhalten deutlich mehr Kontaktanfragen.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-number">24/7</div>
+                    <h4>Immer geöffnet</h4>
+                    <p>Interessenten können Ihr Unternehmen jederzeit erkunden – auch nachts.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-number">3x</div>
+                    <h4>Längere Verweildauer</h4>
+                    <p>Besucher bleiben dreimal länger auf Ihrer Website.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-number">↑</div>
+                    <h4>Google-Ranking</h4>
+                    <p>Google bevorzugt interaktive Inhalte – bessere lokale Sichtbarkeit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews-header">
+                <p class="section-label">Kundenstimmen</p>
+                <h2>Das sagen meine Kunden</h2>
+            </div>
+            <div class="reviews-rating">
+                <span class="reviews-stars">★★★★★</span>
+                <span>5,0 von 5 Sternen auf Google</span>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card fade-in">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">„Der 360°-Rundgang hat unsere Online-Präsenz komplett verändert. Kunden sehen jetzt vorab unseren Showroom und kommen gezielt vorbei."</p>
+                    <div class="review-author">
+                        <h4>Thomas Wackenhut</h4>
+                        <p>Autohaus Wackenhut</p>
+                    </div>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">„Unsere Mitglieder-Anfragen sind deutlich gestiegen. Interessenten können sich vorab ein Bild machen – das senkt die Hemmschwelle enorm."</p>
+                    <div class="review-author">
+                        <h4>Michael Schäfer</h4>
+                        <p>CrossFit BuffaloBox</p>
+                    </div>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">„Schnelle Umsetzung, tolle Qualität und faire Preise. Unser Geschäft ist jetzt auch online erlebbar. Klare Empfehlung!"</p>
+                    <div class="review-author">
+                        <h4>Klaus Bärle</h4>
+                        <p>Eisen Bärle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-image fade-in">
+                <img src="images/eugen-beck.jpg" alt="Eugen Beck - Beck360">
+            </div>
+            <div class="about-content fade-in">
+                <p class="section-label">Über mich</p>
+                <h2>Eugen Beck</h2>
+                <p class="about-title">Ihr Ansprechpartner in Karlsruhe</p>
+                <p>Ich bin Eugen Beck aus Ettlingen. Als zertifizierter Matterport-Partner erstelle ich seit 2019 professionelle 360° Rundgänge für Unternehmen in der Region.</p>
+                <p>Mein Versprechen: Persönlicher Service, transparente Preise und ein Ergebnis, das Ihre Kunden begeistert.</p>
+                <div class="about-credentials">
+                    <span class="credential">Matterport Partner</span>
+                    <span class="credential">50+ Projekte</span>
+                    <span class="credential">Haftpflicht versichert</span>
+                    <span class="credential">Seit 2019</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="preise">
+        <div class="container">
+            <div class="pricing-header">
+                <p class="section-label">Preise</p>
+                <h2>Transparente Festpreise</h2>
+                <p>Keine versteckten Kosten. Sie wissen vorher, was es kostet.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <h3>Starter</h3>
+                    <p>Für kleinere Geschäfte bis 100m²</p>
+                    <div class="price">799€</div>
+                    <p class="price-note">zzgl. MwSt.</p>
+                    <ul class="pricing-features">
+                        <li>360° Rundgang bis 100m²</li>
+                        <li>Matterport-Technologie</li>
+                        <li>Hosting für 12 Monate</li>
+                        <li>Lieferung in 48-72h</li>
+                    </ul>
+                    <a href="#kontakt" class="pricing-cta">Angebot anfordern</a>
+                </div>
+                <div class="pricing-card featured fade-in">
+                    <h3>Professional</h3>
+                    <p>Für mittlere Objekte bis 300m²</p>
+                    <div class="price">1.299€</div>
+                    <p class="price-note">zzgl. MwSt.</p>
+                    <ul class="pricing-features">
+                        <li>360° Rundgang bis 300m²</li>
+                        <li>Matterport-Technologie</li>
+                        <li>Hosting für 12 Monate</li>
+                        <li>Google Street View</li>
+                    </ul>
+                    <a href="#kontakt" class="pricing-cta">Angebot anfordern</a>
+                </div>
+                <div class="pricing-card fade-in">
+                    <h3>Enterprise</h3>
+                    <p>Für große Objekte bis 800m²</p>
+                    <div class="price">1.999€</div>
+                    <p class="price-note">zzgl. MwSt.</p>
+                    <ul class="pricing-features">
+                        <li>360° Rundgang bis 800m²</li>
+                        <li>Matterport-Technologie</li>
+                        <li>Hosting für 12 Monate</li>
+                        <li>Grundriss + Messwerkzeug</li>
+                    </ul>
+                    <a href="#kontakt" class="pricing-cta">Angebot anfordern</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+        <div class="container">
+            <div class="contact-info">
+                <p class="section-label">Kontakt</p>
+                <h2>Jetzt Angebot anfordern</h2>
+                <p>Beschreiben Sie kurz Ihr Projekt. Ich melde mich innerhalb von 24 Stunden.</p>
+                <div class="contact-details">
+                    <p><strong>Eugen Beck</strong></p>
+                    <p>Telefon: <a href="tel:+491734682501">0173 468 2501</a></p>
+                    <p>E-Mail: <a href="mailto:rundgang@beck360.de">rundgang@beck360.de</a></p>
+                    <p>Standort: Ettlingen bei Karlsruhe</p>
+                </div>
+            </div>
+            <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/rundgang@beck360.de" method="POST">
+                <input type="hidden" name="_subject" value="Anfrage Firmenrundgang">
+                <input type="hidden" name="_captcha" value="true">
+                <!-- Honeypot Spam Protection -->
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_timestamp" id="form-timestamp">
+
+                <div class="form-error" id="form-error"></div>
+
+                <div class="form-group">
+                    <label for="name">Name / Firma *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="branche">Branche</label>
+                    <select id="branche" name="branche">
+                        <option value="">Bitte wählen...</option>
+                        <option value="Hotel / Pension">Hotel / Pension</option>
+                        <option value="Restaurant / Café">Restaurant / Café</option>
+                        <option value="Showroom / Autohaus">Showroom / Autohaus</option>
+                        <option value="Fitnessstudio">Fitnessstudio</option>
+                        <option value="Arztpraxis">Arztpraxis</option>
+                        <option value="Einzelhandel">Einzelhandel</option>
+                        <option value="Sonstige">Sonstige</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ihre Nachricht</label>
+                    <textarea id="message" name="message" placeholder="Beschreiben Sie kurz Ihr Objekt..."></textarea>
+                </div>
+                <button type="submit" class="form-submit">Anfrage senden</button>
+            </form>
+        </div>
+    </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>© 2026 Beck360 · <a href="https://360-rundgang-karlsruhe.de">Hauptseite</a> · <a href="/impressum/">Impressum</a> · <a href="/datenschutz/">Datenschutz</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Set timestamp for bot detection
+        const formLoadTime = Date.now();
+        document.getElementById('form-timestamp').value = formLoadTime;
+
+        // Form Handler with improved validation and spam protection
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = this;
+            const btn = form.querySelector('button[type="submit"]');
+            const errorDiv = document.getElementById('form-error');
+
+            // Bot detection: form filled too fast (< 3 seconds)
+            const timeDiff = Date.now() - formLoadTime;
+            if (timeDiff < 3000) {
+                console.log('Bot detected: form submitted too fast');
+                window.location.href = '/danke.html';
+                return;
+            }
+
+            // Reset error state
+            errorDiv.style.display = 'none';
+
+            // Validation
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            // Loading state
+            btn.innerHTML = '<span class="spinner"></span> Wird gesendet...';
+            btn.disabled = true;
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    window.location.href = '/danke.html';
+                } else {
+                    throw new Error('Server error');
+                }
+            } catch (error) {
+                errorDiv.textContent = 'Fehler beim Senden. Bitte versuchen Sie es erneut oder rufen Sie uns an: 0173 468 2501';
+                errorDiv.style.display = 'block';
+                btn.innerHTML = 'Anfrage senden';
+                btn.disabled = false;
+            }
+        });
+
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

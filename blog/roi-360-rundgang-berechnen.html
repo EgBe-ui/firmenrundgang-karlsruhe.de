@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <title>360° Rundgang ROI: Lohnt sich die Investition? | Beck360</title>
+    <meta name="description" content="360° Rundgang ROI-Rechnung: Berechnen Sie den Return on Investment. Amortisation nach 2-10 Monaten je nach Branche und Kundenwert.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://firmenrundgang-karlsruhe.de/blog/roi-360-rundgang-berechnen.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "ROI berechnen: Lohnt sich ein 360° Rundgang für mein Unternehmen?",
+        "author": {"@type": "Person", "name": "Eugen Beck"},
+        "publisher": {"@type": "Organization", "name": "Beck360"},
+        "datePublished": "2025-12-09",
+        "dateModified": "2025-12-09"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0F766E;
+            --primary-dark: #0D5D57;
+            --primary-light: #14B8A6;
+            --text: #134E4A;
+            --text-light: #5F7A78;
+            --bg: #ffffff;
+            --bg-soft: #F0FDFA;
+            --gradient: linear-gradient(135deg, #0F766E 0%, #14B8A6 100%);
+            --font-display: 'Inter', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            line-height: 1.6;
+            background: #F0FDFA;
+            position: relative;
+        }
+        .header { background: var(--bg); padding: 16px 20px; border-bottom: 1px solid #e2e8f0; }
+        .header-content { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; font-family: var(--font-display); }
+        .logo span { color: var(--primary); }
+        .back-link { color: var(--text-light); text-decoration: none; font-size: 14px; }
+        .back-link:hover { color: var(--primary); }
+        .article-header { background: var(--gradient); color: white; padding: 60px 20px; text-align: center; }
+        .article-header .category { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+        .article-header h1 { font-family: var(--font-display); font-size: clamp(28px, 4vw, 40px); font-weight: 700; max-width: 700px; margin: 0 auto 16px; line-height: 1.2; }
+        .article-meta { opacity: 0.8; font-size: 14px; }
+        .article-meta span { margin: 0 8px; }
+        .article-content { max-width: 700px; margin: 0 auto; padding: 48px 20px; background: white; margin-top: -20px; border-radius: 20px 20px 0 0; position: relative; }
+        .article-content h2 { font-family: var(--font-display); font-size: 24px; font-weight: 700; margin: 40px 0 16px; color: var(--text); }
+        .article-content h3 { font-family: var(--font-display); font-size: 20px; font-weight: 600; margin: 32px 0 12px; }
+        .article-content p { font-size: 17px; line-height: 1.8; margin-bottom: 20px; color: #334155; }
+        .article-content ul { margin: 20px 0; padding-left: 24px; }
+        .article-content li { font-size: 17px; line-height: 1.8; margin-bottom: 12px; color: #334155; }
+        .highlight-box { background: linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%); border-left: 4px solid var(--primary); padding: 24px; border-radius: 0 12px 12px 0; margin: 32px 0; }
+        .highlight-box p { margin: 0; font-style: italic; }
+        .formula-box { background: var(--gradient); color: white; padding: 32px; border-radius: 16px; text-align: center; margin: 32px 0; font-family: var(--font-body); animation: slideInUp 0.6s ease-out; }
+        .formula-box .formula { font-family: var(--font-display); font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .formula-box .label { opacity: 0.9; font-size: 14px; }
+        .example-box { background: #F0FDFA; padding: 24px; border-radius: 12px; margin: 24px 0; animation: slideInUp 0.6s ease-out; }
+        .example-box h4 { font-family: var(--font-display); font-size: 16px; font-weight: 700; margin-bottom: 12px; color: var(--primary); }
+        .example-box p { margin-bottom: 8px; font-size: 15px; }
+        .cta-box { background: #0D5D57; color: white; padding: 40px; border-radius: 20px; text-align: center; margin: 48px 0; }
+        .cta-box h3 { font-family: var(--font-display); font-size: 24px; margin-bottom: 12px; }
+        .cta-box p { opacity: 0.8; margin-bottom: 24px; }
+        .cta-btn { display: inline-block; background: var(--gradient); color: white; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+        
+        /* Article Form Styles */
+        .article-form { text-align: left; margin-top: 20px; }
+        .article-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+        @media (max-width: 500px) { .article-form .form-row { grid-template-columns: 1fr; } }
+        .article-form input, .article-form textarea {
+            width: 100%; padding: 12px 16px; border: none; border-radius: 8px;
+            font-size: 15px; font-family: inherit; background: rgba(255,255,255,0.1);
+            color: white; margin-bottom: 12px;
+        }
+        .article-form input::placeholder, .article-form textarea::placeholder { color: rgba(255,255,255,0.6); }
+        .article-form input:focus, .article-form textarea:focus { outline: 2px solid var(--primary); background: rgba(255,255,255,0.15); }
+        .article-form .submit-btn {
+            width: 100%; background: var(--gradient); color: white; padding: 14px;
+            border: none; border-radius: 10px; font-size: 16px; font-weight: 600;
+            cursor: pointer; transition: transform 0.2s;
+        }
+        .article-form .submit-btn:hover { transform: translateY(-2px); }
+
+        .related { background: #F0FDFA; padding: 48px 20px; }
+        .related h3 { text-align: center; margin-bottom: 32px; font-size: 24px; font-family: var(--font-display); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .related-card { background: white; border-radius: 12px; padding: 24px; text-decoration: none; color: inherit; transition: transform 0.2s; }
+        .related-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+        .related-card h4 { font-family: var(--font-display); font-size: 16px; margin-bottom: 8px; }
+        .related-card p { font-size: 14px; color: var(--text-light); }
+        footer { background: #0D5D57; color: #64748b; text-align: center; padding: 24px; font-size: 13px; }
+        footer a { color: #64748b; text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: white; }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">Beck<span>360</span></a>
+            <a href="/blog/" class="back-link">← Alle Artikel</a>
+        </div>
+    </header>
+
+    <div class="article-header">
+        <span class="category">Business</span>
+        <h1>ROI berechnen: Lohnt sich ein 360° Rundgang für mein Unternehmen?</h1>
+        <div class="article-meta">
+            <span>9. Dezember 2025</span>
+            <span>•</span>
+            <span>5 min Lesezeit</span>
+        </div>
+    </div>
+
+    <article class="article-content">
+        <p>Die Investition in einen 360° Rundgang ist überschaubar – aber lohnt sie sich auch? Mit einer einfachen Formel können Sie berechnen, ab wann sich der Rundgang für Ihr Unternehmen amortisiert hat.</p>
+
+        <div class="formula-box">
+            <div class="formula">ROI = (Zusätzlicher Umsatz - Kosten) / Kosten × 100</div>
+            <div class="label">Return on Investment in Prozent</div>
+        </div>
+
+        <h2>Die Rechnung im Detail</h2>
+
+        <p>Um den ROI eines 360° Rundgangs zu berechnen, brauchen Sie drei Zahlen: die Kosten des Rundgangs, Ihren durchschnittlichen Kundenwert und die erwartete Steigerung an Neukunden oder Anfragen.</p>
+
+        <div class="highlight-box">
+            <p>Studien zeigen: Unternehmen mit virtuellen Rundgängen verzeichnen im Schnitt 10-40% mehr qualifizierte Anfragen. Selbst bei konservativer Rechnung amortisiert sich die Investition oft innerhalb weniger Wochen.</p>
+        </div>
+
+        <h2>Beispielrechnungen nach Branche</h2>
+
+        <div class="example-box">
+            <h4>🏨 Hotel (100 Zimmer)</h4>
+            <p><strong>Investition:</strong> 1.200€ für den Rundgang</p>
+            <p><strong>Durchschnittlicher Zimmerpreis:</strong> 120€/Nacht</p>
+            <p><strong>Annahme:</strong> 5 zusätzliche Buchungen pro Monat durch den Rundgang</p>
+            <p><strong>Ergebnis:</strong> 600€ zusätzlicher Umsatz/Monat → Amortisation nach 2 Monaten</p>
+        </div>
+
+        <div class="example-box">
+            <h4>🍽️ Restaurant (80 Plätze)</h4>
+            <p><strong>Investition:</strong> 600€ für den Rundgang</p>
+            <p><strong>Durchschnittlicher Bonwert:</strong> 35€</p>
+            <p><strong>Annahme:</strong> 3 zusätzliche Tische pro Woche durch den Rundgang</p>
+            <p><strong>Ergebnis:</strong> 420€ zusätzlicher Umsatz/Monat → Amortisation nach 6 Wochen</p>
+        </div>
+
+        <div class="example-box">
+            <h4>💪 Fitnessstudio</h4>
+            <p><strong>Investition:</strong> 800€ für den Rundgang</p>
+            <p><strong>Durchschnittlicher Mitgliedsbeitrag:</strong> 40€/Monat</p>
+            <p><strong>Annahme:</strong> 2 zusätzliche Neumitglieder pro Monat</p>
+            <p><strong>Ergebnis:</strong> Bei 12 Monaten Laufzeit = 960€ Umsatz → Amortisation nach 10 Monaten</p>
+        </div>
+
+        <h2>Faktoren, die den ROI beeinflussen</h2>
+
+        <h3>Positive Faktoren</h3>
+        <ul>
+            <li><strong>Hoher Kundenwert:</strong> Je mehr ein Kunde wert ist, desto schneller der ROI</li>
+            <li><strong>Starke Online-Präsenz:</strong> Wenn viele Kunden über die Website kommen</li>
+            <li><strong>Wettbewerb ohne Rundgang:</strong> Differenzierung bringt Vorsprung</li>
+            <li><strong>Erklärungsbedürftiges Produkt:</strong> Wenn das „Erleben" wichtig ist</li>
+        </ul>
+
+        <h3>Zu beachtende Faktoren</h3>
+        <ul>
+            <li><strong>Website-Traffic:</strong> Der Rundgang muss gesehen werden</li>
+            <li><strong>Qualität der restlichen Website:</strong> Der Rundgang ist ein Element von vielen</li>
+            <li><strong>Call-to-Action:</strong> Nach dem Rundgang muss eine klare Handlungsaufforderung folgen</li>
+        </ul>
+
+        <h2>Versteckte Vorteile nicht vergessen</h2>
+
+        <p>Neben den direkten Umsatzeffekten gibt es weitere Vorteile, die schwer zu beziffern, aber wertvoll sind:</p>
+
+        <ul>
+            <li><strong>Zeitersparnis:</strong> Weniger telefonische Fragen und Vor-Ort-Besichtigungen</li>
+            <li><strong>Professionalität:</strong> Modernes Image stärkt die Marke</li>
+            <li><strong>SEO-Effekt:</strong> Bessere Google-Platzierung bringt langfristig Traffic</li>
+            <li><strong>Langlebigkeit:</strong> Ein Rundgang ist 3-5 Jahre aktuell</li>
+        </ul>
+
+        <h2>Ihre individuelle ROI-Berechnung</h2>
+
+        <p>Jedes Unternehmen ist anders. Gerne erstelle ich Ihnen eine individuelle ROI-Prognose basierend auf Ihrer Branche, Ihrem Kundenwert und Ihrer aktuellen Situation. Kostenlos und unverbindlich.</p>
+
+                <div class="cta-box">
+            <h3>Kostenlose Beratung anfragen</h3>
+            <p>Ich melde mich innerhalb von 24 Stunden bei Ihnen.</p>
+            
+            <form class="article-form" action="https://formsubmit.co/rundgang@beck360.de" method="POST">
+                <input type="hidden" name="_subject" value="Blog-Anfrage: ROI">
+                <input type="hidden" name="_source" value="Blog: ROI">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="_next" value="https://firmenrundgang-karlsruhe.de/danke.html">
+                
+                <div class="form-row">
+                    <input type="text" name="name" required placeholder="Ihr Name *" autocomplete="name">
+                    <input type="email" name="email" required placeholder="E-Mail *" autocomplete="email">
+                </div>
+                <input type="tel" name="telefon" placeholder="Telefon (optional)" autocomplete="tel">
+                <textarea name="nachricht" rows="3" placeholder="Ihre Nachricht (optional)" autocomplete="off"></textarea>
+                <button type="submit" class="submit-btn">Kostenlos anfragen →</button>
+            </form>
+        </div>
+    </article>
+
+    <section class="related">
+        <h3>Ähnliche Artikel</h3>
+        <div class="related-grid">
+            <a href="/blog/matterport-vs-andere-technologien.html" class="related-card">
+                <h4>Matterport vs. andere 360°-Technologien</h4>
+                <p>Welche Technik ist die beste für Ihr Unternehmen? Ein objektiver Überblick.</p>
+            </a>
+            <a href="/blog/360-rundgang-seo-lokale-suche.html" class="related-card">
+                <h4>Lokales SEO: So verbessern 360° Rundgänge Ihr Google-Ranking</h4>
+                <p>Interaktive Inhalte werden von Google belohnt. So nutzen Sie das.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Beck360 – 360° Rundgänge & Drohnenaufnahmen Karlsruhe</p>
+        <p style="margin-top:8px">
+            <a href="https://360-rundgang-karlsruhe.de">Startseite</a>
+            <a href="/">Für Unternehmen</a>
+            <a href="/blog/">Magazin</a>
+            <a href="https://360-rundgang-karlsruhe.de/impressum">Impressum</a>
+            <a href="https://360-rundgang-karlsruhe.de/datenschutz">Datenschutz</a>
+        </p>
+    </footer>
+
+    <script>
+        // Scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideInUp 0.6s ease-out forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all headings and paragraphs
+        document.querySelectorAll('.article-content h2, .article-content h3, .article-content p, .formula-box, .example-box, .highlight-box').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

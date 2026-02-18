@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <title>360° Rundgang Magazin | Wissen & Inspiration | Beck360</title>
+    <meta name="description" content="Tipps, Trends und Erfolgsgeschichten rund um virtuelle Rundgänge. Erfahren Sie, wie 360° Touren Ihr Unternehmen voranbringen.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://firmenrundgang-karlsruhe.de/blog/">
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0F766E;
+            --primary-dark: #0D5D57;
+            --primary-light: #14B8A6;
+            --cta: #0369A1;
+            --cta-hover: #075985;
+            --text: #134E4A;
+            --text-light: #5F7A78;
+            --bg: #ffffff;
+            --bg-soft: #F0FDFA;
+            --border: #D1E4E2;
+            --gradient: linear-gradient(135deg, #0F766E 0%, #14B8A6 100%);
+            --font-main: 'Inter', -apple-system, sans-serif;
+        }
+        body {
+            font-family: var(--font-main);
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--bg-soft);
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+        }
+        
+        /* Removed noise texture overlay */
+
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .header {
+            background: var(--bg);
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; }
+        .logo span { color: var(--primary); }
+        .nav { display: flex; gap: 24px; align-items: center; }
+        .nav a { color: var(--text-light); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+        .nav a:hover { color: var(--primary); }
+        .nav-cta { background: var(--gradient) !important; color: white !important; padding: 10px 20px !important; border-radius: 8px !important; }
+
+        .page-header {
+            background: linear-gradient(135deg, #0F766E 0%, #0D5D57 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .page-header h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 800; margin-bottom: 12px; }
+        .page-header p { opacity: 0.9; max-width: 500px; margin: 0 auto; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 48px 20px; }
+
+        .filter-bar {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 50px;
+            background: white;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            border-color: var(--primary);
+            background: var(--primary);
+            color: white;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        @media (max-width: 900px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } }
+
+        .blog-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+        }
+        .blog-image {
+            height: 160px;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            overflow: hidden;
+        }
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover .blog-image img {
+            transform: scale(1.05);
+        }
+        .blog-content { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+        .blog-category {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .blog-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
+        .blog-card p { color: var(--text-light); font-size: 13px; flex: 1; }
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #f1f5f9;
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        footer {
+            background: #0D5D57;
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+            padding: 24px;
+            font-size: 13px;
+        }
+        footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: white; }
+
+        /* Accessibility: Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            z-index: 1000;
+            text-decoration: none;
+            border-radius: 0 0 8px 0;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Accessibility: Focus States */
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+        /* Accessibility: Touch Targets */
+        .nav a {
+            padding: 12px 20px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        .filter-btn {
+            min-height: 44px;
+            padding: 10px 16px;
+        }
+
+        footer a {
+            padding: 10px 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Accessibility: Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+    <header class="header" role="banner">
+        <div class="header-content">
+            <a href="/" class="logo">Beck<span>360</span></a>
+            <nav class="nav" aria-label="Hauptnavigation">
+                <a href="/">Firmenrundgang</a>
+                <a href="https://360-rundgang-karlsruhe.de/drohnenaufnahmen">Drohnenaufnahmen</a>
+                <a href="/#kontakt" class="nav-cta">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>360° Rundgang Magazin</h1>
+        <p>Wissen, Tipps und Erfolgsgeschichten rund um virtuelle Touren und digitales Marketing.</p>
+    </div>
+
+    <main id="main-content">
+    <div class="container">
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Alle</button>
+            <button class="filter-btn" data-filter="Hotels">Hotels</button>
+            <button class="filter-btn" data-filter="Gastronomie">Gastronomie</button>
+            <button class="filter-btn" data-filter="Showroom">Showroom</button>
+            <button class="filter-btn" data-filter="Fitness">Fitness</button>
+            <button class="filter-btn" data-filter="Gesundheit">Gesundheit</button>
+            <button class="filter-btn" data-filter="Marketing">Marketing</button>
+            <button class="filter-btn" data-filter="SEO">SEO</button>
+            <button class="filter-btn" data-filter="Business">Business</button>
+        </div>
+
+        <div class="blog-grid" id="blogGrid"></div>
+    </div>
+    </main>
+
+    <footer role="contentinfo">
+        <p>© 2026 Beck360 – 360° Rundgänge & Drohnenaufnahmen</p>
+        <p style="margin-top:8px">
+            <a href="https://360-rundgang-karlsruhe.de">Startseite</a>
+            <a href="/">Für Unternehmen</a>
+            <a href="https://360-rundgang-karlsruhe.de/drohnenaufnahmen">Drohnenaufnahmen</a>
+            <a href="https://360-rundgang-karlsruhe.de/impressum">Impressum</a>
+            <a href="https://360-rundgang-karlsruhe.de/datenschutz">Datenschutz</a>
+        </p>
+    </footer>
+
+    <script>
+    const blogPosts = [
+        { slug: "immobilienmakler-360-grad-rundgaenge-schneller-verkaufen", title: "Immobilienmakler: Mit 360° Rundgängen schneller verkaufen", excerpt: "Immobilienmakler steigern Verkaufszahlen mit 360° Rundgängen. Mehr qualifizierte Interessenten, weniger Besichtigungen, schnellerer Verkauf.", category: "Business", image: "immobilienmakler-360-grad-rundgaenge-schneller-verkaufen.jpg", date: "2026-02-18", readTime: "7 min" },
+        { slug: "360-rundgang-hotel-mehr-buchungen", title: "Wie Hotels mit 360° Rundgängen mehr Buchungen erzielen", excerpt: "Studien zeigen: Hotels mit virtuellen Touren verzeichnen bis zu 67% mehr Direktbuchungen.", category: "Hotels", image: "hotel-360-rundgang.jpg", date: "2026-02-03", readTime: "5 min" },
+        { slug: "google-street-view-trusted-vorteile", title: "Google Street View Trusted: Warum Ihr Unternehmen sichtbar sein muss", excerpt: "90% der Kunden recherchieren online. So nutzen Sie Google Maps für Ihr Marketing.", category: "Marketing", image: "google-street-view.jpg", date: "2026-01-27", readTime: "4 min" },
+        { slug: "restaurant-virtuelle-tour-gaeste-gewinnen", title: "Restaurant-Marketing: Mit virtueller Tour neue Gäste gewinnen", excerpt: "Ambiente verkauft. Zeigen Sie Ihren Gästen vorab, wo sie sich wohlfühlen werden.", category: "Gastronomie", image: "restaurant-tour.jpg", date: "2026-01-20", readTime: "4 min" },
+        { slug: "fitnessstudio-360-grad-mitglieder", title: "Fitnessstudio: So überzeugt ein 360° Rundgang neue Mitglieder", excerpt: "Der erste Eindruck zählt – auch online. Warum virtuelle Touren die Hemmschwelle senken.", category: "Fitness", image: "fitnessstudio-360.jpg", date: "2026-01-13", readTime: "3 min" },
+        { slug: "zahnarztpraxis-virtuell-vertrauen", title: "Zahnarztpraxis: Vertrauen aufbauen mit virtueller Praxistour", excerpt: "Angstpatienten brauchen Sicherheit. Ein 360° Rundgang zeigt, was sie erwartet.", category: "Gesundheit", image: "zahnarztpraxis-vertrauen.jpg", date: "2026-01-06", readTime: "4 min" },
+        { slug: "autohaus-showroom-360-virtuell", title: "Autohaus & Showroom: 24/7 Verkaufen mit virtueller Ausstellung", excerpt: "Kunden informieren sich online, bevor sie zum Händler kommen.", category: "Showroom", image: "autohaus-showroom.jpg", date: "2025-12-30", readTime: "5 min" },
+        { slug: "eventlocation-virtuelle-besichtigung", title: "Eventlocation: Virtuelle Besichtigung spart Zeit und gewinnt Kunden", excerpt: "Hochzeitspaare und Eventplaner wollen vorher sehen, wo sie feiern.", category: "Events", image: "eventlocation-virtuell.jpg", date: "2025-12-23", readTime: "4 min" },
+        { slug: "matterport-vs-andere-technologien", title: "Matterport vs. andere 360°-Technologien: Ein Vergleich", excerpt: "Welche Technik ist die beste für Ihr Unternehmen? Ein objektiver Überblick.", category: "Technik", image: "matterport-technik.jpg", date: "2025-12-16", readTime: "6 min" },
+        { slug: "roi-360-rundgang-berechnen", title: "ROI berechnen: Lohnt sich ein 360° Rundgang für mein Unternehmen?", excerpt: "Eine einfache Formel zeigt, ab wann sich die Investition rentiert.", category: "Business", image: "roi-berechnen.jpg", date: "2025-12-09", readTime: "5 min" },
+        { slug: "einzelhandel-online-offline-verbinden", title: "Einzelhandel: Online und Offline Welt verbinden mit 360° Touren", excerpt: "Lokale Geschäfte können online punkten – ohne aufwendigen E-Commerce.", category: "Einzelhandel", image: "einzelhandel-360.jpg", date: "2025-12-02", readTime: "4 min" },
+        { slug: "schule-tag-offene-tuer-virtuell", title: "Schulen: Virtueller Tag der offenen Tür erreicht mehr Familien", excerpt: "Nicht alle Eltern können vor Ort sein. So zeigen Sie Ihre Schule trotzdem.", category: "Bildung", image: "schule-virtuell.jpg", date: "2025-11-25", readTime: "3 min" },
+        { slug: "360-rundgang-seo-lokale-suche", title: "Lokales SEO: So verbessern 360° Rundgänge Ihr Google-Ranking", excerpt: "Interaktive Inhalte werden von Google belohnt. So nutzen Sie das.", category: "SEO", image: "seo-lokale-suche.jpg", date: "2025-11-18", readTime: "5 min" }
+    ];
+
+    let currentFilter = 'all';
+
+    function renderBlogPosts(filter = 'all') {
+        const grid = document.getElementById('blogGrid');
+        const filtered = filter === 'all' ? blogPosts : blogPosts.filter(p => p.category === filter);
+        grid.innerHTML = filtered.map(post => `
+            <a href="/blog/${post.slug}.html" class="blog-card">
+                <div class="blog-image">
+                    <img src="/images/blog/${post.image}" alt="${post.title}" loading="lazy" width="400" height="225">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">${post.category}</span>
+                    <h3>${post.title}</h3>
+                    <p>${post.excerpt}</p>
+                    <div class="blog-meta">
+                        <span>${new Date(post.date).toLocaleDateString('de-DE', {day:'numeric',month:'short',year:'numeric'})}</span>
+                        <span>${post.readTime}</span>
+                    </div>
+                </div>
+            </a>
+        `).join('');
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderBlogPosts(btn.dataset.filter);
+        });
+    });
+
+    renderBlogPosts();
+    </script>
+
+    <script>
+    // Scroll animation
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.blog-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+    </script>
+</body>
+</html>

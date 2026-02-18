@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <title>Eventlocation: 360° Rundgang für mehr Bookings | Beck360</title>
+    <meta name="description" content="Hochzeitspaare und Eventplaner recherchieren online. Zeigen Sie Ihre Eventlocation mit 360° Rundgängen und qualifizieren Sie Anfragen.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://firmenrundgang-karlsruhe.de/blog/eventlocation-virtuelle-besichtigung.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Eventlocation: Virtuelle Besichtigung spart Zeit und gewinnt Kunden",
+        "author": {"@type": "Person", "name": "Eugen Beck"},
+        "publisher": {"@type": "Organization", "name": "Beck360"},
+        "datePublished": "2025-12-23",
+        "dateModified": "2025-12-23"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary: #0F766E; --primary-dark: #0D5D57; --primary-light: #14B8A6; --text: #134E4A; --text-light: #5F7A78; --bg: #ffffff; --bg-soft: #F0FDFA; --gradient: linear-gradient(135deg, #0F766E 0%, #14B8A6 100%); --font-display: 'Inter', sans-serif; --font-body: 'Inter', sans-serif; }
+        body { font-family: var(--font-body); color: var(--text); line-height: 1.6; background: #F0FDFA; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .header { background: var(--bg); padding: 16px 20px; border-bottom: 1px solid #e2e8f0; }
+        .header-content { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; font-family: var(--font-display); }
+        .logo span { color: var(--primary); }
+        .back-link { color: var(--text-light); text-decoration: none; font-size: 14px; font-family: var(--font-display); }
+        .back-link:hover { color: var(--primary); }
+        .article-header { background: var(--gradient); color: white; padding: 60px 20px; text-align: center; }
+        .article-header .category { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; font-family: var(--font-display); }
+        .article-header h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; max-width: 700px; margin: 0 auto 16px; line-height: 1.2; font-family: var(--font-display); }
+        .article-meta { opacity: 0.8; font-size: 14px; font-family: var(--font-display); }
+        .article-meta span { margin: 0 8px; }
+        .article-content { max-width: 700px; margin: 0 auto; padding: 48px 20px; background: white; margin-top: -20px; border-radius: 20px 20px 0 0; position: relative; }
+        .article-content h2 { font-size: 24px; font-weight: 700; margin: 40px 0 16px; color: var(--text); font-family: var(--font-display); }
+        .article-content h3 { font-size: 20px; font-weight: 600; margin: 32px 0 12px; font-family: var(--font-display); }
+        .article-content p { font-family: var(--font-body); font-size: 17px; line-height: 1.8; margin-bottom: 20px; color: #334155; }
+        .article-content ul { margin: 20px 0; padding-left: 24px; }
+        .article-content li { font-family: var(--font-body); font-size: 17px; line-height: 1.8; margin-bottom: 12px; color: #334155; }
+        .highlight-box { background: linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%); border-left: 4px solid var(--primary); padding: 24px; border-radius: 0 12px 12px 0; margin: 32px 0; }
+        .highlight-box p { margin: 0; font-style: italic; }
+        .stat-box { background: var(--gradient); color: white; padding: 32px; border-radius: 16px; text-align: center; margin: 32px 0; }
+        .stat-box .number { font-size: 48px; font-weight: 800; font-family: var(--font-display); }
+        .stat-box .label { opacity: 0.9; font-family: var(--font-display); }
+        .cta-box { background: #0D5D57; color: white; padding: 40px; border-radius: 20px; text-align: center; margin: 48px 0; }
+        .cta-box h3 { font-size: 24px; margin-bottom: 12px; font-family: var(--font-display); }
+        .cta-box p { opacity: 0.8; margin-bottom: 24px; font-family: var(--font-display); }
+        .cta-btn { display: inline-block; background: var(--gradient); color: white; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-weight: 600; font-family: var(--font-display); }
+        
+        /* Article Form Styles */
+        .article-form { text-align: left; margin-top: 20px; }
+        .article-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+        @media (max-width: 500px) { .article-form .form-row { grid-template-columns: 1fr; } }
+        .article-form input, .article-form textarea {
+            width: 100%; padding: 12px 16px; border: none; border-radius: 8px;
+            font-size: 15px; font-family: var(--font-display); background: rgba(255,255,255,0.1);
+            color: white; margin-bottom: 12px;
+        }
+        .article-form input::placeholder, .article-form textarea::placeholder { color: rgba(255,255,255,0.6); }
+        .article-form input:focus, .article-form textarea:focus { outline: 2px solid var(--primary); background: rgba(255,255,255,0.15); }
+        .article-form .submit-btn {
+            width: 100%; background: var(--gradient); color: white; padding: 14px;
+            border: none; border-radius: 10px; font-size: 16px; font-weight: 600;
+            cursor: pointer; transition: transform 0.2s; font-family: var(--font-display);
+        }
+        .article-form .submit-btn:hover { transform: translateY(-2px); }
+
+        .related { background: #F0FDFA; padding: 48px 20px; }
+        .related h3 { text-align: center; margin-bottom: 32px; font-size: 24px; font-family: var(--font-display); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .related-card { background: white; border-radius: 12px; padding: 24px; text-decoration: none; color: inherit; transition: transform 0.2s; }
+        .related-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+        .related-card h4 { font-size: 16px; margin-bottom: 8px; font-family: var(--font-display); font-weight: 600; }
+        .related-card p { font-size: 14px; color: var(--text-light); }
+        footer { background: #0D5D57; color: #64748b; text-align: center; padding: 24px; font-size: 13px; font-family: var(--font-display); }
+        footer a { color: #64748b; text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: white; }
+
+        /* Scroll Animation */
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">Beck<span>360</span></a>
+            <a href="/blog/" class="back-link">← Alle Artikel</a>
+        </div>
+    </header>
+
+    <div class="article-header">
+        <span class="category">Events</span>
+        <h1>Eventlocation: Virtuelle Besichtigung spart Zeit und gewinnt Kunden</h1>
+        <div class="article-meta">
+            <span>23. Dezember 2025</span>
+            <span>•</span>
+            <span>4 min Lesezeit</span>
+        </div>
+    </div>
+
+    <article class="article-content">
+        <p class="fade-in">Die Suche nach der perfekten Eventlocation ist zeitaufwändig – für beide Seiten. Brautpaare, Firmenkunden und Eventplaner besichtigen oft Dutzende Locations, bevor sie sich entscheiden. Ein 360° Rundgang filtert vor und bringt die richtigen Kunden zu Ihnen.</p>
+
+        <div class="stat-box fade-in">
+            <div class="number">70%</div>
+            <div class="label">weniger unpassende Besichtigungen</div>
+        </div>
+
+        <h2 class="fade-in">Warum virtuelle Besichtigungen funktionieren</h2>
+
+        <p class="fade-in">Eventplaner stehen unter Zeitdruck. Sie wollen schnell die Locations identifizieren, die ihren Kriterien entsprechen. Ein 360° Rundgang ermöglicht diese Vorentscheidung in Minuten – statt in Stunden vor Ort.</p>
+
+        <div class="highlight-box fade-in">
+            <p>„Seit wir unseren virtuellen Rundgang haben, kommen nur noch Interessenten, die wirklich zu uns passen. Das spart uns pro Woche mehrere Stunden an Besichtigungen."</p>
+        </div>
+
+        <h2 class="fade-in">Diese Bereiche sollten Sie zeigen</h2>
+
+        <h3 class="fade-in">1. Der Hauptsaal</h3>
+        <p class="fade-in">Zeigen Sie Größe, Deckenhöhe, Beleuchtungsmöglichkeiten und verschiedene Bestuhlung-Optionen. Wenn möglich, zeigen Sie den Raum in verschiedenen Setups.</p>
+
+        <h3 class="fade-in">2. Außenbereiche</h3>
+        <p class="fade-in">Garten, Terrasse, Innenhof – Außenbereiche sind oft das entscheidende Kriterium für Sommerhochzeiten und Firmenevents.</p>
+
+        <h3 class="fade-in">3. Nebenräume</h3>
+        <p class="fade-in">Trauzimmer, Vorbereitungsräume, Chill-Out-Areas – diese Details machen den Unterschied.</p>
+
+        <h3 class="fade-in">4. Catering-Bereich</h3>
+        <p class="fade-in">Küche, Servicebereich, Büfett-Aufstellung – wichtig für Caterer und Planer.</p>
+
+        <h2 class="fade-in">Vorteile für Ihre Eventlocation</h2>
+        <ul class="fade-in">
+            <li><strong>Zeitersparnis:</strong> Weniger unpassende Besichtigungstermine</li>
+            <li><strong>Qualifizierte Anfragen:</strong> Wer sich durch den Rundgang klickt, ist ernsthaft interessiert</li>
+            <li><strong>Reichweite:</strong> Fernkunden aus anderen Städten erreichen</li>
+            <li><strong>Hochzeits-Portale:</strong> Bessere Präsentation auf Eventplattformen</li>
+            <li><strong>Social Media:</strong> Teilbarer Content für Marketing</li>
+        </ul>
+
+        <h2 class="fade-in">Besondere Einsatzmöglichkeiten</h2>
+
+        <h3 class="fade-in">Virtuelle Walkthroughs mit Kunden</h3>
+        <p class="fade-in">Führen Sie Interessenten per Videocall durch Ihre Location – mit dem 360° Rundgang als Grundlage. So können Sie Details zeigen und Fragen beantworten, ohne dass der Kunde vor Ort sein muss.</p>
+
+        <h3 class="fade-in">Event-Planung</h3>
+        <p class="fade-in">Caterer, Floristen, DJ – alle Dienstleister können sich vorab ein Bild machen. Das vereinfacht die Koordination erheblich.</p>
+
+        <h2 class="fade-in">Der richtige Zeitpunkt für Aufnahmen</h2>
+        <p class="fade-in">Wir empfehlen Aufnahmen bei neutralem Setup und gutem Tageslicht. Optional können wir auch einen „Event-Look" mit Dekoration aufnehmen – das inspiriert Kunden und zeigt das Potenzial.</p>
+
+        <div class="cta-box fade-in">
+            <h3>Kostenlose Beratung anfragen</h3>
+            <p>Ich melde mich innerhalb von 24 Stunden bei Ihnen.</p>
+            
+            <form class="article-form" action="https://formsubmit.co/rundgang@beck360.de" method="POST">
+                <input type="hidden" name="_subject" value="Blog-Anfrage: Eventlocations">
+                <input type="hidden" name="_source" value="Blog: Eventlocations">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="_next" value="https://firmenrundgang-karlsruhe.de/danke.html">
+                
+                <div class="form-row">
+                    <input type="text" name="name" required placeholder="Ihr Name *" autocomplete="name">
+                    <input type="email" name="email" required placeholder="E-Mail *" autocomplete="email">
+                </div>
+                <input type="tel" name="telefon" placeholder="Telefon (optional)" autocomplete="tel">
+                <textarea name="nachricht" rows="3" placeholder="Ihre Nachricht (optional)" autocomplete="off"></textarea>
+                <button type="submit" class="submit-btn">Kostenlos anfragen →</button>
+            </form>
+        </div>
+    </article>
+
+    <section class="related">
+        <h3 class="fade-in">Ähnliche Artikel</h3>
+        <div class="related-grid">
+            <a href="/blog/restaurant-virtuelle-tour-gaeste-gewinnen.html" class="related-card fade-in">
+                <h4>Restaurant-Marketing: Mit virtueller Tour neue Gäste gewinnen</h4>
+                <p>Ambiente verkauft. Zeigen Sie Ihren Gästen vorab, wo sie sich wohlfühlen werden.</p>
+            </a>
+            <a href="/blog/360-rundgang-hotel-mehr-buchungen.html" class="related-card fade-in">
+                <h4>Hotels: Mit 360° Rundgängen mehr Buchungen erzielen</h4>
+                <p>Hotels mit virtuellen Touren verzeichnen bis zu 67% mehr Direktbuchungen.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Beck360 – 360° Rundgänge & Drohnenaufnahmen Karlsruhe</p>
+        <p style="margin-top:8px">
+            <a href="https://360-rundgang-karlsruhe.de">Startseite</a>
+            <a href="/">Für Unternehmen</a>
+            <a href="/blog/">Magazin</a>
+            <a href="https://360-rundgang-karlsruhe.de/impressum">Impressum</a>
+            <a href="https://360-rundgang-karlsruhe.de/datenschutz">Datenschutz</a>
+        </p>
+    </footer>
+
+    <script>
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+    });
+    </script>
+</body>
+</html>

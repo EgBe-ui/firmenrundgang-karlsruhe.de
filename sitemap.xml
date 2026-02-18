@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Hauptseite -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Blog Übersicht -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
+        <lastmod>2026-02-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog Artikel -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/360-rundgang-hotel-mehr-buchungen.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/360-rundgang-seo-lokale-suche.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/autohaus-showroom-360-virtuell.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/einzelhandel-online-offline-verbinden.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/eventlocation-virtuelle-besichtigung.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/fitnessstudio-360-grad-mitglieder.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/google-street-view-trusted-vorteile.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/matterport-vs-andere-technologien.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/restaurant-virtuelle-tour-gaeste-gewinnen.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/roi-360-rundgang-berechnen.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/schule-tag-offene-tuer-virtuell.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/zahnarztpraxis-virtuell-vertrauen.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog Artikel: immobilienmakler-360-grad-rundgaenge-schneller-verkaufen -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/immobilienmakler-360-grad-rundgaenge-schneller-verkaufen.html</loc>
+        <lastmod>2026-02-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>

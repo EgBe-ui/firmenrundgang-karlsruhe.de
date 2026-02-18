@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <title>Schulen: Virtueller Tag der offenen Tür 360° | Beck360</title>
+    <meta name="description" content="Schulen 360° Rundgang: Mehr Familien erreichen. Virtueller Tag der offenen Tür 24/7 verfügbar für Schülergewinnung und Elterninformation.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://firmenrundgang-karlsruhe.de/blog/schule-tag-offene-tuer-virtuell.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Schulen: Virtueller Tag der offenen Tür erreicht mehr Familien",
+        "author": {"@type": "Person", "name": "Eugen Beck"},
+        "publisher": {"@type": "Organization", "name": "Beck360"},
+        "datePublished": "2025-11-25",
+        "dateModified": "2025-11-25"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0F766E;
+            --primary-dark: #0D5D57;
+            --primary-light: #14B8A6;
+            --text: #134E4A;
+            --text-light: #5F7A78;
+            --bg: #ffffff;
+            --bg-soft: #F0FDFA;
+            --gradient: linear-gradient(135deg, #0F766E 0%, #14B8A6 100%);
+            --font-display: 'Inter', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            line-height: 1.6;
+            background: #F0FDFA;
+            position: relative;
+        }
+        .header { background: var(--bg); padding: 16px 20px; border-bottom: 1px solid #e2e8f0; }
+        .header-content { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; font-family: var(--font-display); }
+        .logo span { color: var(--primary); }
+        .back-link { color: var(--text-light); text-decoration: none; font-size: 14px; }
+        .back-link:hover { color: var(--primary); }
+        .article-header { background: var(--gradient); color: white; padding: 60px 20px; text-align: center; }
+        .article-header .category { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+        .article-header h1 { font-family: var(--font-display); font-size: clamp(28px, 4vw, 40px); font-weight: 700; max-width: 700px; margin: 0 auto 16px; line-height: 1.2; }
+        .article-meta { opacity: 0.8; font-size: 14px; }
+        .article-meta span { margin: 0 8px; }
+        .article-content { max-width: 700px; margin: 0 auto; padding: 48px 20px; background: white; margin-top: -20px; border-radius: 20px 20px 0 0; position: relative; }
+        .article-content h2 { font-family: var(--font-display); font-size: 24px; font-weight: 700; margin: 40px 0 16px; color: var(--text); }
+        .article-content h3 { font-family: var(--font-display); font-size: 20px; font-weight: 600; margin: 32px 0 12px; }
+        .article-content p { font-size: 17px; line-height: 1.8; margin-bottom: 20px; color: #334155; }
+        .article-content ul { margin: 20px 0; padding-left: 24px; }
+        .article-content li { font-size: 17px; line-height: 1.8; margin-bottom: 12px; color: #334155; }
+        .highlight-box { background: linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%); border-left: 4px solid var(--primary); padding: 24px; border-radius: 0 12px 12px 0; margin: 32px 0; }
+        .highlight-box p { margin: 0; font-style: italic; }
+        .stat-box { background: var(--gradient); color: white; padding: 32px; border-radius: 16px; text-align: center; margin: 32px 0; animation: slideInUp 0.6s ease-out; }
+        .stat-box .number { font-family: var(--font-display); font-size: 48px; font-weight: 700; }
+        .stat-box .label { opacity: 0.9; }
+        .cta-box { background: #0D5D57; color: white; padding: 40px; border-radius: 20px; text-align: center; margin: 48px 0; }
+        .cta-box h3 { font-family: var(--font-display); font-size: 24px; margin-bottom: 12px; }
+        .cta-box p { opacity: 0.8; margin-bottom: 24px; }
+        .cta-btn { display: inline-block; background: var(--gradient); color: white; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+        
+        /* Article Form Styles */
+        .article-form { text-align: left; margin-top: 20px; }
+        .article-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+        @media (max-width: 500px) { .article-form .form-row { grid-template-columns: 1fr; } }
+        .article-form input, .article-form textarea {
+            width: 100%; padding: 12px 16px; border: none; border-radius: 8px;
+            font-size: 15px; font-family: inherit; background: rgba(255,255,255,0.1);
+            color: white; margin-bottom: 12px;
+        }
+        .article-form input::placeholder, .article-form textarea::placeholder { color: rgba(255,255,255,0.6); }
+        .article-form input:focus, .article-form textarea:focus { outline: 2px solid var(--primary); background: rgba(255,255,255,0.15); }
+        .article-form .submit-btn {
+            width: 100%; background: var(--gradient); color: white; padding: 14px;
+            border: none; border-radius: 10px; font-size: 16px; font-weight: 600;
+            cursor: pointer; transition: transform 0.2s;
+        }
+        .article-form .submit-btn:hover { transform: translateY(-2px); }
+
+        .related { background: #F0FDFA; padding: 48px 20px; }
+        .related h3 { text-align: center; margin-bottom: 32px; font-size: 24px; font-family: var(--font-display); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .related-card { background: white; border-radius: 12px; padding: 24px; text-decoration: none; color: inherit; transition: transform 0.2s; }
+        .related-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+        .related-card h4 { font-family: var(--font-display); font-size: 16px; margin-bottom: 8px; }
+        .related-card p { font-size: 14px; color: var(--text-light); }
+        footer { background: #0D5D57; color: #64748b; text-align: center; padding: 24px; font-size: 13px; }
+        footer a { color: #64748b; text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: white; }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">Beck<span>360</span></a>
+            <a href="/blog/" class="back-link">← Alle Artikel</a>
+        </div>
+    </header>
+
+    <div class="article-header">
+        <span class="category">Bildung</span>
+        <h1>Schulen: Virtueller Tag der offenen Tür erreicht mehr Familien</h1>
+        <div class="article-meta">
+            <span>25. November 2025</span>
+            <span>•</span>
+            <span>3 min Lesezeit</span>
+        </div>
+    </div>
+
+    <article class="article-content">
+        <p>Der Tag der offenen Tür ist für Schulen ein wichtiges Instrument – aber nicht alle interessierten Familien können kommen. Berufstätige Eltern, weite Anfahrtswege, kranke Kinder – es gibt viele Gründe. Ein virtueller 360° Rundgang löst dieses Problem.</p>
+
+        <div class="stat-box">
+            <div class="number">24/7</div>
+            <div class="label">Verfügbarkeit für interessierte Familien</div>
+        </div>
+
+        <h2>Warum ein virtueller Rundgang für Schulen?</h2>
+
+        <p>Die Schulwahl ist eine wichtige Entscheidung für Familien. Eltern wollen wissen: Wie sieht es dort aus? Welche Atmosphäre herrscht? Ist die Schule modern ausgestattet? Ein 360° Rundgang beantwortet diese Fragen jederzeit und von überall.</p>
+
+        <div class="highlight-box">
+            <p>„Seit wir den virtuellen Rundgang haben, bekommen wir deutlich mehr qualifizierte Anfragen. Familien kommen informiert zum Gespräch und haben bereits einen guten Eindruck von unserer Schule."</p>
+        </div>
+
+        <h2>Diese Bereiche sollten Sie zeigen</h2>
+
+        <h3>1. Klassenzimmer</h3>
+        <p>Zeigen Sie moderne Ausstattung, digitale Medien und die Lernumgebung. Eltern achten besonders auf die Klassengröße und den Zustand der Räume.</p>
+
+        <h3>2. Fachräume</h3>
+        <p>Naturwissenschaften, Musik, Kunst, Informatik – Fachräume zeigen das pädagogische Angebot und die Möglichkeiten der Schule.</p>
+
+        <h3>3. Aufenthaltsbereiche</h3>
+        <p>Mensa, Pausenhof, Schulhof – wo verbringen die Kinder ihre freie Zeit? Diese Bereiche sind für Eltern oft genauso wichtig wie die Klassenzimmer.</p>
+
+        <h3>4. Sporteinrichtungen</h3>
+        <p>Turnhalle, Sportplatz, evtl. Schwimmbad – sportliche Aktivitäten sind ein wichtiger Teil des Schullebens.</p>
+
+        <h3>5. Bibliothek & Lernzentren</h3>
+        <p>Zeigen Sie, wo Schüler selbstständig lernen können.</p>
+
+        <h2>Vorteile für Ihre Schule</h2>
+        <ul>
+            <li><strong>Mehr Reichweite:</strong> Familien aus größerer Entfernung erreichen</li>
+            <li><strong>Zeitersparnis:</strong> Weniger Einzelbesichtigungen nötig</li>
+            <li><strong>Modernität:</strong> Zeigen Sie, dass Ihre Schule digital denkt</li>
+            <li><strong>Inklusion:</strong> Auch Familien mit Mobilitätseinschränkungen können sich informieren</li>
+            <li><strong>Dauerhaft verfügbar:</strong> Nicht nur am Tag der offenen Tür</li>
+        </ul>
+
+        <h2>Integration in Ihre Schulkommunikation</h2>
+
+        <p>Der Rundgang sollte prominent auf der Schulwebsite platziert werden – idealerweise auf der Startseite oder einer eigenen „Unsere Schule"-Seite. Verlinken Sie ihn auch in Elternbriefen, Infobroschüren und Social Media.</p>
+
+        <h2>Datenschutz und Persönlichkeitsrechte</h2>
+
+        <p>Selbstverständlich werden alle Aufnahmen ohne erkennbare Personen gemacht. Wir achten auf maximalen Datenschutz und stellen sicher, dass keine Schüler, Lehrer oder sensiblen Informationen sichtbar sind.</p>
+
+                <div class="cta-box">
+            <h3>Kostenlose Beratung anfragen</h3>
+            <p>Ich melde mich innerhalb von 24 Stunden bei Ihnen.</p>
+            
+            <form class="article-form" action="https://formsubmit.co/rundgang@beck360.de" method="POST">
+                <input type="hidden" name="_subject" value="Blog-Anfrage: Schulen">
+                <input type="hidden" name="_source" value="Blog: Schulen">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="_next" value="https://firmenrundgang-karlsruhe.de/danke.html">
+                
+                <div class="form-row">
+                    <input type="text" name="name" required placeholder="Ihr Name *" autocomplete="name">
+                    <input type="email" name="email" required placeholder="E-Mail *" autocomplete="email">
+                </div>
+                <input type="tel" name="telefon" placeholder="Telefon (optional)" autocomplete="tel">
+                <textarea name="nachricht" rows="3" placeholder="Ihre Nachricht (optional)" autocomplete="off"></textarea>
+                <button type="submit" class="submit-btn">Kostenlos anfragen →</button>
+            </form>
+        </div>
+    </article>
+
+    <section class="related">
+        <h3>Ähnliche Artikel</h3>
+        <div class="related-grid">
+            <a href="/blog/eventlocation-virtuelle-besichtigung.html" class="related-card">
+                <h4>Eventlocation: Virtuelle Besichtigung für Planer</h4>
+                <p>Wie 360° Rundgänge Zeit sparen und die richtigen Kunden bringen.</p>
+            </a>
+            <a href="/blog/google-street-view-trusted-vorteile.html" class="related-card">
+                <h4>Google Street View Trusted: Sichtbarkeit auf Google Maps</h4>
+                <p>90% der Kunden recherchieren online. So werden Sie gefunden.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Beck360 – 360° Rundgänge & Drohnenaufnahmen Karlsruhe</p>
+        <p style="margin-top:8px">
+            <a href="https://360-rundgang-karlsruhe.de">Startseite</a>
+            <a href="/">Für Unternehmen</a>
+            <a href="/blog/">Magazin</a>
+            <a href="https://360-rundgang-karlsruhe.de/impressum">Impressum</a>
+            <a href="https://360-rundgang-karlsruhe.de/datenschutz">Datenschutz</a>
+        </p>
+    </footer>
+
+    <script>
+        // Scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideInUp 0.6s ease-out forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all headings and paragraphs
+        document.querySelectorAll('.article-content h2, .article-content h3, .article-content p, .stat-box, .highlight-box').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

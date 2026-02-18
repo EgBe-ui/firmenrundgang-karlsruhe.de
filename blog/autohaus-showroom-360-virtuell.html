@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <title>Autohaus: 360° Showroom für mehr Verkäufe | Beck360</title>
+    <meta name="description" content="Autokäufer recherchieren 14 Stunden online vor dem Besuch. Ein 360° Rundgang Ihres Showrooms erhöht qualifizierte Anfragen und Verkäufe.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://firmenrundgang-karlsruhe.de/blog/autohaus-showroom-360-virtuell.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Autohaus & Showroom: 24/7 Verkaufen mit virtueller Ausstellung",
+        "author": {"@type": "Person", "name": "Eugen Beck"},
+        "publisher": {"@type": "Organization", "name": "Beck360"},
+        "datePublished": "2025-12-30",
+        "dateModified": "2025-12-30"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary: #0F766E; --primary-dark: #0D5D57; --primary-light: #14B8A6; --text: #134E4A; --text-light: #5F7A78; --bg: #ffffff; --bg-soft: #F0FDFA; --gradient: linear-gradient(135deg, #0F766E 0%, #14B8A6 100%); --font-display: 'Inter', sans-serif; --font-body: 'Inter', sans-serif; }
+        body { font-family: var(--font-body); color: var(--text); line-height: 1.6; background: #F0FDFA; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .header { background: var(--bg); padding: 16px 20px; border-bottom: 1px solid #e2e8f0; }
+        .header-content { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; font-family: var(--font-display); }
+        .logo span { color: var(--primary); }
+        .back-link { color: var(--text-light); text-decoration: none; font-size: 14px; font-family: var(--font-display); }
+        .back-link:hover { color: var(--primary); }
+        .article-header { background: var(--gradient); color: white; padding: 60px 20px; text-align: center; }
+        .article-header .category { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; font-family: var(--font-display); }
+        .article-header h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; max-width: 700px; margin: 0 auto 16px; line-height: 1.2; font-family: var(--font-display); }
+        .article-meta { opacity: 0.8; font-size: 14px; font-family: var(--font-display); }
+        .article-meta span { margin: 0 8px; }
+        .article-content { max-width: 700px; margin: 0 auto; padding: 48px 20px; background: white; margin-top: -20px; border-radius: 20px 20px 0 0; position: relative; }
+        .article-content h2 { font-size: 24px; font-weight: 700; margin: 40px 0 16px; color: var(--text); font-family: var(--font-display); }
+        .article-content h3 { font-size: 20px; font-weight: 600; margin: 32px 0 12px; font-family: var(--font-display); }
+        .article-content p { font-family: var(--font-body); font-size: 17px; line-height: 1.8; margin-bottom: 20px; color: #334155; }
+        .article-content ul { margin: 20px 0; padding-left: 24px; }
+        .article-content li { font-family: var(--font-body); font-size: 17px; line-height: 1.8; margin-bottom: 12px; color: #334155; }
+        .highlight-box { background: linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%); border-left: 4px solid var(--primary); padding: 24px; border-radius: 0 12px 12px 0; margin: 32px 0; }
+        .highlight-box p { margin: 0; font-style: italic; }
+        .stat-box { background: var(--gradient); color: white; padding: 32px; border-radius: 16px; text-align: center; margin: 32px 0; }
+        .stat-box .number { font-size: 48px; font-weight: 800; font-family: var(--font-display); }
+        .stat-box .label { opacity: 0.9; font-family: var(--font-display); }
+        .cta-box { background: #0D5D57; color: white; padding: 40px; border-radius: 20px; text-align: center; margin: 48px 0; }
+        .cta-box h3 { font-size: 24px; margin-bottom: 12px; font-family: var(--font-display); }
+        .cta-box p { opacity: 0.8; margin-bottom: 24px; font-family: var(--font-display); }
+        .cta-btn { display: inline-block; background: var(--gradient); color: white; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-weight: 600; font-family: var(--font-display); }
+        
+        /* Article Form Styles */
+        .article-form { text-align: left; margin-top: 20px; }
+        .article-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+        @media (max-width: 500px) { .article-form .form-row { grid-template-columns: 1fr; } }
+        .article-form input, .article-form textarea {
+            width: 100%; padding: 12px 16px; border: none; border-radius: 8px;
+            font-size: 15px; font-family: var(--font-display); background: rgba(255,255,255,0.1);
+            color: white; margin-bottom: 12px;
+        }
+        .article-form input::placeholder, .article-form textarea::placeholder { color: rgba(255,255,255,0.6); }
+        .article-form input:focus, .article-form textarea:focus { outline: 2px solid var(--primary); background: rgba(255,255,255,0.15); }
+        .article-form .submit-btn {
+            width: 100%; background: var(--gradient); color: white; padding: 14px;
+            border: none; border-radius: 10px; font-size: 16px; font-weight: 600;
+            cursor: pointer; transition: transform 0.2s; font-family: var(--font-display);
+        }
+        .article-form .submit-btn:hover { transform: translateY(-2px); }
+
+        /* Demo Tour Embed */
+        .demo-tour { margin: 40px 0; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+        .demo-tour iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; }
+        .demo-tour-caption { background: var(--gradient); color: white; padding: 16px 20px; text-align: center; font-weight: 600; font-family: var(--font-display); }
+
+        .related { background: #F0FDFA; padding: 48px 20px; }
+        .related h3 { text-align: center; margin-bottom: 32px; font-size: 24px; font-family: var(--font-display); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .related-card { background: white; border-radius: 12px; padding: 24px; text-decoration: none; color: inherit; transition: transform 0.2s; }
+        .related-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+        .related-card h4 { font-size: 16px; margin-bottom: 8px; font-family: var(--font-display); font-weight: 600; }
+        .related-card p { font-size: 14px; color: var(--text-light); }
+        footer { background: #0D5D57; color: #64748b; text-align: center; padding: 24px; font-size: 13px; font-family: var(--font-display); }
+        footer a { color: #64748b; text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: white; }
+
+        /* Scroll Animation */
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">Beck<span>360</span></a>
+            <a href="/blog/" class="back-link">← Alle Artikel</a>
+        </div>
+    </header>
+
+    <div class="article-header">
+        <span class="category">Showroom</span>
+        <h1>Autohaus & Showroom: 24/7 Verkaufen mit virtueller Ausstellung</h1>
+        <div class="article-meta">
+            <span>30. Dezember 2025</span>
+            <span>•</span>
+            <span>5 min Lesezeit</span>
+        </div>
+    </div>
+
+    <article class="article-content">
+        <p class="fade-in">95% aller Autokäufer recherchieren heute online, bevor sie einen Händler besuchen. Der Showroom ist nicht mehr der erste Touchpoint – die Website ist es. Ein 360° Rundgang bringt Ihren Showroom dorthin, wo Ihre Kunden sind: ins Internet.</p>
+
+        <div class="stat-box fade-in">
+            <div class="number">95%</div>
+            <div class="label">recherchieren vor dem Händlerbesuch online</div>
+        </div>
+
+        <div class="demo-tour fade-in">
+            <iframe src="https://my.matterport.com/show/?m=eisanxEDSWw" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" loading="lazy"></iframe>
+            <div class="demo-tour-caption">Live-Beispiel: Autohaus Lounge Wackenhut – Klicken Sie sich durch!</div>
+        </div>
+
+        <h2 class="fade-in">Der virtuelle Showroom als Verkaufsinstrument</h2>
+
+        <p class="fade-in">Autokäufer verbringen durchschnittlich 14 Stunden mit Online-Recherche, aber nur 3,5 Stunden beim Händler. Das bedeutet: Die Kaufentscheidung fällt großteils online. Ein virtueller Rundgang gibt Interessenten das Gefühl, bereits vor Ort zu sein.</p>
+
+        <div class="highlight-box fade-in">
+            <p>Händler mit virtuellen Showrooms berichten von 25% qualifizierteren Anfragen – Kunden kommen vorbereitet und interessiert.</p>
+        </div>
+
+        <h2 class="fade-in">Was sollte Ihr virtueller Showroom zeigen?</h2>
+
+        <h3 class="fade-in">1. Die Fahrzeugausstellung</h3>
+        <p class="fade-in">Zeigen Sie Ihre aktuellen Modelle im besten Licht. Ein 360° Rundgang durch den Showroom vermittelt Größe, Ambiente und Qualität.</p>
+
+        <h3 class="fade-in">2. Einzelne Fahrzeuge</h3>
+        <p class="fade-in">Besonders für Premium-Fahrzeuge oder Gebrauchtwagen-Highlights lohnen sich individuelle 360°-Aufnahmen im und um das Fahrzeug.</p>
+
+        <h3 class="fade-in">3. Werkstatt und Service</h3>
+        <p class="fade-in">Transparenz schafft Vertrauen. Zeigen Sie Ihre moderne Werkstatt – das überzeugt auch beim Thema Service und Wartung.</p>
+
+        <h3 class="fade-in">4. Kundenbereich</h3>
+        <p class="fade-in">Lounge, Café, Kinderecke – diese Details machen den Unterschied bei der Händlerwahl.</p>
+
+        <h2 class="fade-in">Vorteile für Autohäuser und Showrooms</h2>
+        <ul class="fade-in">
+            <li><strong>24/7 Verfügbarkeit:</strong> Kunden können jederzeit „vorbeischauen"</li>
+            <li><strong>Qualifizierte Leads:</strong> Besucher, die den Rundgang nutzen, haben echtes Interesse</li>
+            <li><strong>Reichweite erweitern:</strong> Kunden aus größerer Entfernung erreichen</li>
+            <li><strong>Zeitersparnis:</strong> Weniger unqualifizierte Besichtigungen</li>
+            <li><strong>Markenimage:</strong> Modernität und Innovation demonstrieren</li>
+        </ul>
+
+        <h2 class="fade-in">Nicht nur für Autos</h2>
+        <p class="fade-in">Das Konzept funktioniert für jeden Showroom: Möbelhäuser, Küchenstudios, Boote, Motorräder, Campingfahrzeuge. Überall dort, wo Produkte live erlebt werden müssen, hilft ein virtueller Rundgang bei der Vorentscheidung.</p>
+
+        <h2 class="fade-in">Integration in Ihre Verkaufsprozesse</h2>
+        <p class="fade-in">Der virtuelle Rundgang kann direkt mit Ihrem Fahrzeugbestand verknüpft werden. Klickt ein Kunde auf ein bestimmtes Modell, startet der Rundgang bei diesem Fahrzeug. So wird die Online-Recherche zum nahtlosen Erlebnis.</p>
+
+        <div class="cta-box fade-in">
+            <h3>Kostenlose Beratung anfragen</h3>
+            <p>Ich melde mich innerhalb von 24 Stunden bei Ihnen.</p>
+            
+            <form class="article-form" action="https://formsubmit.co/rundgang@beck360.de" method="POST">
+                <input type="hidden" name="_subject" value="Blog-Anfrage: Showrooms">
+                <input type="hidden" name="_source" value="Blog: Showrooms">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="_next" value="https://firmenrundgang-karlsruhe.de/danke.html">
+                
+                <div class="form-row">
+                    <input type="text" name="name" required placeholder="Ihr Name *" autocomplete="name">
+                    <input type="email" name="email" required placeholder="E-Mail *" autocomplete="email">
+                </div>
+                <input type="tel" name="telefon" placeholder="Telefon (optional)" autocomplete="tel">
+                <textarea name="nachricht" rows="3" placeholder="Ihre Nachricht (optional)" autocomplete="off"></textarea>
+                <button type="submit" class="submit-btn">Kostenlos anfragen →</button>
+            </form>
+        </div>
+    </article>
+
+    <section class="related">
+        <h3 class="fade-in">Ähnliche Artikel</h3>
+        <div class="related-grid">
+            <a href="/blog/einzelhandel-online-offline-verbinden.html" class="related-card fade-in">
+                <h4>Einzelhandel: Online und Offline Welt verbinden</h4>
+                <p>Lokale Geschäfte können online punkten – ohne aufwendigen E-Commerce.</p>
+            </a>
+            <a href="/blog/roi-360-rundgang-berechnen.html" class="related-card fade-in">
+                <h4>ROI berechnen: Lohnt sich ein 360° Rundgang?</h4>
+                <p>Eine einfache Formel zeigt, ab wann sich die Investition rentiert.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Beck360 – 360° Rundgänge & Drohnenaufnahmen Karlsruhe</p>
+        <p style="margin-top:8px">
+            <a href="https://360-rundgang-karlsruhe.de">Startseite</a>
+            <a href="/">Für Unternehmen</a>
+            <a href="/blog/">Magazin</a>
+            <a href="https://360-rundgang-karlsruhe.de/impressum">Impressum</a>
+            <a href="https://360-rundgang-karlsruhe.de/datenschutz">Datenschutz</a>
+        </p>
+    </footer>
+
+    <script>
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+    });
+    </script>
+</body>
+</html>

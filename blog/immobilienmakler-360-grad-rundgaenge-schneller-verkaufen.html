@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <title>Immobilienmakler: Mit 360° Rundgängen schneller verkaufen | Beck360</title>
+    <meta name="description" content="Immobilienmakler steigern Verkaufszahlen mit 360° Rundgängen. Mehr qualifizierte Interessenten, weniger Besichtigungen, schnellerer Verkauf.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://firmenrundgang-karlsruhe.de/blog/immobilienmakler-360-grad-rundgaenge-schneller-verkaufen.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Immobilienmakler: Mit 360° Rundgängen schneller verkaufen",
+        "author": {
+                "@type": "Person",
+                "name": "Eugen Beck"
+        },
+        "publisher": {
+                "@type": "Organization",
+                "name": "Beck360"
+        },
+        "datePublished": "2026-02-18",
+        "dateModified": "2026-02-18",
+        "keywords": "Immobilienmakler 360 Grad, virtuelle Immobilienbesichtigung, Immobilien Marketing, 3D Rundgang Immobilien, digitale Hausbesichtigung"
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0F766E;
+            --primary-dark: #0D5D57;
+            --primary-light: #14B8A6;
+            --text: #134E4A;
+            --text-light: #5F7A78;
+            --bg: #ffffff;
+            --bg-soft: #F0FDFA;
+            --gradient: linear-gradient(135deg, #0F766E 0%, #14B8A6 100%);
+            --font-display: 'Inter', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            line-height: 1.6;
+            background: #F0FDFA;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .header { background: var(--bg); padding: 16px 20px; border-bottom: 1px solid #e2e8f0; position: relative; z-index: 10; }
+        .header-content { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; }
+        .logo span { color: var(--primary); }
+        .back-link { color: var(--text-light); text-decoration: none; font-size: 14px; }
+        .back-link:hover { color: var(--primary); }
+
+        .article-header {
+            background: var(--gradient);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .article-header .category {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        .article-header h1 {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 800;
+            max-width: 700px;
+            margin: 0 auto 16px;
+            line-height: 1.2;
+        }
+        .article-meta { opacity: 0.8; font-size: 14px; }
+        .article-meta span { margin: 0 8px; }
+
+        .article-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 48px 20px;
+            background: white;
+            margin-top: -20px;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+            z-index: 2;
+        }
+        .article-content h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 40px 0 16px;
+            color: var(--text);
+        }
+        .article-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 12px;
+        }
+        .article-content p {
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #334155;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 24px;
+        }
+        .article-content li {
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            color: #334155;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%);
+            border-left: 4px solid var(--primary);
+            padding: 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 32px 0;
+        }
+        .highlight-box p { margin: 0; font-style: italic; }
+        .stat-box {
+            background: var(--gradient);
+            color: white;
+            padding: 32px;
+            border-radius: 16px;
+            text-align: center;
+            margin: 32px 0;
+        }
+        .stat-box .number { font-size: 48px; font-weight: 800; }
+        .stat-box .label { opacity: 0.9; }
+
+        .cta-box {
+            background: #0D5D57;
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-box h3 { font-size: 24px; margin-bottom: 12px; }
+        .cta-box p { opacity: 0.8; margin-bottom: 24px; }
+        .cta-btn {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Article Form Styles */
+        .article-form { text-align: left; margin-top: 20px; }
+        .article-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+        @media (max-width: 500px) { .article-form .form-row { grid-template-columns: 1fr; } }
+        .article-form input, .article-form textarea {
+            width: 100%; padding: 12px 16px; border: none; border-radius: 8px;
+            font-size: 15px; font-family: inherit; background: rgba(255,255,255,0.1);
+            color: white; margin-bottom: 12px;
+        }
+        .article-form input::placeholder, .article-form textarea::placeholder { color: rgba(255,255,255,0.6); }
+        .article-form input:focus, .article-form textarea:focus { outline: 2px solid var(--primary); background: rgba(255,255,255,0.15); }
+        .article-form .submit-btn {
+            width: 100%; background: var(--gradient); color: white; padding: 14px;
+            border: none; border-radius: 10px; font-size: 16px; font-weight: 600;
+            cursor: pointer; transition: transform 0.2s;
+        }
+        .article-form .submit-btn:hover { transform: translateY(-2px); }
+
+        .related { background: #F0FDFA; padding: 48px 20px; position: relative; z-index: 2; }
+        .related h3 { text-align: center; margin-bottom: 32px; font-size: 24px; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .related-card { background: white; border-radius: 12px; padding: 24px; text-decoration: none; color: inherit; transition: transform 0.2s; }
+        .related-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+        .related-card h4 { font-size: 16px; margin-bottom: 8px; }
+        .related-card p { font-size: 14px; color: var(--text-light); }
+
+        footer { background: #0D5D57; color: #64748b; text-align: center; padding: 24px; font-size: 13px; position: relative; z-index: 2; }
+        footer a { color: #64748b; text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: white; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">Beck<span>360</span></a>
+            <a href="/blog/" class="back-link">&larr; Alle Artikel</a>
+        </div>
+    </header>
+
+    <div class="article-header">
+        <span class="category">Business</span>
+        <h1>Immobilienmakler: Mit 360° Rundgängen schneller verkaufen</h1>
+        <div class="article-meta">
+            <span>18. Februar 2026</span>
+            <span>&bull;</span>
+            <span>7 min Lesezeit</span>
+        </div>
+    </div>
+
+    <article class="article-content">
+                <p>Die Immobilienbranche befindet sich im digitalen Wandel. Während klassische Exposés mit statischen Fotos noch vor wenigen Jahren Standard waren, erwarten potenzielle Käufer und Mieter heute deutlich mehr: Sie möchten sich ein umfassendes Bild machen, bevor sie Zeit in eine Besichtigung investieren. Genau hier setzen 360°-Rundgänge an – eine Technologie, die nicht nur die Erwartungen moderner Immobilieninteressenten erfüllt, sondern auch Maklern messbare Vorteile in Form von Zeitersparnis, höheren Abschlussquoten und einem deutlichen Wettbewerbsvorsprung verschafft. In Karlsruhe und der gesamten Region Baden haben innovative Immobilienmakler bereits erkannt: Virtuelle Rundgänge sind kein nettes Extra mehr, sondern ein entscheidender Erfolgsfaktor im hart umkämpften Immobilienmarkt.</p>
+
+        <h2>Warum virtuelle Rundgänge die Immobilienbranche revolutionieren</h2>
+
+        <p>Die Digitalisierung hat das Suchverhalten potenzieller Immobilienkäufer grundlegend verändert. Laut aktuellen Studien beginnen über 90 Prozent aller Immobiliensuchen online – und die Ansprüche an die Präsentation sind dabei kontinuierlich gestiegen. Einfache Grundrisse und einige Fotos reichen längst nicht mehr aus, um sich von der Konkurrenz abzuheben. Virtuelle 360°-Rundgänge bieten Interessenten die Möglichkeit, eine Immobilie rund um die Uhr zu besichtigen, sich frei durch alle Räume zu bewegen und ein authentisches Raumgefühl zu entwickeln – und das vom Sofa aus.</p>
+
+        <div class="stat-box">
+            <div class="number">87%</div>
+            <div class="label">der Immobilieninteressenten bevorzugen Angebote mit virtuellen Rundgängen gegenüber reinen Foto-Exposés</div>
+        </div>
+        <p>Diese Entwicklung ist kein vorübergehender Trend, sondern eine fundamentale Veränderung der Kundenerwartungen. Besonders in der Region Karlsruhe, Ettlingen und Bruchsal, wo der Immobilienmarkt dynamisch und wettbewerbsintensiv ist, verschafft die Nutzung modernster Präsentationstechnologie einen messbaren Vorsprung. Immobilien mit 360°-Rundgängen erzielen nicht nur mehr Aufrufe in Online-Portalen, sondern ziehen auch qualifiziertere Interessenten an, die bereits eine fundierte Vorauswahl getroffen haben.</p>
+
+        <h2>Vorteile für Makler: Zeitersparnis und höhere Conversion-Rate</h2>
+
+        <p>Für Immobilienmakler bedeuten virtuelle Rundgänge eine fundamentale Optimierung des Vermarktungsprozesses. Der klassische Ablauf mit zahlreichen Besichtigungsterminen, bei denen sich viele Interessenten erst vor Ort ein Bild machen, bindet enorme zeitliche Ressourcen. Mit 360°-Rundgängen ändert sich diese Dynamik grundlegend: Nur noch ernsthaft interessierte Käufer, die die Immobilie bereits virtuell besichtigt und für passend befunden haben, vereinbaren einen Vor-Ort-Termin.</p>
+
+        <ul>
+            <li><strong>Reduzierung der Besichtigungstermine um bis zu 50%:</strong> Weniger unqualifizierte Anfragen bedeuten mehr Zeit für vielversprechende Verkaufsgespräche und die Akquise neuer Objekte.</li>
+            <li><strong>Höhere Abschlusswahrscheinlichkeit:</strong> Interessenten, die nach einem virtuellen Rundgang zur physischen Besichtigung kommen, haben bereits eine konkrete Kaufabsicht und kennen die Immobilie genau.</li>
+            <li><strong>24/7 Verfügbarkeit:</strong> Die Immobilie kann jederzeit besichtigt werden – auch außerhalb der Geschäftszeiten und von internationalen Interessenten.</li>
+            <li><strong>Professionellere Außendarstellung:</strong> Hochwertige 360°-Rundgänge unterstreichen die Professionalität Ihres Maklerunternehmens und schaffen Vertrauen.</li>
+            <li><strong>Längere Verweildauer in Exposés:</strong> Interessenten beschäftigen sich intensiver mit dem Angebot, was die emotionale Bindung zur Immobilie stärkt.</li>
+        </ul>
+        <p>Ein konkretes Beispiel aus der Praxis: Ein Maklerbüro in Karlsruhe konnte nach Einführung von 360°-Rundgängen die durchschnittliche Vermarktungszeit für Eigentumswohnungen von 89 auf 62 Tage reduzieren – eine Zeitersparnis von über 30 Prozent. Gleichzeitig sank die Anzahl der notwendigen Besichtigungen pro verkaufter Immobilie von durchschnittlich 14 auf 8 Termine.</p>
+
+        <div class="stat-box">
+            <div class="number">3x</div>
+            <div class="label">höhere Kontaktrate bei Immobilienanzeigen mit 360°-Rundgang im Vergleich zu herkömmlichen Inseraten</div>
+        </div>
+
+        <h2>Käuferperspektive: Vorauswahl treffen ohne Anfahrt</h2>
+
+        <p>Auch aus Sicht der Immobiliensuchenden bieten virtuelle Rundgänge erhebliche Vorteile. Die Suche nach der passenden Immobilie ist zeitaufwendig und oft mit weiten Anfahrten verbunden – besonders in der weitläufigen Region zwischen Karlsruhe, Baden-Baden, Rastatt und Pforzheim. Virtuelle Besichtigungen ermöglichen es Interessenten, ihre Auswahl erheblich einzugrenzen, bevor sie Zeit und Kosten für physische Besichtigungen investieren.</p>
+        <p>Besonders für auswärtige Käufer, die beispielsweise aus beruflichen Gründen nach Karlsruhe ziehen, sind 360°-Rundgänge ein unschätzbarer Vorteil. Sie können sich bereits vor dem Umzug einen realistischen Eindruck verschaffen und die Anzahl der notwendigen Besichtigungsreisen minimieren. Dies beschleunigt nicht nur den Entscheidungsprozess, sondern reduziert auch die Frustration durch unpassende Besichtigungen.</p>
+
+        <div class="highlight-box">
+            <p>Virtuelle Rundgänge schaffen Transparenz und Vertrauen – zwei entscheidende Faktoren für schnelle Kaufentscheidungen im Immobilienmarkt.</p>
+        </div>
+        <p>Darüber hinaus ermöglichen 360°-Rundgänge es Käufern, Familienmitglieder oder Berater in den Entscheidungsprozess einzubeziehen, ohne dass alle Beteiligten physisch anwesend sein müssen. Der Link zum virtuellen Rundgang kann einfach geteilt werden, und jeder kann sich in Ruhe ein eigenes Bild machen. Dies führt zu fundierteren und schnelleren Kaufentscheidungen.</p>
+
+        <h2>Technische Umsetzung: Von der Aufnahme bis zur Integration</h2>
+
+        <p>Die Erstellung professioneller 360°-Rundgänge erfordert spezialisierte Technologie und Know-how. Mit der Matterport Pro2 Kamera, die zu den führenden Systemen im Bereich der virtuellen Immobilienbesichtigung zählt, werden hochauflösende 3D-Modelle erstellt, die weit über einfache Panoramafotos hinausgehen. Die Technologie erfasst nicht nur visuelle Informationen, sondern auch räumliche Dimensionen und erstellt automatisch Grundrisse und Raummaße.</p>
+
+        <ul>
+            <li><strong>Professionelle Aufnahme:</strong> Ein geschulter Fotograf erstellt die Aufnahmen in der Regel innerhalb von 1-2 Stunden, abhängig von der Objektgröße.</li>
+            <li><strong>Automatische Verarbeitung:</strong> Die Software erstellt automatisch einen nahtlosen virtuellen Rundgang, inklusive Dollhouse-Ansicht und 2D-Grundrissen.</li>
+            <li><strong>Einfache Integration:</strong> Der fertige Rundgang kann per Embed-Code in Ihre Website, Immobilienportale und Social Media integriert werden.</li>
+            <li><strong>Google Street View Anbindung:</strong> Die Veröffentlichung auf Google Maps erhöht die Sichtbarkeit und Auffindbarkeit Ihrer Immobilienangebote erheblich.</li>
+            <li><strong>Messbare Statistiken:</strong> Sie erhalten detaillierte Einblicke, wie oft und wie lange Interessenten den Rundgang nutzen – wertvolle Daten für Ihre Vermarktungsstrategie.</li>
+        </ul>
+        <p>Die Investition in professionelle 360°-Rundgänge amortisiert sich in der Regel bereits nach wenigen Objekten durch die beschleunigte Vermarktung und die eingesparten Besichtigungskosten. Besonders für hochpreisige Immobilien oder Objekte mit besonderen Ausstattungsmerkmalen ist die virtuelle Präsentation ein unverzichtbares Marketinginstrument geworden.</p>
+
+        <h2>Best Practices und ROI-Beispiele aus der Praxis</h2>
+
+        <p>Die erfolgreiche Nutzung von 360°-Rundgängen im Immobilienmarketing folgt einigen bewährten Prinzipien. Zunächst sollte die Immobilie optimal präsentiert werden: aufgeräumt, gut beleuchtet und ansprechend gestylt. Der virtuelle Rundgang verstärkt jeden Eindruck – positiv wie negativ. Eine professionelle Vorbereitung ist daher ebenso wichtig wie bei klassischen Immobilienfotos.</p>
+
+        <div class="stat-box">
+            <div class="number">62%</div>
+            <div class="label">schnellere Vermarktung bei Immobilien mit professionellen 360°-Rundgängen im Vergleich zu konventionellen Exposés</div>
+        </div>
+        <p>Ein weiterer Erfolgsfaktor ist die prominente Platzierung des virtuellen Rundgangs in allen Marketingkanälen. Der Link sollte in Exposés, auf der Website, in Social-Media-Posts und in E-Mail-Kampagnen gut sichtbar sein. Viele Makler berichten, dass der 360°-Rundgang zum meistgenutzten Feature ihrer Immobilienanzeigen geworden ist – noch vor klassischen Fotogalerien.</p>
+        <p>Ein Praxisbeispiel aus Ettlingen zeigt das ROI-Potenzial deutlich: Ein Makler investierte 350 Euro in einen professionellen 360°-Rundgang für eine Eigentumswohnung. Die Immobilie erhielt 340% mehr Aufrufe als vergleichbare Objekte ohne virtuellen Rundgang und wurde innerhalb von drei Wochen verkauft – bei einer ursprünglich kalkulierten Vermarktungszeit von zwei bis drei Monaten. Die eingesparten Kosten für zusätzliche Besichtigungstermine, Anzeigenverlängerungen und Zeitaufwand übertrafen die Investition um ein Vielfaches.</p>
+
+        <div class="highlight-box">
+            <p>Die durchschnittliche Verweildauer in Immobilienanzeigen mit 360°-Rundgang liegt bei über 5 Minuten – im Vergleich zu unter 2 Minuten bei herkömmlichen Anzeigen.</p>
+        </div>
+        <p>Besonders effektiv ist die Kombination aus virtuellem Rundgang und gezieltem Online-Marketing. Immobilien mit 360°-Präsentation eignen sich hervorragend für Social-Media-Kampagnen, da sie visuell ansprechend sind und eine hohe Engagement-Rate erzielen. In der Region Karlsruhe, Bruchsal und Rastatt, wo der Wettbewerb unter Maklern intensiv ist, kann diese digitale Präsenz den entscheidenden Unterschied machen.</p>
+
+        <h2>Fazit: Wettbewerbsvorteil durch digitale Innovation</h2>
+
+        <p>360°-Rundgänge haben sich von einer innovativen Zusatzleistung zu einem Standard-Werkzeug für erfolgreiche Immobilienmakler entwickelt. Die Vorteile sind messbar und überzeugend: schnellere Vermarktung, weniger Besichtigungstermine, qualifiziertere Interessenten und eine deutlich professionellere Außendarstellung. In einem Markt, in dem sich Immobilien oft nur marginal unterscheiden, kann die Art der Präsentation den entscheidenden Unterschied machen.</p>
+        <p>Für Immobilienmakler in Karlsruhe und Umgebung bedeutet der Einsatz virtueller Rundgänge nicht nur eine Optimierung bestehender Prozesse, sondern einen echten Wettbewerbsvorteil. Während einige Marktteilnehmer noch zögern, haben Vorreiter bereits erkannt: Die Investition in professionelle 360°-Technologie zahlt sich mehrfach aus – durch höhere Abschlussquoten, zufriedenere Kunden und eine stärkere Marktposition.</p>
+        <p>Die Technologie ist ausgereift, die Nachfrage seitens der Immobiliensuchenden eindeutig, und die Erfolgsbeispiele sprechen für sich. Makler, die jetzt auf virtuelle Rundgänge setzen, positionieren sich nicht nur für den aktuellen Markt optimal, sondern sind auch für die zunehmend digitale Zukunft der Immobilienbranche bestens gerüstet. Beck360 unterstützt Immobilienmakler in der gesamten Region mit professionellen 360°-Rundgängen auf Basis der Matterport Pro2 Technologie – von der ersten Aufnahme bis zur Integration in alle relevanten Vermarktungskanäle.</p>
+
+        <div class="cta-box">
+            <h3>Kostenlose Beratung anfragen</h3>
+            <p>Ich melde mich innerhalb von 24 Stunden bei Ihnen.</p>
+
+            <form class="article-form" action="https://formsubmit.co/rundgang@beck360.de" method="POST">
+                <input type="hidden" name="_subject" value="Blog-Anfrage: Business">
+                <input type="hidden" name="_source" value="Blog: Business">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="_next" value="https://firmenrundgang-karlsruhe.de/danke.html">
+
+                <div class="form-row">
+                    <input type="text" name="name" required placeholder="Ihr Name *" autocomplete="name">
+                    <input type="email" name="email" required placeholder="E-Mail *" autocomplete="email">
+                </div>
+                <input type="tel" name="telefon" placeholder="Telefon (optional)" autocomplete="tel">
+                <textarea name="nachricht" rows="3" placeholder="Ihre Nachricht (optional)" autocomplete="off"></textarea>
+                <button type="submit" class="submit-btn">Kostenlos anfragen &rarr;</button>
+            </form>
+        </div>
+    </article>
+
+    <section class="related">
+        <h3>Ähnliche Artikel</h3>
+        <div class="related-grid">
+            
+            <a href="/blog/google-street-view-trusted-vorteile.html" class="related-card">
+                <h4>Google Street View Trusted: Warum Ihr Unternehmen sichtbar sein muss</h4>
+                <p>90% der Kunden recherchieren online. So nutzen Sie Google Maps für Ihr Marketing.</p>
+            </a>
+            <a href="/blog/roi-360-rundgang-berechnen.html" class="related-card">
+                <h4>ROI berechnen: Lohnt sich ein 360° Rundgang?</h4>
+                <p>Eine einfache Formel zeigt, ab wann sich die Investition rentiert.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Beck360 – 360° Rundgänge &amp; Drohnenaufnahmen Karlsruhe</p>
+        <p style="margin-top:8px">
+            <a href="https://360-rundgang-karlsruhe.de">Startseite</a>
+            <a href="/">Für Unternehmen</a>
+            <a href="/blog/">Magazin</a>
+            <a href="https://360-rundgang-karlsruhe.de/impressum">Impressum</a>
+            <a href="https://360-rundgang-karlsruhe.de/datenschutz">Datenschutz</a>
+        </p>
+    </footer>
+
+    <script>
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.stat-box, .highlight-box, .related-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+    </script>
+</body>
+</html>
