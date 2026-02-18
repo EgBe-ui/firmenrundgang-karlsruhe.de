@@ -97,4 +97,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- Blog Artikel: coworking-spaces-360-grad-rundgang-mitglieder-gewinnen -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/coworking-spaces-360-grad-rundgang-mitglieder-gewinnen.html</loc>
+        <lastmod>2026-02-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
