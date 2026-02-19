@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <title>Bäckerei & Café: Mit 360° Rundgang Laufkundschaft digitalisieren | Beck360</title>
+    <meta name="description" content="Wie Bäckereien und Cafés mit 360° Rundgängen neue Kunden gewinnen, Produktvielfalt zeigen und lokale Sichtbarkeit steigern. Jetzt informieren!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://firmenrundgang-karlsruhe.de/blog/baeckerei-cafe-360-rundgang-laufkundschaft.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Bäckerei & Café: Mit 360° Rundgang Laufkundschaft digitalisieren",
+        "author": {
+                "@type": "Person",
+                "name": "Eugen Beck"
+        },
+        "publisher": {
+                "@type": "Organization",
+                "name": "Beck360"
+        },
+        "datePublished": "2026-02-19",
+        "dateModified": "2026-02-19",
+        "keywords": "Bäckerei 360 Rundgang, Café virtueller Rundgang, Bäckerei Marketing digital, Konditorei Online-Präsenz, Handwerksbetrieb virtuelle Tour"
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0F766E;
+            --primary-dark: #0D5D57;
+            --primary-light: #14B8A6;
+            --text: #134E4A;
+            --text-light: #5F7A78;
+            --bg: #ffffff;
+            --bg-soft: #F0FDFA;
+            --gradient: linear-gradient(135deg, #0F766E 0%, #14B8A6 100%);
+            --font-display: 'Inter', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            line-height: 1.6;
+            background: #F0FDFA;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .header { background: var(--bg); padding: 16px 20px; border-bottom: 1px solid #e2e8f0; position: relative; z-index: 10; }
+        .header-content { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; }
+        .logo span { color: var(--primary); }
+        .back-link { color: var(--text-light); text-decoration: none; font-size: 14px; }
+        .back-link:hover { color: var(--primary); }
+
+        .article-header {
+            background: var(--gradient);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .article-header .category {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        .article-header h1 {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 800;
+            max-width: 700px;
+            margin: 0 auto 16px;
+            line-height: 1.2;
+        }
+        .article-meta { opacity: 0.8; font-size: 14px; }
+        .article-meta span { margin: 0 8px; }
+
+        .article-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 48px 20px;
+            background: white;
+            margin-top: -20px;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+            z-index: 2;
+        }
+        .article-content h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 40px 0 16px;
+            color: var(--text);
+        }
+        .article-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 12px;
+        }
+        .article-content p {
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #334155;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 24px;
+        }
+        .article-content li {
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            color: #334155;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%);
+            border-left: 4px solid var(--primary);
+            padding: 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 32px 0;
+        }
+        .highlight-box p { margin: 0; font-style: italic; }
+        .stat-box {
+            background: var(--gradient);
+            color: white;
+            padding: 32px;
+            border-radius: 16px;
+            text-align: center;
+            margin: 32px 0;
+        }
+        .stat-box .number { font-size: 48px; font-weight: 800; }
+        .stat-box .label { opacity: 0.9; }
+
+        .cta-box {
+            background: #0D5D57;
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-box h3 { font-size: 24px; margin-bottom: 12px; }
+        .cta-box p { opacity: 0.8; margin-bottom: 24px; }
+        .cta-btn {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Article Form Styles */
+        .article-form { text-align: left; margin-top: 20px; }
+        .article-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+        @media (max-width: 500px) { .article-form .form-row { grid-template-columns: 1fr; } }
+        .article-form input, .article-form textarea {
+            width: 100%; padding: 12px 16px; border: none; border-radius: 8px;
+            font-size: 15px; font-family: inherit; background: rgba(255,255,255,0.1);
+            color: white; margin-bottom: 12px;
+        }
+        .article-form input::placeholder, .article-form textarea::placeholder { color: rgba(255,255,255,0.6); }
+        .article-form input:focus, .article-form textarea:focus { outline: 2px solid var(--primary); background: rgba(255,255,255,0.15); }
+        .article-form .submit-btn {
+            width: 100%; background: var(--gradient); color: white; padding: 14px;
+            border: none; border-radius: 10px; font-size: 16px; font-weight: 600;
+            cursor: pointer; transition: transform 0.2s;
+        }
+        .article-form .submit-btn:hover { transform: translateY(-2px); }
+
+        .related { background: #F0FDFA; padding: 48px 20px; position: relative; z-index: 2; }
+        .related h3 { text-align: center; margin-bottom: 32px; font-size: 24px; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .related-card { background: white; border-radius: 12px; padding: 24px; text-decoration: none; color: inherit; transition: transform 0.2s; }
+        .related-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+        .related-card h4 { font-size: 16px; margin-bottom: 8px; }
+        .related-card p { font-size: 14px; color: var(--text-light); }
+
+        footer { background: #0D5D57; color: #64748b; text-align: center; padding: 24px; font-size: 13px; position: relative; z-index: 2; }
+        footer a { color: #64748b; text-decoration: none; margin: 0 8px; }
+        footer a:hover { color: white; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">Beck<span>360</span></a>
+            <a href="/blog/" class="back-link">&larr; Alle Artikel</a>
+        </div>
+    </header>
+
+    <div class="article-header">
+        <span class="category">Gastronomie</span>
+        <h1>Bäckerei & Café: Mit 360° Rundgang Laufkundschaft digitalisieren</h1>
+        <div class="article-meta">
+            <span>19. Februar 2026</span>
+            <span>&bull;</span>
+            <span>8 min Lesezeit</span>
+        </div>
+    </div>
+
+    <article class="article-content">
+                <p>Stellen Sie sich vor, ein potenzieller Kunde sucht morgens um 7 Uhr nach einer Bäckerei in Karlsruhe – noch bevor er das Haus verlässt. Er findet Ihre Webseite, sieht Ihre Öffnungszeiten, aber dann passiert etwas Entscheidendes: Er kann virtuell durch Ihre Räume gehen, die liebevoll dekorierten Vitrinen betrachten, den gemütlichen Sitzbereich im Café erkunden und sich bereits vorstellen, wo er seinen Kaffee genießen wird. Die Wahrscheinlichkeit, dass dieser Kunde gezielt zu Ihnen kommt statt zur Konkurrenz, steigt dramatisch. Genau diese digitale Erlebbarkeit macht den Unterschied zwischen Laufkundschaft und bewussten Besuchern aus – und 360° Rundgänge sind das Werkzeug, mit dem Sie als Bäckerei- oder Café-Betreiber diesen Wandel vollziehen können.</p>
+
+        <h2>Warum Bäckereien und Cafés digitale Sichtbarkeit brauchen</h2>
+
+        <p>Der Wettbewerb im Bäckerei- und Café-Segment ist härter denn je. Während große Ketten mit standardisierten Konzepten und massivem Marketing-Budget punkten, müssen Sie als inhabergeführte Bäckerei oder Konditorei Ihre individuellen Stärken ausspielen: handwerkliche Qualität, persönliche Atmosphäre und regionale Verbundenheit. Doch diese Vorzüge müssen Sie erst einmal kommunizieren – und zwar dort, wo Ihre Kunden heute ihre Kaufentscheidungen treffen: online.</p>
+
+        <div class="stat-box">
+            <div class="number">76%</div>
+            <div class="label">der Konsumenten recherchieren online, bevor sie ein lokales Geschäft besuchen</div>
+        </div>
+        <p>Für Ihr Unternehmen bedeutet das: Wer online nicht überzeugt, existiert für viele potenzielle Kunden praktisch nicht. Ein 360° Rundgang ist dabei weit mehr als eine technische Spielerei – er ist Ihr digitales Schaufenster, das rund um die Uhr arbeitet. Während Sie nachts schlafen, können Frühaufsteher bereits Ihre Backstube virtuell erkunden. Während Sie am Wochenende mit der Familie Zeit verbringen, planen Hochzeitsgäste ihre Feier in Ihrem Café-Bereich. Diese permanente Verfügbarkeit ist ein Wettbewerbsvorteil, den Sie sich nicht entgehen lassen sollten.</p>
+
+        <h2>Produktvielfalt und Ambiente erlebbar machen</h2>
+
+        <p>Als Bäckerei- oder Konditorei-Betreiber wissen Sie: Ihre Produkte müssen gesehen werden, um zu überzeugen. Die goldbraune Kruste des Bauernbrots, die kunstvolle Verzierung der Hochzeitstorte, die appetitliche Präsentation der belegten Brötchen in der Vitrine – all das sind visuelle Verkaufsargumente, die Fotos nur bedingt transportieren können. Ein 360° Rundgang hingegen ermöglicht es potenziellen Kunden, sich frei durch Ihre Räume zu bewegen und dabei die gesamte Produktpalette zu entdecken.</p>
+
+        <h3>Vom Eingangsbereich bis zur Kuchentheke: Die Customer Journey digital abbilden</h3>
+
+        <p>Wenn Sie ein Café mit angeschlossener Bäckerei führen, kennen Sie das Problem: Viele Kunden kommen für ein bestimmtes Produkt und entdecken erst vor Ort die Vielfalt Ihres Angebots. Mit einem virtuellen Rundgang können Sie diese Entdeckungsreise bereits online initiieren. Potenzielle Gäste sehen nicht nur Ihre Brotwaren, sondern auch den einladenden Café-Bereich, die Außenterrasse mit Blick auf den Karlsruher Marktplatz oder die separate Ecke für Geschäftskunden mit WLAN und Steckdosen.</p>
+
+        <ul>
+            <li><strong>Verkaufsbereich optimal präsentieren:</strong> Zeigen Sie die Fülle und Frische Ihrer Produkte in den Vitrinen – von Frühstücksgebäck über Mittagssnacks bis zu Kuchen und Torten.</li>
+            <li><strong>Café-Atmosphäre transportieren:</strong> Lassen Sie Interessenten die gemütliche Einrichtung, die Sitzplatzoptionen und das Ambiente erleben, das Stammkunden zu schätzen wissen.</li>
+            <li><strong>Besonderheiten hervorheben:</strong> Ob Barrierefreiheit, Kinderspielecke, Außenbereich oder separate Raucherzone – im Rundgang wird alles sichtbar, was Ihre Zielgruppen interessiert.</li>
+            <li><strong>Saisonale Gestaltung zeigen:</strong> Dokumentieren Sie Ihre liebevolle Dekoration zu Weihnachten, Ostern oder anderen Anlässen und nutzen Sie diese Aufnahmen für Ihr Marketing.</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p>Ein 360° Rundgang reduziert die Hemmschwelle für Erstkunden um bis zu 40% – weil Menschen sich in bekannten Umgebungen wohler fühlen.</p>
+        </div>
+
+        <h2>Lokales SEO für Handwerksbetriebe stärken</h2>
+
+        <p>Wenn Sie als Bäckereibetreiber in Ettlingen, Bruchsal oder einem der Karlsruher Stadtteile ansässig sind, ist lokale Auffindbarkeit Ihr wichtigstes Marketing-Asset. Die meisten Ihrer Kunden kommen aus einem Umkreis von maximal 5 Kilometern – und genau diese Menschen müssen Sie online erreichen. Google bevorzugt Unternehmen mit reichhaltigen, authentischen Inhalten in den lokalen Suchergebnissen. Ein 360° Rundgang, der direkt in Google Maps und Ihr Google Unternehmensprofil integriert ist, sendet starke Qualitätssignale an die Suchmaschine.</p>
+
+        <div class="stat-box">
+            <div class="number">2,7x</div>
+            <div class="label">höheres Interesse zeigen Google-Nutzer an Unternehmen mit virtuellem Rundgang</div>
+        </div>
+        <p>Für Ihr Unternehmen bedeutet das konkret: Wenn jemand in Karlsruhe nach 'Bäckerei mit Café', 'frische Croissants in der Nähe' oder 'Konditorei für Hochzeitstorte' sucht, erscheinen Sie nicht nur in den Ergebnissen – Sie stechen heraus. Das blaue Symbol für den virtuellen Rundgang in Google Maps signalisiert Modernität und Transparenz. Nutzer klicken bevorzugt auf Einträge mit diesem Feature, weil sie mehr Informationen erwarten. Und diese Erwartung erfüllen Sie: Während die Konkurrenz mit drei Außenfotos auskommen muss, bieten Sie ein vollständiges Raumerlebnis.</p>
+
+        <h3>Integration in Ihre bestehende Online-Präsenz</h3>
+
+        <p>Ein professioneller 360° Rundgang ist keine isolierte Lösung, sondern fügt sich nahtlos in Ihre digitale Infrastruktur ein. Auf Ihrer Website wird er zum interaktiven Highlight, das Besucher durchschnittlich 5-8 Minuten länger auf Ihrer Seite hält – ein Faktor, den Google bei der Bewertung Ihrer Relevanz berücksichtigt. In Social Media können Sie einzelne Ansichten als Teaser nutzen und Follower zum vollständigen Rundgang einladen. Und in Ihren Google-Bewertungen können zufriedene Kunden sich auf konkrete Bereiche Ihres Cafés beziehen, was die Authentizität der Rezensionen erhöht.</p>
+
+        <h2>Vertrauen durch Transparenz: Hygiene und Handwerk zeigen</h2>
+
+        <p>Gerade im Lebensmittelhandwerk ist Vertrauen die Währung, mit der Sie arbeiten. Kunden möchten wissen, wo ihr Brot gebacken wird, wie sauber die Arbeitsflächen sind und ob Sie mit Leidenschaft bei der Sache sind. Ein 360° Rundgang ermöglicht es Ihnen, diese Transparenz zu demonstrieren – auf eine Art, die weit überzeugender ist als jede Textbeschreibung.</p>
+        <p>Wenn Sie eine Backstube oder einen Produktionsbereich haben, der einsehbar ist oder den Sie präsentieren möchten, wird dies zu einem starken Verkaufsargument. Zeigen Sie die professionellen Backöfen, die Arbeitstische, an denen Ihre Konditoren Torten verzieren, oder den Bereich, in dem frische Brötchen für den nächsten Morgen vorbereitet werden. Diese Einblicke schaffen eine emotionale Verbindung und differenzieren Sie klar von industriellen Aufbackstationen.</p>
+
+        <ul>
+            <li><strong>Hygienestandards dokumentieren:</strong> Saubere, moderne Räumlichkeiten überzeugen qualitätsbewusste Kunden und können bei Hygiene-Zertifizierungen unterstützend wirken.</li>
+            <li><strong>Handwerkliche Kompetenz zeigen:</strong> Professionelle Ausstattung und Arbeitsbereiche signalisieren Expertise und rechtfertigen Premium-Preise.</li>
+            <li><strong>Regionalität betonen:</strong> Zeigen Sie lokale Lieferanten-Zertifikate, regionale Produktauszeichnungen oder Ihre Mitgliedschaft in der Bäcker-Innung an den Wänden.</li>
+            <li><strong>Familienfreundlichkeit dokumentieren:</strong> Wickeltisch, Hochstühle und Spielecke werden im Rundgang sichtbar – wichtig für junge Familien als Zielgruppe.</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p>Transparenz schafft Vertrauen: 83% der Konsumenten bewerten Unternehmen positiver, die offen ihre Arbeitsprozesse zeigen.</p>
+        </div>
+
+        <h2>Praxisbeispiele und Umsetzungstipps für Bäckereien und Cafés</h2>
+
+        <p>Die Investition in einen 360° Rundgang amortisiert sich für Bäckerei- und Café-Betreiber typischerweise innerhalb weniger Monate. Betrachten wir konkrete Szenarien: Eine Konditorei in Rastatt, die auf Hochzeitstorten spezialisiert ist, kann durch den virtuellen Rundgang Beratungstermine qualifizieren. Brautpaare sehen bereits vorab den Verkostungsraum und die Auswahl an Mustertorten, kommen also besser vorbereitet und kaufbereiter zum Termin. Das spart Ihnen Zeit und erhöht die Abschlussquote.</p>
+        <p>Ein Café in Baden-Baden mit Außenterrasse nutzt den Rundgang gezielt für saisonales Marketing. Im Frühjahr wird die neu gestaltete Terrasse prominent auf der Website und in Google Maps präsentiert – ein visuelles Argument, das Ausflügler und Touristen anzieht. Eine Bäckerei-Kette mit mehreren Filialen in Pforzheim und Umgebung dokumentiert mit 360° Rundgängen die individuellen Besonderheiten jedes Standorts, statt alle Filialen über einen Kamm zu scheren.</p>
+
+        <h3>Technische Umsetzung mit Beck360</h3>
+
+        <p>Die Erstellung eines professionellen 360° Rundgangs für Ihre Bäckerei oder Ihr Café ist unkomplizierter, als Sie vielleicht denken. Beck360 nutzt die Matterport Pro2 Kamera – eine Technologie, die speziell für gewerbliche Immobilien entwickelt wurde und auch in anspruchsvollen Lichtverhältnissen (Vitrinen-Beleuchtung, Café-Atmosphäre) hervorragende Ergebnisse liefert. Der gesamte Prozess – von der Terminvereinbarung bis zur Veröffentlichung – dauert in der Regel nur wenige Tage.</p>
+
+        <ul>
+            <li><strong>Vorbereitung:</strong> Sie bereiten Ihre Räume so vor, wie Sie sie Kunden präsentieren möchten – frisch bestückte Vitrinen, aufgeräumter Café-Bereich, eventuell saisonale Dekoration.</li>
+            <li><strong>Aufnahme:</strong> Ein Beck360-Fotograf kommt zu Ihnen (idealerweise außerhalb der Stoßzeiten) und erstellt die 360°-Aufnahmen. Für eine durchschnittliche Bäckerei mit Café-Bereich dauert dies 1-2 Stunden.</li>
+            <li><strong>Nachbearbeitung:</strong> Die Aufnahmen werden professionell bearbeitet, zusammengefügt und mit interaktiven Elementen versehen – Sie können z.B. Infopunkte zu besonderen Produkten oder Ihrem Lieferservice setzen lassen.</li>
+            <li><strong>Veröffentlichung:</strong> Der Rundgang wird in Ihr Google Unternehmensprofil, Ihre Website und auf Wunsch in weitere Plattformen integriert. Updates und Anpassungen sind jederzeit möglich.</li>
+        </ul>
+
+        <div class="stat-box">
+            <div class="number">94%</div>
+            <div class="label">der Bäckerei-Kunden entscheiden sich für Betriebe, die online einen professionellen Eindruck machen</div>
+        </div>
+
+        <h2>Fazit: Vom zufälligen Vorbeigehen zum gezielten Besuch</h2>
+
+        <p>Die Zeiten, in denen Bäckereien und Cafés ausschließlich von Laufkundschaft leben konnten, sind in vielen Lagen vorbei. Heute entscheiden digitale Touchpoints darüber, welcher Handwerksbetrieb im Gedächtnis bleibt und welcher in der Masse untergeht. Ein 360° Rundgang ist keine Zukunftsmusik mehr, sondern ein etabliertes Marketing-Instrument, das Ihnen hilft, Ihre individuellen Stärken sichtbar zu machen – unabhängig davon, ob Sie eine traditionelle Dorfbäckerei in Bruchsal, ein hippes Urban Café in Karlsruhe oder eine Konditorei mit Event-Catering in Ettlingen betreiben.</p>
+        <p>Die Investition rechnet sich durch mehr qualifizierte Kundenanfragen, höhere Konversionsraten bei Spezialprodukten wie Torten und Catering sowie eine stärkere Positionierung im lokalen Wettbewerb. Während Ihre Konkurrenz weiterhin auf Zufallskunden hofft, bauen Sie mit einem virtuellen Rundgang eine Brücke zwischen der digitalen Recherche und dem realen Besuch. Sie verwandeln anonyme Google-Suchen in Stammkunden, die gezielt zu Ihnen kommen – weil sie bereits wissen, was sie erwartet und warum gerade Ihre Bäckerei oder Ihr Café die richtige Wahl ist.</p>
+        <p>Beck360 unterstützt Bäckereien, Konditoreien und Cafés in Karlsruhe und der gesamten Region dabei, diesen digitalen Vorsprung zu realisieren. Mit der professionellen Matterport-Technologie, der nahtlosen Google-Integration und der regionalen Expertise schaffen wir virtuelle Rundgänge, die Ihre Handwerkskunst und Ihr Ambiente authentisch transportieren. Wenn Sie bereit sind, Ihre Online-Präsenz auf das nächste Level zu heben und aus Suchenden Besucher zu machen, dann ist jetzt der richtige Zeitpunkt, aktiv zu werden.</p>
+
+        <div class="cta-box">
+            <h3>Kostenlose Beratung anfragen</h3>
+            <p>Ich melde mich innerhalb von 24 Stunden bei Ihnen.</p>
+
+            <form class="article-form" action="https://formsubmit.co/rundgang@beck360.de" method="POST">
+                <input type="hidden" name="_subject" value="Blog-Anfrage: Gastronomie">
+                <input type="hidden" name="_source" value="Blog: Gastronomie">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="_next" value="https://firmenrundgang-karlsruhe.de/danke.html">
+
+                <div class="form-row">
+                    <input type="text" name="name" required placeholder="Ihr Name *" autocomplete="name">
+                    <input type="email" name="email" required placeholder="E-Mail *" autocomplete="email">
+                </div>
+                <input type="tel" name="telefon" placeholder="Telefon (optional)" autocomplete="tel">
+                <textarea name="nachricht" rows="3" placeholder="Ihre Nachricht (optional)" autocomplete="off"></textarea>
+                <button type="submit" class="submit-btn">Kostenlos anfragen &rarr;</button>
+            </form>
+        </div>
+    </article>
+
+    <section class="related">
+        <h3>Ähnliche Artikel</h3>
+        <div class="related-grid">
+            
+            <a href="/blog/google-street-view-trusted-vorteile.html" class="related-card">
+                <h4>Google Street View Trusted: Warum Ihr Unternehmen sichtbar sein muss</h4>
+                <p>90% der Kunden recherchieren online. So nutzen Sie Google Maps für Ihr Marketing.</p>
+            </a>
+            <a href="/blog/roi-360-rundgang-berechnen.html" class="related-card">
+                <h4>ROI berechnen: Lohnt sich ein 360° Rundgang?</h4>
+                <p>Eine einfache Formel zeigt, ab wann sich die Investition rentiert.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Beck360 – 360° Rundgänge &amp; Drohnenaufnahmen Karlsruhe</p>
+        <p style="margin-top:8px">
+            <a href="https://360-rundgang-karlsruhe.de">Startseite</a>
+            <a href="/">Für Unternehmen</a>
+            <a href="/blog/">Magazin</a>
+            <a href="https://360-rundgang-karlsruhe.de/impressum">Impressum</a>
+            <a href="https://360-rundgang-karlsruhe.de/datenschutz">Datenschutz</a>
+        </p>
+    </footer>
+
+    <script>
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.stat-box, .highlight-box, .related-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+    </script>
+</body>
+</html>

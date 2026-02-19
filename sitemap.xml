@@ -106,4 +106,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- Blog Artikel: baeckerei-cafe-360-rundgang-laufkundschaft -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/baeckerei-cafe-360-rundgang-laufkundschaft.html</loc>
+        <lastmod>2026-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
