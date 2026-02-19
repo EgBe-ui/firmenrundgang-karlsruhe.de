@@ -218,6 +218,60 @@
             padding: 10px 8px;
             display: inline-block;
         }
+
+        /* Featured Card (newest article) */
+        .blog-card--featured {
+            grid-column: 1 / -1;
+            flex-direction: row;
+            border: 2px solid var(--primary-light);
+        }
+        .blog-card--featured .blog-image {
+            width: 45%;
+            height: auto;
+            min-height: 280px;
+            flex-shrink: 0;
+            position: relative;
+        }
+        .blog-card--featured .blog-content {
+            padding: 32px;
+        }
+        .blog-card--featured h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        .blog-card--featured p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .featured-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--gradient);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            z-index: 1;
+        }
+        @media (max-width: 768px) {
+            .blog-card--featured {
+                flex-direction: column;
+            }
+            .blog-card--featured .blog-image {
+                width: 100%;
+                min-height: 200px;
+            }
+            .blog-card--featured .blog-content {
+                padding: 20px;
+            }
+            .blog-card--featured h3 {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -293,9 +347,12 @@
     function renderBlogPosts(filter = 'all') {
         const grid = document.getElementById('blogGrid');
         const filtered = filter === 'all' ? blogPosts : blogPosts.filter(p => p.category === filter);
-        grid.innerHTML = filtered.map(post => `
-            <a href="/blog/${post.slug}.html" class="blog-card">
+        grid.innerHTML = filtered.map((post, i) => {
+            const isFeatured = i === 0 && filter === 'all';
+            return `
+            <a href="/blog/${post.slug}.html" class="blog-card${isFeatured ? ' blog-card--featured' : ''}">
                 <div class="blog-image">
+                    ${isFeatured ? '<span class="featured-badge">Neu</span>' : ''}
                     <img src="/images/blog/${post.image}" alt="${post.title}" loading="lazy" width="400" height="225">
                 </div>
                 <div class="blog-content">
@@ -307,8 +364,8 @@
                         <span>${post.readTime}</span>
                     </div>
                 </div>
-            </a>
-        `).join('');
+            </a>`;
+        }).join('');
     }
 
     document.querySelectorAll('.filter-btn').forEach(btn => {
