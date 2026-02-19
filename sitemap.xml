@@ -11,7 +11,7 @@
     <!-- Blog Übersicht -->
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
-        <lastmod>2026-02-18</lastmod>
+        <lastmod>2026-02-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -98,4 +98,12 @@
         <priority>0.7</priority>
     </url>
 
+
+    <!-- Blog Artikel: arztpraxis-marketing-360-rundgang-angstpatienten -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/arztpraxis-marketing-360-rundgang-angstpatienten.html</loc>
+        <lastmod>2026-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
