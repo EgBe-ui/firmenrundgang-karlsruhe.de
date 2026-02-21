@@ -47,10 +47,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Service","name":"360° Rundgang für Restaurants & Cafés","provider":{"@type":"LocalBusiness","name":"Beck360","address":{"@type":"PostalAddress","addressLocality":"Karlsruhe","addressRegion":"BW","addressCountry":"DE"},"telephone":"+491734682501","url":"https://firmenrundgang-karlsruhe.de"},"description":"Professionelle 360° virtuelle Rundgänge für Restaurants, Cafés und Gastronomiebetriebe in Karlsruhe und Umgebung.","areaServed":{"@type":"City","name":"Karlsruhe"},"serviceType":"360° Virtueller Rundgang für Gastronomie"}
+    {"@context":"https://schema.org","@type":"Service","name":"360° Rundgang für Restaurants & Cafés","provider":{"@type":"LocalBusiness","name":"Beck360","address":{"@type":"PostalAddress","addressLocality":"Karlsruhe","addressRegion":"BW","addressCountry":"DE"},"telephone":"+491734682501","url":"https://firmenrundgang-karlsruhe.de"},"description":"Professionelle 360° virtuelle Rundgänge für Restaurants, Cafés und Gastronomiebetriebe in Karlsruhe und Umgebung.","areaServed":{"@type":"City","name":"Karlsruhe"},"serviceType":"360° Virtueller Rundgang für Gastronomie","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","ratingCount":"3","reviewCount":"3"}}
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was kostet ein 360° Rundgang für mein Restaurant?","acceptedAnswer":{"@type":"Answer","text":"Ab 299\u20ac für kleine Gastronomiebetriebe. Der Preis richtet sich nach der Größe Ihres Restaurants oder Cafés und dem gewünschten Umfang. Wir erstellen Ihnen gerne ein individuelles Angebot."}},{"@type":"Question","name":"Wie lange dauert die Aufnahme?","acceptedAnswer":{"@type":"Answer","text":"Je nach Größe 1-2 Stunden. Wir empfehlen die Aufnahme außerhalb der Stoßzeiten, z.B. vormittags vor der Öffnung. So stören wir den laufenden Betrieb nicht."}},{"@type":"Question","name":"Kann ich den Rundgang auf meiner Website einbinden?","acceptedAnswer":{"@type":"Answer","text":"Ja, der Rundgang lässt sich per iFrame oder Link einfach in Ihre Website, Social-Media-Profile und Reservierungsplattformen einbinden. Wir unterstützen Sie bei der Integration."}},{"@type":"Question","name":"Funktioniert das auch mit Google Maps?","acceptedAnswer":{"@type":"Answer","text":"Ja, wir können den Rundgang direkt in Ihren Google Maps Eintrag integrieren. So sehen potenzielle Gäste Ihr Ambiente direkt in der Google-Suche und auf Google Maps."}}]}
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was kostet ein 360° Rundgang für mein Restaurant?","acceptedAnswer":{"@type":"Answer","text":"Ab 299\u20ac für kleine Gastronomiebetriebe. Der Preis richtet sich nach der Größe Ihres Restaurants oder Cafés und dem gewünschten Umfang. Wir erstellen Ihnen gerne ein individuelles Angebot."}},{"@type":"Question","name":"Wie lange dauert die Aufnahme?","acceptedAnswer":{"@type":"Answer","text":"Je nach Größe 1-2 Stunden. Wir empfehlen die Aufnahme außerhalb der Stoßzeiten, z.B. vormittags vor der Öffnung. So stören wir den laufenden Betrieb nicht."}},{"@type":"Question","name":"Kann ich den Rundgang auf meiner Website einbinden?","acceptedAnswer":{"@type":"Answer","text":"Ja, der Rundgang lässt sich per iFrame oder Link einfach in Ihre Website, Social-Media-Profile und Reservierungsplattformen einbinden. Wir unterstützen Sie bei der Integration."}},{"@type":"Question","name":"Funktioniert das auch mit Google Maps?","acceptedAnswer":{"@type":"Answer","text":"Ja, wir können den Rundgang direkt in Ihren Google Maps Eintrag integrieren. So sehen potenzielle Gäste Ihr Ambiente direkt in der Google-Suche und auf Google Maps."}},{"@type":"Question","name":"Kann der Rundgang auf Google Maps eingebunden werden?","acceptedAnswer":{"@type":"Answer","text":"Ja! Als zertifizierter Google Street View Fotograf veröffentlichen wir Ihren Rundgang direkt in Google Maps. Gäste finden Ihr Restaurant in der Suche und können es virtuell betreten, bevor sie reservieren."}},{"@type":"Question","name":"Muss das Restaurant während der Aufnahme geschlossen sein?","acceptedAnswer":{"@type":"Answer","text":"Nein, die Aufnahme kann vor der Öffnungszeit oder in einer ruhigen Phase erfolgen. Wir arbeiten schnell und diskret, ohne den laufenden Betrieb zu stören."}},{"@type":"Question","name":"Kann der Rundgang saisonal aktualisiert werden?","acceptedAnswer":{"@type":"Answer","text":"Ja, wenn Sie Ihre Terrasse, Weihnachtsdekoration oder ein neues Interieur zeigen möchten, können wir den Rundgang jederzeit aktualisieren."}}]}
     </script>
     <script type="application/ld+json">
     {
@@ -157,6 +157,28 @@
         .lp-footer a{color:rgba(255,255,255,0.6);text-decoration:none}
         .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:white;padding:12px 20px;box-shadow:0 -4px 20px rgba(0,0,0,0.1);z-index:100;display:none}
         .sticky-cta a{display:block;background:var(--cta);color:white;text-align:center;padding:14px;border-radius:10px;font-weight:600;text-decoration:none}
+        /* Author */
+        .author-section{background:var(--bg)}
+        .author-box{background:white;border:2px solid var(--border);border-radius:20px;padding:24px;display:flex;gap:16px;align-items:center;max-width:540px;margin:0 auto}
+        .author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-light));display:flex;align-items:center;justify-content:center;flex-shrink:0;color:white;font-size:24px;font-weight:700}
+        .author-info h3{font-size:16px;font-weight:600;margin-bottom:2px}
+        .author-info .author-role{font-size:13px;color:var(--text-light);margin-bottom:8px}
+        .author-badges{display:flex;gap:6px;flex-wrap:wrap}
+        .author-badge{font-size:11px;background:var(--bg-soft);color:var(--primary);padding:3px 10px;border-radius:20px;font-weight:500}
+        /* FAQ visible */
+        .faq{background:var(--bg-soft)}
+        .faq-list{display:grid;gap:16px}
+        .faq-item{background:white;padding:24px;border-radius:14px;box-shadow:var(--shadow-md)}
+        .faq-item h3{font-size:16px;font-weight:600;margin-bottom:8px;color:var(--text)}
+        .faq-item p{font-size:14px;color:var(--text-light);line-height:1.6}
+        /* Related */
+        .related{background:var(--bg);text-align:center}
+        .city-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px}
+        .city-link{display:inline-block;background:var(--bg-soft);color:var(--primary);padding:10px 20px;border-radius:50px;text-decoration:none;font-weight:500;font-size:14px;box-shadow:var(--shadow-md);transition:transform 0.3s}
+        .city-link:hover{transform:translateY(-2px)}
+        .more-links{margin-top:20px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+        .more-links a{color:var(--primary);text-decoration:none;font-size:14px;font-weight:500}
+        .more-links a:hover{text-decoration:underline}
         @media(max-width:768px){.sticky-cta{display:none}.cta-section{padding-bottom:60px}.stats-grid{grid-template-columns:1fr;gap:16px}}
         .skip-link{position:absolute;top:-40px;left:0;background:var(--text);color:white;padding:8px 16px;z-index:1000;text-decoration:none}.skip-link:focus{top:0}
         a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
@@ -262,6 +284,81 @@
                 <div class="trust-item"><span>⚡</span><div>Zuverlässig &amp; pünktlich — auch kurzfristig verfügbar</div></div>
                 <div class="trust-item"><span>🏆</span><div>Zertifizierter Matterport-Partner</div></div>
                 <div class="trust-item"><span>⭐</span><div>5,0 Sterne auf Google — 100% Zufriedenheit</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="author-section">
+        <div class="container">
+            <div class="author-box">
+                <div class="author-avatar">EB</div>
+                <div class="author-info">
+                    <h3>Eugen Beck</h3>
+                    <p class="author-role">Gastronomie &amp; Restaurants</p>
+                    <div class="author-badges">
+                        <span class="author-badge">Matterport-Partner</span>
+                        <span class="author-badge">Google Street View</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Häufige Fragen zu Gastronomie-Rundgängen</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Was kostet ein 360° Rundgang für mein Restaurant?</h3>
+                    <p>Ab 299€ für kleine Gastronomiebetriebe. Der Preis richtet sich nach der Größe Ihres Restaurants oder Cafés und dem gewünschten Umfang. Wir erstellen Ihnen gerne ein individuelles Angebot.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Wie lange dauert die Aufnahme?</h3>
+                    <p>Je nach Größe 1-2 Stunden. Wir empfehlen die Aufnahme außerhalb der Stoßzeiten, z.B. vormittags vor der Öffnung. So stören wir den laufenden Betrieb nicht.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Kann ich den Rundgang auf meiner Website einbinden?</h3>
+                    <p>Ja, der Rundgang lässt sich per iFrame oder Link einfach in Ihre Website, Social-Media-Profile und Reservierungsplattformen einbinden. Wir unterstützen Sie bei der Integration.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Funktioniert das auch mit Google Maps?</h3>
+                    <p>Ja, wir können den Rundgang direkt in Ihren Google Maps Eintrag integrieren. So sehen potenzielle Gäste Ihr Ambiente direkt in der Google-Suche und auf Google Maps.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Kann der Rundgang auf Google Maps eingebunden werden?</h3>
+                    <p>Ja! Als zertifizierter Google Street View Fotograf veröffentlichen wir Ihren Rundgang direkt in Google Maps. Gäste finden Ihr Restaurant in der Suche und können es virtuell betreten, bevor sie reservieren.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Muss das Restaurant während der Aufnahme geschlossen sein?</h3>
+                    <p>Nein, die Aufnahme kann vor der Öffnungszeit oder in einer ruhigen Phase erfolgen. Wir arbeiten schnell und diskret, ohne den laufenden Betrieb zu stören.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Kann der Rundgang saisonal aktualisiert werden?</h3>
+                    <p>Ja, wenn Sie Ihre Terrasse, Weihnachtsdekoration oder ein neues Interieur zeigen möchten, können wir den Rundgang jederzeit aktualisieren.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related">
+        <div class="container">
+            <h2 class="section-title">Rundgänge für weitere Branchen</h2>
+            <div class="city-links">
+                <a href="/hotels/" class="city-link">Hotels</a>
+                <a href="/fitness/" class="city-link">Fitness</a>
+                <a href="/einzelhandel/" class="city-link">Einzelhandel</a>
+                <a href="/eventlocations/" class="city-link">Eventlocations</a>
+                <a href="/gesundheit/" class="city-link">Gesundheit</a>
+                <a href="/autohaus/" class="city-link">Autohaus</a>
+                <a href="/coworking/" class="city-link">Coworking</a>
+            </div>
+            <div class="more-links">
+                <a href="/ettlingen/">Ettlingen</a>
+                <a href="/bruchsal/">Bruchsal</a>
+                <a href="/rastatt/">Rastatt</a>
+                <a href="/baden-baden/">Baden-Baden</a>
+                <a href="/pforzheim/">Pforzheim</a>
+                <a href="/mannheim/">Mannheim</a>
             </div>
         </div>
     </section>

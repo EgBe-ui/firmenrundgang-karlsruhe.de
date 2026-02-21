@@ -46,11 +46,11 @@
 
     <!-- Schema.org Service -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Service","name":"360° Rundgang für Fitnessstudios","provider":{"@type":"LocalBusiness","name":"Beck360","telephone":"+491734682501","address":{"@type":"PostalAddress","addressLocality":"Karlsruhe","addressRegion":"BW","addressCountry":"DE"}},"areaServed":{"@type":"Place","name":"Karlsruhe und Umgebung"},"description":"Virtuelle 360° Rundgänge für Fitnessstudios in Karlsruhe. Zeigen Sie Geräte, Kursräume und Atmosphäre online."}
+    {"@context":"https://schema.org","@type":"Service","name":"360° Rundgang für Fitnessstudios","provider":{"@type":"LocalBusiness","name":"Beck360","telephone":"+491734682501","address":{"@type":"PostalAddress","addressLocality":"Karlsruhe","addressRegion":"BW","addressCountry":"DE"}},"areaServed":{"@type":"Place","name":"Karlsruhe und Umgebung"},"description":"Virtuelle 360° Rundgänge für Fitnessstudios in Karlsruhe. Zeigen Sie Geräte, Kursräume und Atmosphäre online.","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","ratingCount":"3","reviewCount":"3"}}
     </script>
     <!-- Schema.org FAQPage -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was kostet ein 360° Rundgang für ein Fitnessstudio?","acceptedAnswer":{"@type":"Answer","text":"Die Kosten hängen von der Größe des Studios ab. Für ein mittelgroßes Fitnessstudio (500–1500 m²) starten die Preise ab 399 Euro. Kontaktieren Sie uns für ein individuelles Angebot."}},{"@type":"Question","name":"Wie lange dauert die Aufnahme im Fitnessstudio?","acceptedAnswer":{"@type":"Answer","text":"Die Aufnahme dauert je nach Studiogröße 2–4 Stunden. Wir können auch außerhalb der Haupttrainingszeiten aufnehmen, um den Betrieb nicht zu stören."}},{"@type":"Question","name":"Können Mitglieder während der Aufnahme trainieren?","acceptedAnswer":{"@type":"Answer","text":"Ja, ein eingeschränkter Betrieb ist möglich. Für optimale Ergebnisse empfehlen wir jedoch Aufnahmen zu ruhigeren Zeiten, z.B. am Vormittag oder nach Vereinbarung."}},{"@type":"Question","name":"Kann ich den virtuellen Rundgang auf meiner Website und Social Media einbinden?","acceptedAnswer":{"@type":"Answer","text":"Ja, der Rundgang lässt sich per iframe auf Ihrer Website einbetten und als Link auf Google, Instagram, Facebook und allen weiteren Plattformen teilen."}}]}
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was kostet ein 360° Rundgang für ein Fitnessstudio?","acceptedAnswer":{"@type":"Answer","text":"Die Kosten hängen von der Größe des Studios ab. Für ein mittelgroßes Fitnessstudio (500–1500 m²) starten die Preise ab 399 Euro. Kontaktieren Sie uns für ein individuelles Angebot."}},{"@type":"Question","name":"Wie lange dauert die Aufnahme im Fitnessstudio?","acceptedAnswer":{"@type":"Answer","text":"Die Aufnahme dauert je nach Studiogröße 2–4 Stunden. Wir können auch außerhalb der Haupttrainingszeiten aufnehmen, um den Betrieb nicht zu stören."}},{"@type":"Question","name":"Können Mitglieder während der Aufnahme trainieren?","acceptedAnswer":{"@type":"Answer","text":"Ja, ein eingeschränkter Betrieb ist möglich. Für optimale Ergebnisse empfehlen wir jedoch Aufnahmen zu ruhigeren Zeiten, z.B. am Vormittag oder nach Vereinbarung."}},{"@type":"Question","name":"Kann ich den virtuellen Rundgang auf meiner Website und Social Media einbinden?","acceptedAnswer":{"@type":"Answer","text":"Ja, der Rundgang lässt sich per iframe auf Ihrer Website einbetten und als Link auf Google, Instagram, Facebook und allen weiteren Plattformen teilen."}},{"@type":"Question","name":"Kann der Rundgang auf Google Maps eingebunden werden?","acceptedAnswer":{"@type":"Answer","text":"Ja! Als zertifizierter Google Street View Fotograf veröffentlichen wir Ihren Rundgang direkt in Google Maps. Neue Mitglieder können Ihr Studio virtuell betreten, bevor sie sich für ein Probetraining anmelden."}},{"@type":"Question","name":"Kann der Rundgang aktualisiert werden, wenn neue Geräte aufgestellt werden?","acceptedAnswer":{"@type":"Answer","text":"Ja, wir können einzelne Bereiche jederzeit neu erfassen. So zeigt Ihr Rundgang immer den aktuellen Stand Ihres Studios."}},{"@type":"Question","name":"Stört die Aufnahme den Trainingsbetrieb?","acceptedAnswer":{"@type":"Answer","text":"Nein, die Aufnahme dauert nur 1-2 Stunden und kann vor Öffnung, in einer ruhigen Phase oder nach Schließung erfolgen. Die Matterport-Kamera ist leise und unauffällig."}}]}
     </script>
     <script type="application/ld+json">
     {
@@ -157,6 +157,28 @@
         .lp-footer a{color:rgba(255,255,255,0.6);text-decoration:none}
         .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:white;padding:12px 20px;box-shadow:0 -4px 20px rgba(0,0,0,0.1);z-index:100;display:none}
         .sticky-cta a{display:block;background:var(--cta);color:white;text-align:center;padding:14px;border-radius:10px;font-weight:600;text-decoration:none}
+        /* Author */
+        .author-section{background:var(--bg)}
+        .author-box{background:white;border:2px solid var(--border);border-radius:20px;padding:24px;display:flex;gap:16px;align-items:center;max-width:540px;margin:0 auto}
+        .author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-light));display:flex;align-items:center;justify-content:center;flex-shrink:0;color:white;font-size:24px;font-weight:700}
+        .author-info h3{font-size:16px;font-weight:600;margin-bottom:2px}
+        .author-info .author-role{font-size:13px;color:var(--text-light);margin-bottom:8px}
+        .author-badges{display:flex;gap:6px;flex-wrap:wrap}
+        .author-badge{font-size:11px;background:var(--bg-soft);color:var(--primary);padding:3px 10px;border-radius:20px;font-weight:500}
+        /* FAQ visible */
+        .faq{background:var(--bg-soft)}
+        .faq-list{display:grid;gap:16px}
+        .faq-item{background:white;padding:24px;border-radius:14px;box-shadow:var(--shadow-md)}
+        .faq-item h3{font-size:16px;font-weight:600;margin-bottom:8px;color:var(--text)}
+        .faq-item p{font-size:14px;color:var(--text-light);line-height:1.6}
+        /* Related */
+        .related{background:var(--bg);text-align:center}
+        .city-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px}
+        .city-link{display:inline-block;background:var(--bg-soft);color:var(--primary);padding:10px 20px;border-radius:50px;text-decoration:none;font-weight:500;font-size:14px;box-shadow:var(--shadow-md);transition:transform 0.3s}
+        .city-link:hover{transform:translateY(-2px)}
+        .more-links{margin-top:20px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+        .more-links a{color:var(--primary);text-decoration:none;font-size:14px;font-weight:500}
+        .more-links a:hover{text-decoration:underline}
         @media(max-width:768px){.sticky-cta{display:none}.cta-section{padding-bottom:60px}.stats-grid{grid-template-columns:1fr;gap:16px}}
         .skip-link{position:absolute;top:-40px;left:0;background:var(--text);color:white;padding:8px 16px;z-index:1000;text-decoration:none}
         .skip-link:focus{top:0}
@@ -264,6 +286,86 @@
                 <div class="trust-item"><span>&#x26A1;</span><div>Zuverl&#228;ssig &amp; p&#252;nktlich &#8211; auch kurzfristig</div></div>
                 <div class="trust-item"><span>&#x1F3C6;</span><div>Zertifizierter Matterport-Partner</div></div>
                 <div class="trust-item"><span>&#x2B50;</span><div>5,0 Sterne auf Google &#8211; 100% Zufriedenheit</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTHOR/EXPERT -->
+    <section class="author-section">
+        <div class="container">
+            <div class="author-box fade-up">
+                <div class="author-avatar">EB</div>
+                <div class="author-info">
+                    <h3>Eugen Beck</h3>
+                    <p class="author-role">Ihr Ansprechpartner f&#252;r Fitness &amp; Sport</p>
+                    <div class="author-badges">
+                        <span class="author-badge">Matterport-Partner</span>
+                        <span class="author-badge">200+ Rundg&#228;nge</span>
+                        <span class="author-badge">Region Karlsruhe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title fade-up">H&#228;ufige Fragen zu Fitness-Rundg&#228;ngen</h2>
+            <div class="faq-list">
+                <div class="faq-item fade-up">
+                    <h3>Was kostet ein 360&#176; Rundgang f&#252;r ein Fitnessstudio?</h3>
+                    <p>Die Kosten h&#228;ngen von der Gr&#246;&#223;e des Studios ab. F&#252;r ein mittelgro&#223;es Fitnessstudio (500&#8211;1500 m&#178;) starten die Preise ab 399 Euro. Kontaktieren Sie uns f&#252;r ein individuelles Angebot.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>Wie lange dauert die Aufnahme im Fitnessstudio?</h3>
+                    <p>Die Aufnahme dauert je nach Studiogr&#246;&#223;e 2&#8211;4 Stunden. Wir k&#246;nnen auch au&#223;erhalb der Haupttrainingszeiten aufnehmen, um den Betrieb nicht zu st&#246;ren.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>K&#246;nnen Mitglieder w&#228;hrend der Aufnahme trainieren?</h3>
+                    <p>Ja, ein eingeschr&#228;nkter Betrieb ist m&#246;glich. F&#252;r optimale Ergebnisse empfehlen wir jedoch Aufnahmen zu ruhigeren Zeiten, z.B. am Vormittag oder nach Vereinbarung.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>Kann ich den virtuellen Rundgang auf meiner Website und Social Media einbinden?</h3>
+                    <p>Ja, der Rundgang l&#228;sst sich per iframe auf Ihrer Website einbetten und als Link auf Google, Instagram, Facebook und allen weiteren Plattformen teilen.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>Kann der Rundgang auf Google Maps eingebunden werden?</h3>
+                    <p>Ja! Als zertifizierter Google Street View Fotograf ver&#246;ffentlichen wir Ihren Rundgang direkt in Google Maps. Neue Mitglieder k&#246;nnen Ihr Studio virtuell betreten, bevor sie sich f&#252;r ein Probetraining anmelden.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>Kann der Rundgang aktualisiert werden, wenn neue Ger&#228;te aufgestellt werden?</h3>
+                    <p>Ja, wir k&#246;nnen einzelne Bereiche jederzeit neu erfassen. So zeigt Ihr Rundgang immer den aktuellen Stand Ihres Studios.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>St&#246;rt die Aufnahme den Trainingsbetrieb?</h3>
+                    <p>Nein, die Aufnahme dauert nur 1&#8211;2 Stunden und kann vor &#214;ffnung, in einer ruhigen Phase oder nach Schlie&#223;ung erfolgen. Die Matterport-Kamera ist leise und unauff&#228;llig.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WEITERE BRANCHEN & STANDORTE -->
+    <section class="related">
+        <div class="container">
+            <h2 class="section-title fade-up">Rundg&#228;nge f&#252;r weitere Branchen</h2>
+            <p class="section-subtitle fade-up">360&#176; Rundg&#228;nge f&#252;r Unternehmen aller Art</p>
+            <div class="city-links fade-up">
+                <a href="/hotels/" class="city-link">Hotels</a>
+                <a href="/gastronomie/" class="city-link">Gastronomie</a>
+                <a href="/einzelhandel/" class="city-link">Einzelhandel</a>
+                <a href="/eventlocations/" class="city-link">Eventlocations</a>
+                <a href="/gesundheit/" class="city-link">Gesundheit</a>
+                <a href="/autohaus/" class="city-link">Autohaus</a>
+                <a href="/coworking/" class="city-link">Coworking</a>
+            </div>
+            <div class="more-links fade-up">
+                <a href="/ettlingen/">Ettlingen</a>
+                <a href="/bruchsal/">Bruchsal</a>
+                <a href="/rastatt/">Rastatt</a>
+                <a href="/baden-baden/">Baden-Baden</a>
+                <a href="/pforzheim/">Pforzheim</a>
+                <a href="/mannheim/">Mannheim</a>
             </div>
         </div>
     </section>

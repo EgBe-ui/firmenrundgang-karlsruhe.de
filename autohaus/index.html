@@ -40,7 +40,7 @@
     <meta name="twitter:image" content="https://firmenrundgang-karlsruhe.de/og-image.jpg">
     <!-- Schema.org Service -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Service","name":"360° Virtueller Showroom für Autohäuser","provider":{"@type":"LocalBusiness","name":"Beck360","telephone":"+491734682501","email":"rundgang@beck360.de","areaServed":{"@type":"City","name":"Karlsruhe"}},"description":"Professionelle 360° virtuelle Showroom-Touren für Autohäuser und Fahrzeugausstellungen in Karlsruhe und Umgebung.","serviceType":"360° Virtual Tour","areaServed":{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":49.0069,"longitude":8.4037},"geoRadius":"50000"}}
+    {"@context":"https://schema.org","@type":"Service","name":"360° Virtueller Showroom für Autohäuser","provider":{"@type":"LocalBusiness","name":"Beck360","telephone":"+491734682501","email":"rundgang@beck360.de","areaServed":{"@type":"City","name":"Karlsruhe"}},"description":"Professionelle 360° virtuelle Showroom-Touren für Autohäuser und Fahrzeugausstellungen in Karlsruhe und Umgebung.","serviceType":"360° Virtual Tour","areaServed":{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":49.0069,"longitude":8.4037},"geoRadius":"50000"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","ratingCount":"3","reviewCount":"3"}}
     </script>
     <!-- FAQ Schema -->
     <script type="application/ld+json">
@@ -48,7 +48,7 @@
     {"@type":"Question","name":"Was kostet ein virtueller Showroom für ein Autohaus?","acceptedAnswer":{"@type":"Answer","text":"Ein 360° virtueller Showroom für Autohäuser startet ab 299€. Der genaue Preis richtet sich nach der Größe des Showrooms und ob Außengelände oder Werkstatt einbezogen werden sollen."}},
     {"@type":"Question","name":"Wie lange dauert die Erstellung eines virtuellen Autohaus-Rundgangs?","acceptedAnswer":{"@type":"Answer","text":"Die Aufnahme vor Ort dauert ca. 2-3 Stunden. Ihr fertiger virtueller Showroom ist innerhalb von 48-72 Stunden online verfügbar."}},
     {"@type":"Question","name":"Können einzelne Fahrzeuge im virtuellen Showroom hervorgehoben werden?","acceptedAnswer":{"@type":"Answer","text":"Ja, wir können einzelne Fahrzeuge mit Info-Tags, Mattertags und Detail-Aufnahmen hervorheben. So können Kunden direkt im Rundgang Fahrzeuginformationen abrufen."}},
-    {"@type":"Question","name":"Kann der virtuelle Showroom auf Autoportalen eingebunden werden?","acceptedAnswer":{"@type":"Answer","text":"Ja, der virtuelle Showroom kann per Link oder iFrame in Ihre Website, mobile.de, AutoScout24 und andere Portale eingebunden werden."}}]}
+    {"@type":"Question","name":"Kann der virtuelle Showroom auf Autoportalen eingebunden werden?","acceptedAnswer":{"@type":"Answer","text":"Ja, der virtuelle Showroom kann per Link oder iFrame in Ihre Website, mobile.de, AutoScout24 und andere Portale eingebunden werden."}},{"@type":"Question","name":"Kann der Rundgang auf Google Maps und AutoScout24 eingebunden werden?","acceptedAnswer":{"@type":"Answer","text":"Ja! Der Rundgang lässt sich auf Ihrer Website, in Google Maps und auf Autoportalen einbinden. Als zertifizierter Google Street View Fotograf veröffentlichen wir Ihren Showroom auch direkt in der Google-Suche."}},{"@type":"Question","name":"Muss der Showroom während der Aufnahme geschlossen sein?","acceptedAnswer":{"@type":"Answer","text":"Nein, wir arbeiten diskret und stören den laufenden Betrieb nicht. Die Aufnahme kann auch außerhalb der Stoßzeiten oder vor Öffnung erfolgen."}},{"@type":"Question","name":"Kann der Rundgang aktualisiert werden, wenn der Showroom umgestaltet wird?","acceptedAnswer":{"@type":"Answer","text":"Ja, einzelne Bereiche können jederzeit neu erfasst werden. So zeigt Ihr virtueller Showroom immer den aktuellen Stand — auch nach einer Neugestaltung."}}]}
     </script>
     <script type="application/ld+json">
     {
@@ -156,6 +156,28 @@
         .lp-footer a{color:rgba(255,255,255,0.6);text-decoration:none}
         .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:white;padding:12px 20px;box-shadow:0 -4px 20px rgba(0,0,0,0.1);z-index:100;display:none}
         .sticky-cta a{display:block;background:var(--cta);color:white;text-align:center;padding:14px;border-radius:10px;font-weight:600;text-decoration:none}
+        /* Author */
+        .author-section{background:var(--bg)}
+        .author-box{background:white;border:2px solid var(--border);border-radius:20px;padding:24px;display:flex;gap:16px;align-items:center;max-width:540px;margin:0 auto}
+        .author-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-light));display:flex;align-items:center;justify-content:center;flex-shrink:0;color:white;font-size:24px;font-weight:700}
+        .author-info h3{font-size:16px;font-weight:600;margin-bottom:2px}
+        .author-info .author-role{font-size:13px;color:var(--text-light);margin-bottom:8px}
+        .author-badges{display:flex;gap:6px;flex-wrap:wrap}
+        .author-badge{font-size:11px;background:var(--bg-soft);color:var(--primary);padding:3px 10px;border-radius:20px;font-weight:500}
+        /* FAQ visible */
+        .faq{background:var(--bg-soft)}
+        .faq-list{display:grid;gap:16px}
+        .faq-item{background:white;padding:24px;border-radius:14px;box-shadow:var(--shadow-md)}
+        .faq-item h3{font-size:16px;font-weight:600;margin-bottom:8px;color:var(--text)}
+        .faq-item p{font-size:14px;color:var(--text-light);line-height:1.6}
+        /* Related */
+        .related{background:var(--bg);text-align:center}
+        .city-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px}
+        .city-link{display:inline-block;background:var(--bg-soft);color:var(--primary);padding:10px 20px;border-radius:50px;text-decoration:none;font-weight:500;font-size:14px;box-shadow:var(--shadow-md);transition:transform 0.3s}
+        .city-link:hover{transform:translateY(-2px)}
+        .more-links{margin-top:20px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+        .more-links a{color:var(--primary);text-decoration:none;font-size:14px;font-weight:500}
+        .more-links a:hover{text-decoration:underline}
         @media(max-width:768px){.sticky-cta{display:none}.cta-section{padding-bottom:60px}.stats-grid{grid-template-columns:1fr;gap:16px}}
         .skip-link{position:absolute;top:-40px;left:0;background:var(--text);color:white;padding:8px 16px;z-index:1000;text-decoration:none}
         .skip-link:focus{top:0}
@@ -265,6 +287,86 @@
                 <div class="trust-item"><span>&#x26A1;</span><div>Zuverl&auml;ssig &amp; p&uuml;nktlich &ndash; auch kurzfristig</div></div>
                 <div class="trust-item"><span>&#x1F3C6;</span><div>Zertifizierter Matterport-Partner</div></div>
                 <div class="trust-item"><span>&#x2B50;</span><div>5,0 Sterne auf Google &ndash; 100% Zufriedenheit</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTHOR/EXPERT -->
+    <section class="author-section">
+        <div class="container">
+            <div class="author-box fade-up">
+                <div class="author-avatar">EB</div>
+                <div class="author-info">
+                    <h3>Eugen Beck</h3>
+                    <p class="author-role">Ihr Ansprechpartner f&uuml;r Autohaus &amp; Showrooms</p>
+                    <div class="author-badges">
+                        <span class="author-badge">Matterport-Partner</span>
+                        <span class="author-badge">200+ Rundg&auml;nge</span>
+                        <span class="author-badge">Region Karlsruhe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title fade-up">H&auml;ufige Fragen zu Autohaus-Rundg&auml;ngen</h2>
+            <div class="faq-list">
+                <div class="faq-item fade-up">
+                    <h3>Was kostet ein virtueller Showroom f&uuml;r ein Autohaus?</h3>
+                    <p>Ein 360&deg; virtueller Showroom f&uuml;r Autoh&auml;user startet ab 299&euro;. Der genaue Preis richtet sich nach der Gr&ouml;&szlig;e des Showrooms und ob Au&szlig;engel&auml;nde oder Werkstatt einbezogen werden sollen.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>Wie lange dauert die Erstellung eines virtuellen Autohaus-Rundgangs?</h3>
+                    <p>Die Aufnahme vor Ort dauert ca. 2-3 Stunden. Ihr fertiger virtueller Showroom ist innerhalb von 48-72 Stunden online verf&uuml;gbar.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>K&ouml;nnen einzelne Fahrzeuge im virtuellen Showroom hervorgehoben werden?</h3>
+                    <p>Ja, wir k&ouml;nnen einzelne Fahrzeuge mit Info-Tags, Mattertags und Detail-Aufnahmen hervorheben. So k&ouml;nnen Kunden direkt im Rundgang Fahrzeuginformationen abrufen.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>Kann der virtuelle Showroom auf Autoportalen eingebunden werden?</h3>
+                    <p>Ja, der virtuelle Showroom kann per Link oder iFrame in Ihre Website, mobile.de, AutoScout24 und andere Portale eingebunden werden.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>Kann der Rundgang auf Google Maps und AutoScout24 eingebunden werden?</h3>
+                    <p>Ja! Der Rundgang l&auml;sst sich auf Ihrer Website, in Google Maps und auf Autoportalen einbinden. Als zertifizierter Google Street View Fotograf ver&ouml;ffentlichen wir Ihren Showroom auch direkt in der Google-Suche.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>Muss der Showroom w&auml;hrend der Aufnahme geschlossen sein?</h3>
+                    <p>Nein, wir arbeiten diskret und st&ouml;ren den laufenden Betrieb nicht. Die Aufnahme kann auch au&szlig;erhalb der Sto&szlig;zeiten oder vor &Ouml;ffnung erfolgen.</p>
+                </div>
+                <div class="faq-item fade-up">
+                    <h3>Kann der Rundgang aktualisiert werden, wenn der Showroom umgestaltet wird?</h3>
+                    <p>Ja, einzelne Bereiche k&ouml;nnen jederzeit neu erfasst werden. So zeigt Ihr virtueller Showroom immer den aktuellen Stand &mdash; auch nach einer Neugestaltung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WEITERE BRANCHEN & STANDORTE -->
+    <section class="related">
+        <div class="container">
+            <h2 class="section-title fade-up">Rundg&auml;nge f&uuml;r weitere Branchen</h2>
+            <p class="section-subtitle fade-up">360&deg; Rundg&auml;nge f&uuml;r Unternehmen aller Art</p>
+            <div class="city-links fade-up">
+                <a href="/hotels/" class="city-link">Hotels</a>
+                <a href="/gastronomie/" class="city-link">Gastronomie</a>
+                <a href="/fitness/" class="city-link">Fitness</a>
+                <a href="/einzelhandel/" class="city-link">Einzelhandel</a>
+                <a href="/eventlocations/" class="city-link">Eventlocations</a>
+                <a href="/gesundheit/" class="city-link">Gesundheit</a>
+                <a href="/coworking/" class="city-link">Coworking</a>
+            </div>
+            <div class="more-links fade-up">
+                <a href="/ettlingen/">Ettlingen</a>
+                <a href="/bruchsal/">Bruchsal</a>
+                <a href="/rastatt/">Rastatt</a>
+                <a href="/baden-baden/">Baden-Baden</a>
+                <a href="/pforzheim/">Pforzheim</a>
+                <a href="/mannheim/">Mannheim</a>
             </div>
         </div>
     </section>
