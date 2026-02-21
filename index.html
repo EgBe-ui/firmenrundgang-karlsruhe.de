@@ -29,6 +29,8 @@
     <!-- Geo Tags -->
     <meta name="geo.region" content="DE-BW">
     <meta name="geo.placename" content="Karlsruhe">
+    <meta name="geo.position" content="49.0069;8.4037">
+    <meta name="ICBM" content="49.0069, 8.4037">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -37,6 +39,12 @@
     <meta property="og:description" content="Professionelle 360° Rundgänge für Hotels, Restaurants, Showrooms und mehr. Begeistern Sie Ihre Kunden online!">
     <meta property="og:image" content="https://firmenrundgang-karlsruhe.de/og-image.jpg">
     <meta property="og:locale" content="de_DE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="360° Firmenrundgang | Virtuelle Touren für Ihr Unternehmen">
+    <meta name="twitter:description" content="Professionelle 360° Rundgänge für Hotels, Restaurants, Showrooms und mehr. Begeistern Sie Ihre Kunden online!">
+    <meta name="twitter:image" content="https://firmenrundgang-karlsruhe.de/og-image.jpg">
 
     <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
@@ -51,11 +59,26 @@
         "url": "https://firmenrundgang-karlsruhe.de",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Eichenweg 1",
             "addressLocality": "Ettlingen",
             "addressRegion": "Baden-Württemberg",
             "postalCode": "76275",
             "addressCountry": "DE"
         },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "14:00"
+            }
+        ],
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": 48.9404,
@@ -142,6 +165,64 @@
                     "bestRating": "5"
                 },
                 "reviewBody": "Schnelle Umsetzung, tolle Qualität und faire Preise. Unser Geschäft ist jetzt auch online erlebbar. Klare Empfehlung für jeden Einzelhändler!"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was kostet ein 360° Firmenrundgang in Karlsruhe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein professioneller 360° Rundgang für Ihr Unternehmen beginnt ab 299€. Der genaue Preis hängt von der Größe Ihrer Räumlichkeiten ab. Wir erstellen Ihnen gerne ein individuelles Angebot nach einer kurzen Beratung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert die Erstellung eines virtuellen Rundgangs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Aufnahme vor Ort dauert je nach Größe 1-3 Stunden. Der fertige Rundgang wird innerhalb von 48-72 Stunden geliefert – inklusive aller Nachbearbeitungen und Verlinkungen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Branchen profitieren am meisten von einem 360° Rundgang?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Besonders Hotels, Restaurants, Fitnessstudios, Arztpraxen, Autohäuser, Einzelhändler, Eventlocations und Coworking Spaces profitieren stark. Überall wo Räumlichkeiten ein Verkaufsargument sind, lohnt sich ein virtueller Rundgang."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann der Rundgang in Google Maps eingebunden werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja! Als zertifizierter Matterport-Partner können wir Ihren Rundgang direkt in Google Maps und Google Street View einbinden. So sehen potenzielle Kunden Ihr Unternehmen direkt in der Google-Suche."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "In welchen Regionen bieten Sie 360° Rundgänge an?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wir sind in der gesamten Region Karlsruhe tätig – inklusive Ettlingen, Bruchsal, Rastatt, Baden-Baden, Pforzheim und Mannheim. Für größere Projekte kommen wir auch gerne weiter."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Technik wird für den Rundgang verwendet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wir nutzen die Matterport Pro2 Kamera – die weltweit führende Technologie für 3D-Erfassung. Das Ergebnis ist ein hochauflösender, interaktiver Rundgang mit Dollhouse-Ansicht, Grundriss und Messungen."
+                }
             }
         ]
     }
@@ -984,6 +1065,7 @@
         }
         footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 8px; }
         footer a:hover { color: white; }
+        footer .footer-links { margin-top: 8px; }
 
         /* Accessibility: Skip Link */
         .skip-link {
@@ -1191,7 +1273,7 @@
     <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
     <!-- Header -->
-    <header class="header" role="banner">
+    <header class="header">
         <div class="header-content">
             <a href="/" class="logo">Beck<span>360</span></a>
             <nav class="nav" aria-label="Hauptnavigation">
@@ -1210,7 +1292,7 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="dot"></span>
-                    Jetzt verfügbar in Karlsruhe & Region
+                    Jetzt verfügbar in Karlsruhe &amp; Region
                 </div>
                 <h1>Ihr Showroom.<br><span class="highlight">Immer geöffnet.</span></h1>
                 <p>Interessenten besichtigen Ihr Unternehmen online – rund um die Uhr, von überall. Ein 360° Rundgang, der Vertrauen schafft und Kunden überzeugt, bevor sie anrufen.</p>
@@ -1239,7 +1321,7 @@
                     799€
                 </div>
                 <div class="hero-demo-wrapper">
-                    <iframe src="https://my.matterport.com/show/?m=eisanxEDSWw&play=1&qs=1" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" aria-label="360° virtueller Firmenrundgang Demo" loading="lazy"></iframe>
+                    <iframe src="https://my.matterport.com/show/?m=eisanxEDSWw&play=1&qs=1" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" title="Google Maps Standort" aria-label="360° virtueller Firmenrundgang Demo" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -1254,57 +1336,57 @@
                 <p class="section-subtitle mx-auto">Überall, wo Räumlichkeiten ein Verkaufsargument sind, zahlt sich ein 360° Rundgang aus.</p>
             </div>
             <div class="industry-grid">
-                <a href="/blog/360-rundgang-hotel-mehr-buchungen.html" class="industry-card">
-                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-label="Hotel Icon"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0H5m14 0h2m-16 0H3"/><path d="M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 6v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3"/></svg></div>
-                    <h3>Hotels & Pensionen</h3>
+                <a href="/hotels/" class="industry-card" aria-label="Hotel Icon">
+                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0H5m14 0h2m-16 0H3"/><path d="M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 6v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3"/></svg></div>
+                    <h3>Hotels &amp; Pensionen</h3>
                     <p>Zeigen Sie Zimmer, Lobby und Wellness-Bereich – Gäste buchen, was sie sehen können.</p>
                     <span class="industry-link">Mehr erfahren …</span>
                 </a>
-                <a href="/blog/restaurant-virtuelle-tour-gaeste-gewinnen.html" class="industry-card">
-                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-label="Restaurant Icon"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg></div>
-                    <h3>Restaurants & Cafés</h3>
+                <a href="/gastronomie/" class="industry-card" aria-label="Restaurant Icon">
+                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg></div>
+                    <h3>Restaurants &amp; Cafés</h3>
                     <p>Ambiente ist alles. Lassen Sie Gäste virtuell Platz nehmen, bevor sie reservieren.</p>
                     <span class="industry-link">Mehr erfahren …</span>
                 </a>
-                <a href="/blog/autohaus-showroom-360-virtuell.html" class="industry-card">
-                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-label="Autohaus Icon"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2-5H8L6 10l-2.5 1.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17H3m18 0h-2"/></svg></div>
-                    <h3>Showrooms & Autohäuser</h3>
+                <a href="/autohaus/" class="industry-card" aria-label="Autohaus Icon">
+                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2-5H8L6 10l-2.5 1.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17H3m18 0h-2"/></svg></div>
+                    <h3>Showrooms &amp; Autohäuser</h3>
                     <p>Präsentieren Sie Ihre Ausstellung rund um die Uhr – auch außerhalb der Öffnungszeiten.</p>
                     <span class="industry-link">Mehr erfahren …</span>
                 </a>
-                <a href="/blog/fitnessstudio-360-grad-mitglieder.html" class="industry-card">
-                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-label="Fitnessstudio Icon"><path d="M6.5 6.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 1 0-7 0M2 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/><path d="m18 7 4-4m-4 0 4 4"/></svg></div>
+                <a href="/fitness/" class="industry-card" aria-label="Fitnessstudio Icon">
+                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 6.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 1 0-7 0M2 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/><path d="m18 7 4-4m-4 0 4 4"/></svg></div>
                     <h3>Fitnessstudios</h3>
                     <p>Neue Mitglieder wollen sehen, wo sie trainieren. Zeigen Sie Geräte und Atmosphäre.</p>
                     <span class="industry-link">Mehr erfahren …</span>
                 </a>
-                <a href="/blog/zahnarztpraxis-virtuell-vertrauen.html" class="industry-card">
-                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-label="Zahnarztpraxis Icon"><path d="M12 6v4"/><path d="M14 14h-4"/><path d="M14 18h-4"/><path d="M14 8h-4"/><path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h2"/><path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18"/></svg></div>
-                    <h3>Arzt- & Zahnarztpraxen</h3>
+                <a href="/gesundheit/" class="industry-card" aria-label="Zahnarztpraxis Icon">
+                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v4"/><path d="M14 14h-4"/><path d="M14 18h-4"/><path d="M14 8h-4"/><path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h2"/><path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18"/></svg></div>
+                    <h3>Arzt- &amp; Zahnarztpraxen</h3>
                     <p>Nehmen Sie Patienten die Angst – ein virtueller Rundgang schafft Vertrauen.</p>
                     <span class="industry-link">Mehr erfahren …</span>
                 </a>
-                <a href="/blog/einzelhandel-online-offline-verbinden.html" class="industry-card">
-                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-label="Einzelhandel Icon"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
-                    <h3>Einzelhandel & Boutiquen</h3>
+                <a href="/einzelhandel/" class="industry-card" aria-label="Einzelhandel Icon">
+                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+                    <h3>Einzelhandel &amp; Boutiquen</h3>
                     <p>Bringen Sie Ihr Geschäft online – ohne aufwendigen E-Commerce.</p>
                     <span class="industry-link">Mehr erfahren …</span>
                 </a>
-                <a href="/blog/eventlocation-virtuelle-besichtigung.html" class="industry-card">
-                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-label="Eventlocation Icon"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
+                <a href="/eventlocations/" class="industry-card" aria-label="Eventlocation Icon">
+                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
                     <h3>Eventlocations</h3>
                     <p>Hochzeiten, Firmenevents, Tagungen – überzeugen Sie Planer ohne Vor-Ort-Termin.</p>
                     <span class="industry-link">Mehr erfahren …</span>
                 </a>
-                <a href="/blog/schule-tag-offene-tuer-virtuell.html" class="industry-card">
-                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-label="Schule Icon"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg></div>
-                    <h3>Schulen & Bildung</h3>
+                <a href="/blog/schule-tag-offene-tuer-virtuell.html" class="industry-card" aria-label="Schule Icon">
+                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg></div>
+                    <h3>Schulen &amp; Bildung</h3>
                     <p>Virtuelle Tage der offenen Tür – für Eltern und Schüler, die nicht vor Ort sein können.</p>
                     <span class="industry-link">Mehr erfahren …</span>
                 </a>
-                <a href="#kontakt" class="industry-card">
-                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-label="Industrie Icon"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></div>
-                    <h3>Industrie & Produktion</h3>
+                <a href="#kontakt" class="industry-card" aria-label="Industrie Icon">
+                    <div class="industry-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></div>
+                    <h3>Industrie &amp; Produktion</h3>
                     <p>Dokumentation, Schulung, Marketing – 360° für interne und externe Zwecke.</p>
                     <span class="industry-link">Anfrage stellen …</span>
                 </a>
@@ -1322,42 +1404,42 @@
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=eisanxEDSWw" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" aria-label="Autohaus Lounge Wackenhut virtueller Rundgang" loading="lazy"></iframe>
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=eisanxEDSWw" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" title="360° Rundgang Autohaus Lounge Wackenhut" aria-label="Autohaus Lounge Wackenhut virtueller Rundgang" loading="lazy"></iframe>
                     <div class="portfolio-info">
                         <h4>Autohaus Lounge Wackenhut</h4>
                         <span>Autohaus</span>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=VSzj77WVRrn" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" aria-label="CrossFit BuffaloBox Ettlingen virtueller Rundgang" loading="lazy"></iframe>
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=VSzj77WVRrn" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" title="360° Rundgang CrossFit BuffaloBox Ettlingen" aria-label="CrossFit BuffaloBox Ettlingen virtueller Rundgang" loading="lazy"></iframe>
                     <div class="portfolio-info">
                         <h4>CrossFit BuffaloBox Ettlingen</h4>
                         <span>Fitness</span>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=uaNAUuR2ynk" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" aria-label="Bärle am Friedrichplatz Bruchsal virtueller Rundgang" loading="lazy"></iframe>
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=uaNAUuR2ynk" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" title="360° Rundgang Bärle am Friedrichplatz Bruchsal" aria-label="Bärle am Friedrichplatz Bruchsal virtueller Rundgang" loading="lazy"></iframe>
                     <div class="portfolio-info">
                         <h4>Bärle am Friedrichplatz Bruchsal</h4>
                         <span>Einzelhandel</span>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=xBcQ9jha1Ni" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" aria-label="Friseursalon virtueller Rundgang" loading="lazy"></iframe>
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=xBcQ9jha1Ni" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" title="360° Rundgang Friseursalon" aria-label="Friseursalon virtueller Rundgang" loading="lazy"></iframe>
                     <div class="portfolio-info">
                         <h4>Friseursalon</h4>
                         <span>Dienstleistung</span>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=gj6sDQiJXkr" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" aria-label="Hörgeräte Akustik Ziegler virtueller Rundgang" loading="lazy"></iframe>
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=gj6sDQiJXkr" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" title="360° Rundgang Hörgeräte Akustik Ziegler" aria-label="Hörgeräte Akustik Ziegler virtueller Rundgang" loading="lazy"></iframe>
                     <div class="portfolio-info">
                         <h4>Hörgeräte Akustik Ziegler</h4>
                         <span>Gesundheit</span>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=A6oKq1AGzqS" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" aria-label="Produktionshalle virtueller Rundgang" loading="lazy"></iframe>
+                    <iframe class="portfolio-iframe" src="https://my.matterport.com/show/?m=A6oKq1AGzqS" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" title="360° Rundgang Produktionshalle" aria-label="Produktionshalle virtueller Rundgang" loading="lazy"></iframe>
                     <div class="portfolio-info">
                         <h4>Produktionshalle</h4>
                         <span>Industrie</span>
@@ -1419,7 +1501,7 @@
     <!-- Customer Logos / Trust Section -->
     <section class="customers">
         <div class="container">
-            <p class="customers-label">Vertrauen von Unternehmen in Karlsruhe & Region</p>
+            <p class="customers-label">Vertrauen von Unternehmen in Karlsruhe &amp; Region</p>
             <div class="customers-logos">
                 <div class="customer-logo customer-logo-text wackenhut">WACKENHUT<span>PERFECT DRIVE</span></div>
                 <img src="/images/logos/bgs.png" alt="BGS Ideen Plus Energie" class="customer-logo-img" width="150" height="36" loading="lazy" decoding="async">
@@ -1441,22 +1523,22 @@
             </div>
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <div class="benefit-icon"><svg viewBox="0 0 24 24" aria-label="Anfragen steigen Icon"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
                     <h4>+40% mehr Anfragen</h4>
                     <p>Unternehmen mit virtuellem Rundgang erhalten deutlich mehr Kontaktanfragen.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon"><svg viewBox="0 0 24 24" aria-label="24/7 Verfügbarkeit Icon"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
                     <h4>24/7 geöffnet</h4>
                     <p>Interessenten können Ihr Unternehmen jederzeit erkunden – auch nachts.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon"><svg viewBox="0 0 24 24" aria-label="Qualifizierte Besucher Icon"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
                     <h4>Qualifizierte Besucher</h4>
                     <p>Wer sich durch den Rundgang klickt, hat echtes Interesse.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon"><svg viewBox="0 0 24 24" aria-label="Google Ranking Icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
                     <h4>Besseres Google-Ranking</h4>
                     <p>Google bevorzugt interaktive Inhalte – bessere lokale Sichtbarkeit.</p>
                 </div>
@@ -1469,7 +1551,7 @@
         <div class="container">
             <div class="text-center">
                 <span class="section-label">Magazin</span>
-                <h2 class="section-title">Wissen & Inspiration</h2>
+                <h2 class="section-title">Wissen &amp; Inspiration</h2>
                 <p class="section-subtitle mx-auto">Tipps, Trends und Erfolgsgeschichten rund um virtuelle Rundgänge und digitales Marketing.</p>
             </div>
             <div class="blog-grid" id="blogGrid">
@@ -1503,7 +1585,7 @@
                 </div>
                 <div class="about-content">
                     <h3>Eugen Beck</h3>
-                    <div class="about-title">Gründer & Fotograf bei Beck360</div>
+                    <div class="about-title">Gründer &amp; Fotograf bei Beck360</div>
                     <p class="about-text">
                         Als zertifizierter Matterport-Partner und lizenzierter Drohnenpilot (A2) bringe ich modernste Technik aus dem Silicon Valley nach Karlsruhe. Mein Ziel: Ihrem Unternehmen einen digitalen Auftritt zu geben, der Kunden begeistert – bevor sie überhaupt einen Fuß in die Tür setzen.
                     </p>
@@ -1591,7 +1673,7 @@
                         <label for="message">Ihre Nachricht</label>
                         <textarea id="message" name="nachricht" rows="4" placeholder="Beschreiben Sie kurz Ihr Objekt und Ihre Wünsche…" autocomplete="off"></textarea>
                     </div>
-                    <div class="form-error" style="display: none; color: #dc2626; background: #fef2f2; padding: 12px; border-radius: 6px; margin-bottom: 16px; font-size: 14px;"></div>
+                    <div class="form-error"></div>
 
 
                     <button type="submit" class="submit-btn">Kostenlos anfragen →</button>
@@ -1602,7 +1684,7 @@
 
             <div class="contact-alternative">
                 <p>Oder direkt anrufen:</p>
-                <a href="tel:+491734682501" class="phone-link"><svg class="phone-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 0173 468 2501</a>
+                <a href="tel:+491734682501" class="phone-link"><svg class="phone-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 0173&nbsp;468&nbsp;2501</a>
             </div>
         </div>
     </section>
@@ -1660,14 +1742,15 @@
         .contact-alternative p { color: #94a3b8; font-size: 14px; margin-bottom: 8px; }
         .phone-link { color: white; font-size: 24px; font-weight: 700; text-decoration: none; }
         .phone-link:hover { text-decoration: underline; }
+        .form-error { display: none; color: #dc2626; background: #fef2f2; padding: 12px; border-radius: 6px; margin-bottom: 16px; font-size: 14px; }
     </style>
 
     </main>
 
     <!-- Footer -->
-    <footer role="contentinfo">
-        <p>© 2026 Beck360 – 360° Rundgänge & Drohnenaufnahmen</p>
-        <p style="margin-top:8px">
+    <footer>
+        <p>© 2026 Beck360 – 360° Rundgänge &amp; Drohnenaufnahmen</p>
+        <p class="footer-links">
             <a href="https://360-rundgang-karlsruhe.de">Startseite</a>
             <a href="/">Für Unternehmen</a>
             <a href="https://360-rundgang-karlsruhe.de/privatverkauf">Privatverkauf</a>
