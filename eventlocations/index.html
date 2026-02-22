@@ -378,6 +378,7 @@
                 <input type="hidden" name="_subject" value="🎪 Anfrage Eventlocation - Landing Page">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="_referer" id="form-referer">
                 <div class="form-group"><label for="name">Name *</label><input type="text" id="name" name="name" placeholder="Ihr Name" required autocomplete="name"></div>
                 <div class="form-group"><label for="location-name">Location-Name</label><input type="text" id="location-name" name="location-name" placeholder="Name Ihrer Location" autocomplete="organization"></div>
                 <div class="form-group"><label for="email">E-Mail *</label><input type="email" id="email" name="email" placeholder="ihre@email.de" required autocomplete="email"></div>
@@ -404,7 +405,8 @@
                 submitBtn.textContent = 'Wird gesendet...';
                 submitBtn.disabled = true;
                 const formData = new FormData(this);
-                fetch('https://formsubmit.co/ajax/rundgang@beck360.de', {
+                document.getElementById('form-referer').value = window.location.href;
+                fetch('https://360-rundgang-karlsruhe.de/api/form-submit', {
                     method: 'POST',
                     body: formData,
                     headers: { 'Accept': 'application/json' }

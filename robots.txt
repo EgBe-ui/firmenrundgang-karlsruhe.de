@@ -5,5 +5,5 @@ Allow: /
 # Sitemap location
 Sitemap: https://firmenrundgang-karlsruhe.de/sitemap.xml
 
-# Block thank you page from indexing
+# Block internal pages from indexing
 Disallow: /danke.html

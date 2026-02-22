@@ -1669,6 +1669,7 @@
                     <input type="hidden" name="_source" value="Firmenrundgang">
                     <input type="hidden" name="_captcha" value="true">
                     <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off">
+                    <input type="hidden" name="_referer" id="form-referer">
                     <input type="hidden" name="_next" value="https://firmenrundgang-karlsruhe.de/danke.html">
                     <!-- Timestamp for bot detection -->
                     <input type="hidden" name="_timestamp" id="form-timestamp" value="">
@@ -1977,8 +1978,9 @@
                 btn.innerHTML = '<span style="display:inline-block;width:16px;height:16px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:spin 0.8s linear infinite;margin-right:8px;vertical-align:middle;"></span>Wird gesendet...';
                 btn.disabled = true;
 
+                document.getElementById('form-referer').value = window.location.href;
                 try {
-                    const response = await fetch('https://formsubmit.co/ajax/rundgang@beck360.de', {
+                    const response = await fetch('https://360-rundgang-karlsruhe.de/api/form-submit', {
                         method: 'POST',
                         body: new FormData(form),
                         headers: { 'Accept': 'application/json' }

@@ -358,6 +358,7 @@
                     <input type="hidden" name="_subject" value="Anfrage Gesundheit - Landing Page">
                     <input type="hidden" name="_captcha" value="true">
                     <input type="text" name="_honey" style="display:none!important" tabindex="-1" autocomplete="off">
+                    <input type="hidden" name="_referer" id="form-referer">
                     <input type="hidden" name="_next" value="https://firmenrundgang-karlsruhe.de/danke.html">
                     <input type="hidden" name="_timestamp" id="form-timestamp" value="">
                     <div class="form-row">
@@ -406,7 +407,8 @@
             if(!form.checkValidity()){form.reportValidity();return;}
             var t=parseInt(ts?.value||0);if(t&&Date.now()-t<3000){err.textContent='Bitte nehmen Sie sich einen Moment Zeit.';err.style.display='block';return;}
             btn.innerHTML='<span style="display:inline-block;width:16px;height:16px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:spin .8s linear infinite;margin-right:8px;vertical-align:middle"></span>Wird gesendet...';btn.disabled=true;
-            try{var r=await fetch('https://formsubmit.co/ajax/rundgang@beck360.de',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});if(r.ok){window.location.href='/danke.html'}else{throw new Error('err')}}
+            document.getElementById('form-referer').value = window.location.href;
+            try{var r=await fetch('https://360-rundgang-karlsruhe.de/api/form-submit',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});if(r.ok){window.location.href='/danke.html'}else{throw new Error('err')}}
             catch(x){err.textContent='Fehler beim Senden. Bitte versuchen Sie es erneut oder rufen Sie an: 0173 468 2501';err.style.display='block';btn.innerHTML=orig;btn.disabled=false}
         });
         var obs=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting)en.target.classList.add('visible')})},{threshold:0.1,rootMargin:'0px 0px -100px 0px'});
