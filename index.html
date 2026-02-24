@@ -327,9 +327,127 @@
             padding: 10px 20px !important;
             border-radius: 8px !important;
         }
+
+        /* Dropdown Navigation */
+        .nav-dropdown {
+            position: relative;
+        }
+        .nav-dropdown-btn {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-light);
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            padding: 0;
+        }
+        .nav-dropdown-btn:hover {
+            color: var(--primary);
+        }
+        .nav-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 12px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            padding: 8px 0;
+            min-width: 200px;
+            list-style: none;
+            z-index: 10000;
+            margin: 0;
+        }
+        .nav-dropdown.open .nav-dropdown-menu {
+            display: block;
+        }
+        .nav-dropdown-menu li a {
+            display: block;
+            padding: 10px 20px;
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.15s, color 0.15s;
+            white-space: nowrap;
+        }
+        .nav-dropdown-menu li a:hover {
+            background: rgba(15, 118, 110, 0.08);
+            color: var(--primary);
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 10001;
+        }
+        .mobile-menu-btn span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--text);
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #0a3d37 0%, #0F766E 50%, #14B8A6 100%);
+            z-index: 10000;
+            flex-direction: column;
+            padding: 80px 24px 40px;
+            overflow-y: auto;
+        }
+        .mobile-menu.active {
+            display: flex;
+        }
+        .mobile-menu a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .mobile-menu a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
         @media (max-width: 700px) {
-            .nav { gap: 12px; }
-            .nav a:not(.nav-cta) { display: none; }
+            .nav .nav-dropdown,
+            .nav > a:not(.nav-cta) { display: none; }
+            .mobile-menu-btn { display: flex; }
+            .nav-cta { padding: 8px 16px !important; font-size: 13px !important; }
         }
 
         /* Hero - Enhanced */
@@ -1288,13 +1406,66 @@
         <div class="header-content">
             <a href="/" class="logo">Beck<span>360</span></a>
             <nav class="nav" aria-label="Hauptnavigation">
-                <a href="#branchen">Branchen</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">Branchen <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="/hotels/">Hotels</a></li>
+                        <li><a href="/gastronomie/">Gastronomie</a></li>
+                        <li><a href="/fitness/">Fitness</a></li>
+                        <li><a href="/einzelhandel/">Einzelhandel</a></li>
+                        <li><a href="/autohaus/">Autohaus</a></li>
+                        <li><a href="/gesundheit/">Gesundheit</a></li>
+                        <li><a href="/eventlocations/">Eventlocations</a></li>
+                        <li><a href="/coworking/">Coworking</a></li>
+                    </ul>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">Regionen <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="/ettlingen/">Ettlingen</a></li>
+                        <li><a href="/bruchsal/">Bruchsal</a></li>
+                        <li><a href="/rastatt/">Rastatt</a></li>
+                        <li><a href="/baden-baden/">Baden-Baden</a></li>
+                        <li><a href="/pforzheim/">Pforzheim</a></li>
+                        <li><a href="/mannheim/">Mannheim</a></li>
+                    </ul>
+                </div>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#magazin">Magazin</a>
+                <a href="https://360-rundgang-karlsruhe.de" target="_blank" style="white-space:nowrap;">Für Immobilien ↗</a>
                 <a href="#kontakt" class="nav-cta">Anfragen</a>
             </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.5);padding:16px 24px 4px;pointer-events:none;">Branchen</div>
+        <a href="/hotels/">Hotels</a>
+        <a href="/gastronomie/">Gastronomie</a>
+        <a href="/fitness/">Fitness</a>
+        <a href="/einzelhandel/">Einzelhandel</a>
+        <a href="/autohaus/">Autohaus</a>
+        <a href="/gesundheit/">Gesundheit</a>
+        <a href="/eventlocations/">Eventlocations</a>
+        <a href="/coworking/">Coworking</a>
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.5);padding:16px 24px 4px;pointer-events:none;">Regionen</div>
+        <a href="/ettlingen/">Ettlingen</a>
+        <a href="/bruchsal/">Bruchsal</a>
+        <a href="/rastatt/">Rastatt</a>
+        <a href="/baden-baden/">Baden-Baden</a>
+        <a href="/pforzheim/">Pforzheim</a>
+        <a href="/mannheim/">Mannheim</a>
+        <div style="border-top:1px solid rgba(255,255,255,0.15);margin:12px 24px;"></div>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#magazin">Magazin</a>
+        <a href="https://360-rundgang-karlsruhe.de" target="_blank">Für Immobilien ↗</a>
+    </div>
 
     <!-- Hero -->
     <main id="main-content">
@@ -1937,6 +2108,55 @@
         }).join('');
     }
     renderBlogPosts();
+    </script>
+
+    <!-- Navigation: Dropdowns + Mobile Menu -->
+    <script>
+    (function() {
+        // Desktop dropdowns
+        var dropdowns = document.querySelectorAll('.nav-dropdown');
+        dropdowns.forEach(function(dropdown) {
+            var btn = dropdown.querySelector('.nav-dropdown-btn');
+            if (!btn) return;
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdowns.forEach(function(other) {
+                    if (other !== dropdown) {
+                        other.classList.remove('open');
+                        var ob = other.querySelector('.nav-dropdown-btn');
+                        if (ob) ob.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                var isOpen = dropdown.classList.toggle('open');
+                btn.setAttribute('aria-expanded', isOpen);
+            });
+            var menu = dropdown.querySelector('.nav-dropdown-menu');
+            if (menu) menu.addEventListener('click', function(e) { e.stopPropagation(); });
+        });
+        document.addEventListener('click', function() {
+            dropdowns.forEach(function(d) {
+                d.classList.remove('open');
+                var b = d.querySelector('.nav-dropdown-btn');
+                if (b) b.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Mobile menu
+        var mobileBtn = document.getElementById('mobileMenuBtn');
+        var mobileMenu = document.getElementById('mobileMenu');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', function() {
+                mobileBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+            mobileMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    mobileBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    })();
     </script>
 
     <!-- Form Handler with improved validation and spam protection -->
