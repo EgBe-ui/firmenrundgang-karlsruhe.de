@@ -7,3 +7,9 @@ Sitemap: https://firmenrundgang-karlsruhe.de/sitemap.xml
 
 # Block internal pages from indexing
 Disallow: /danke.html
+
+# Block spam/garbage query parameters (wastes crawl budget)
+Disallow: /*?nocache=
+Disallow: /*&nocache=
+Disallow: /*jet_blog_ajax*
+Disallow: /*?nocache*

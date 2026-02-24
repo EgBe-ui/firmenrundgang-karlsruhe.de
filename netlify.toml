@@ -1,0 +1,17 @@
+[build]
+  publish = "."
+
+# Strip spam query parameters — redirect to clean URL (301)
+[[redirects]]
+  from = "/*"
+  query = {nocache = ":nocache"}
+  to = "/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  query = {jet_blog_ajax = ":val"}
+  to = "/:splat"
+  status = 301
+  force = true
