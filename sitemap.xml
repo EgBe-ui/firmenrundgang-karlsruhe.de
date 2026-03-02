@@ -99,7 +99,7 @@
     <!-- Blog Übersicht -->
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
-        <lastmod>2026-02-24</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -207,6 +207,14 @@
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/friseur-salon-360-rundgang-neue-kunden.html</loc>
         <lastmod>2026-02-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog Artikel: moebelhaus-einrichtungshaus-360-rundgang-verkauf -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/moebelhaus-einrichtungshaus-360-rundgang-verkauf.html</loc>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
