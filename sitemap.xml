@@ -99,7 +99,7 @@
     <!-- Blog Übersicht -->
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
-        <lastmod>2026-03-02</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -215,6 +215,14 @@
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/moebelhaus-einrichtungshaus-360-rundgang-verkauf.html</loc>
         <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog Artikel: bauunternehmen-handwerk-360-rundgang-projektakquise -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/bauunternehmen-handwerk-360-rundgang-projektakquise.html</loc>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
