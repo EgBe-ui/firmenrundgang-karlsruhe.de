@@ -285,9 +285,7 @@
 
         /* Header - Fixiert oben */
         .header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: transparent;
             padding: 16px 20px;
             position: fixed !important;
             top: 0 !important;
@@ -295,9 +293,24 @@
             right: 0;
             width: 100%;
             z-index: 9999;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
+        .header.scrolled {
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+        }
+        .header .logo { color: rgba(255,255,255,0.92); }
+        .header .logo span { color: rgba(255,255,255,0.75); }
+        .header.scrolled .logo { color: var(--text); }
+        .header.scrolled .logo span { color: var(--primary); }
+        .header .nav a:not(.nav-cta),
+        .header .nav-dropdown-btn { color: rgba(255,255,255,0.75); }
+        .header.scrolled .nav a:not(.nav-cta),
+        .header.scrolled .nav-dropdown-btn { color: var(--text-light); }
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -328,6 +341,43 @@
             border-radius: 8px !important;
         }
 
+
+        /* Site Switcher */
+        .site-switcher {
+            display: flex;
+            gap: 2px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 3px;
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: background 0.3s ease, border-color 0.3s ease;
+            margin-right: 8px;
+        }
+        .header.scrolled .site-switcher {
+            background: rgba(0,0,0,0.05);
+            border-color: rgba(0,0,0,0.1);
+        }
+        .site-switcher-btn {
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 11px;
+            font-weight: 600;
+            text-decoration: none;
+            color: rgba(255,255,255,0.55);
+            transition: all 0.2s;
+            white-space: nowrap;
+            letter-spacing: 0.01em;
+        }
+        .site-switcher-btn.active {
+            background: rgba(255,255,255,0.18);
+            color: white;
+        }
+        .header.scrolled .site-switcher-btn { color: rgba(0,0,0,0.45); }
+        .header.scrolled .site-switcher-btn.active {
+            background: rgba(0,0,0,0.08);
+            color: var(--text);
+        }
+        @media (max-width: 640px) { .site-switcher { display: none; } }
         /* Dropdown Navigation */
         .nav-dropdown {
             position: relative;
@@ -460,6 +510,7 @@
             justify-content: center;
             overflow: hidden;
             background: #030d0d;
+            padding-top: 60px;
         }
         .hero-bg-gradient {
             position: absolute;
@@ -1354,6 +1405,10 @@
                 <a href="https://360-rundgang-karlsruhe.de" target="_blank" style="white-space:nowrap;">Für Immobilien ↗</a>
                 <a href="#kontakt" class="nav-cta">Anfragen</a>
             </nav>
+            <div class="site-switcher" aria-label="Website wechseln">
+                <a href="https://360-rundgang-karlsruhe.de" class="site-switcher-btn">Immobilien</a>
+                <span class="site-switcher-btn active" aria-current="page">Unternehmen</span>
+            </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü öffnen">
                 <span></span>
                 <span></span>
@@ -2074,7 +2129,17 @@
         });
 
         // Mobile menu
-        var mobileBtn = document.getElementById('mobileMenuBtn');
+        // Nav scroll effect
+        const headerEl = document.querySelector('.header');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 80) {
+                headerEl.classList.add('scrolled');
+            } else {
+                headerEl.classList.remove('scrolled');
+            }
+        });
+
+                var mobileBtn = document.getElementById('mobileMenuBtn');
         var mobileMenu = document.getElementById('mobileMenu');
         if (mobileBtn && mobileMenu) {
             mobileBtn.addEventListener('click', function() {
