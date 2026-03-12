@@ -285,7 +285,9 @@
 
         /* Header - Fixiert oben */
         .header {
-            background: transparent;
+            background: rgba(3,13,20,0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             padding: 16px 20px;
             position: fixed !important;
             top: 0 !important;
@@ -293,7 +295,7 @@
             right: 0;
             width: 100%;
             z-index: 9999;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
             transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
         .header.scrolled {
@@ -509,21 +511,21 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            background: #030d0d;
+            background: #030d14;
             padding-top: 60px;
         }
         .hero-bg-gradient {
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse 80% 60% at 20% 40%, rgba(15,118,110,0.12), transparent),
-                radial-gradient(ellipse 60% 50% at 80% 70%, rgba(20,184,166,0.07), transparent);
+                radial-gradient(ellipse 80% 60% at 20% 40%, rgba(15,118,110,0.22), transparent),
+                radial-gradient(ellipse 60% 50% at 80% 70%, rgba(20,184,166,0.14), transparent);
             pointer-events: none;
         }
         .hero::before, .hero::after {
             content: ''; position: absolute; left: 0; right: 0; height: 30%; z-index: 2; pointer-events: none;
         }
-        .hero::before { top: 0; background: linear-gradient(to bottom, #030d0d, transparent); }
+        .hero::before { top: 0; background: linear-gradient(to bottom, #030d14, transparent); }
         .hero::after  { bottom: 0; height: 140px; background: linear-gradient(to bottom, transparent, #ffffff); z-index: 4; }
         .hero-shapes { position: absolute; inset: 0; overflow: hidden; z-index: 1; }
         .hero-shape {
@@ -541,11 +543,11 @@
         @keyframes hSE4 { from { opacity:0; transform:translateY(-150px) rotate(5deg);  } to { opacity:1; transform:translateY(0) rotate(20deg); } }
         @keyframes hSE5 { from { opacity:0; transform:translateY(-150px) rotate(-10deg); } to { opacity:1; transform:translateY(0) rotate(-25deg); } }
         @keyframes hSF  { 0%,100% { translate:0 0; } 50% { translate:0 15px; } }
-        .hero-shape-1 { width:600px; height:140px; left:-10%; top:18%; background:linear-gradient(to right,rgba(15,118,110,0.18),transparent); animation:hSE1 2.4s cubic-bezier(.23,.86,.39,.96) .3s both,hSF 12s ease-in-out 2.7s infinite; }
-        .hero-shape-2 { width:500px; height:120px; right:-5%; top:72%; background:linear-gradient(to right,rgba(20,184,166,0.15),transparent); animation:hSE2 2.4s cubic-bezier(.23,.86,.39,.96) .5s both,hSF 12s ease-in-out 2.9s infinite; }
-        .hero-shape-3 { width:300px; height:80px; left:8%; bottom:8%; background:linear-gradient(to right,rgba(5,150,105,0.15),transparent); animation:hSE3 2.4s cubic-bezier(.23,.86,.39,.96) .4s both,hSF 12s ease-in-out 2.8s infinite; }
-        .hero-shape-4 { width:200px; height:55px; right:18%; top:13%; background:linear-gradient(to right,rgba(245,158,11,0.15),transparent); animation:hSE4 2.4s cubic-bezier(.23,.86,.39,.96) .6s both,hSF 12s ease-in-out 3.0s infinite; }
-        .hero-shape-5 { width:150px; height:40px; left:24%; top:8%; background:linear-gradient(to right,rgba(110,231,183,0.15),transparent); animation:hSE5 2.4s cubic-bezier(.23,.86,.39,.96) .7s both,hSF 12s ease-in-out 3.1s infinite; }
+        .hero-shape-1 { width:600px; height:140px; left:-10%; top:18%; background:linear-gradient(to right,rgba(20,184,166,0.28),transparent); animation:hSE1 2.4s cubic-bezier(.23,.86,.39,.96) .3s both,hSF 12s ease-in-out 2.7s infinite; }
+        .hero-shape-2 { width:500px; height:120px; right:-5%; top:72%; background:linear-gradient(to right,rgba(6,182,212,0.22),transparent); animation:hSE2 2.4s cubic-bezier(.23,.86,.39,.96) .5s both,hSF 12s ease-in-out 2.9s infinite; }
+        .hero-shape-3 { width:300px; height:80px; left:8%; bottom:8%; background:linear-gradient(to right,rgba(52,211,153,0.18),transparent); animation:hSE3 2.4s cubic-bezier(.23,.86,.39,.96) .4s both,hSF 12s ease-in-out 2.8s infinite; }
+        .hero-shape-4 { width:200px; height:55px; right:18%; top:13%; background:linear-gradient(to right,rgba(245,158,11,0.18),transparent); animation:hSE4 2.4s cubic-bezier(.23,.86,.39,.96) .6s both,hSF 12s ease-in-out 3.0s infinite; }
+        .hero-shape-5 { width:150px; height:40px; left:24%; top:8%; background:linear-gradient(to right,rgba(110,231,183,0.22),transparent); animation:hSE5 2.4s cubic-bezier(.23,.86,.39,.96) .7s both,hSF 12s ease-in-out 3.1s infinite; }
         .hero-content { position:relative; z-index:3; max-width:760px; margin:0 auto; padding:0 24px; text-align:center; }
         @keyframes hFU { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
         .hero-badge {
@@ -558,7 +560,7 @@
         .hero-badge .dot { width:8px; height:8px; border-radius:50%; background:#f43f5e; flex-shrink:0; }
         .hero-badge-text { font-size:13px; color:rgba(255,255,255,0.55); font-weight:500; letter-spacing:0.04em; }
         .hero h1 {
-            font-size:clamp(42px,7vw,88px); font-weight:800; line-height:1.0;
+            font-size:clamp(38px,6.2vw,80px); font-weight:800; line-height:1.05;
             letter-spacing:-0.03em; margin-bottom:28px; opacity:0;
             animation:hFU 1s cubic-bezier(.25,.4,.25,1) .7s forwards;
         }
