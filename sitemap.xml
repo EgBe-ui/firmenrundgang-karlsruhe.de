@@ -99,7 +99,7 @@
     <!-- Blog Übersicht -->
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
-        <lastmod>2026-03-09</lastmod>
+        <lastmod>2026-03-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -223,6 +223,14 @@
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/bauunternehmen-handwerk-360-rundgang-projektakquise.html</loc>
         <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog Artikel: pflegeheim-seniorenresidenz-360-rundgang-vertrauen -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/pflegeheim-seniorenresidenz-360-rundgang-vertrauen.html</loc>
+        <lastmod>2026-03-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
