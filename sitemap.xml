@@ -99,7 +99,7 @@
     <!-- Blog Übersicht -->
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
-        <lastmod>2026-03-23</lastmod>
+        <lastmod>2026-04-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -231,6 +231,14 @@
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/immobilienmakler-360-rundgaenge-wettbewerbsvorteil.html</loc>
         <lastmod>2026-03-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog Artikel: wellness-spa-360-rundgang-premium-buchungen -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/wellness-spa-360-rundgang-premium-buchungen.html</loc>
+        <lastmod>2026-04-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
