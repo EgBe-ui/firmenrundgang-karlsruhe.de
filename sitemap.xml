@@ -99,7 +99,7 @@
     <!-- Blog Übersicht -->
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
-        <lastmod>2026-05-04</lastmod>
+        <lastmod>2026-05-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -247,6 +247,14 @@
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/kfz-werkstatt-marketing-360-rundgang-vertrauen.html</loc>
         <lastmod>2026-05-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog Artikel: tagungshotel-marketing-360-rundgang-mice-buchungen -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/tagungshotel-marketing-360-rundgang-mice-buchungen.html</loc>
+        <lastmod>2026-05-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
