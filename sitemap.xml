@@ -99,7 +99,7 @@
     <!-- Blog Übersicht -->
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
-        <lastmod>2026-05-11</lastmod>
+        <lastmod>2026-05-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -255,6 +255,14 @@
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/tagungshotel-marketing-360-rundgang-mice-buchungen.html</loc>
         <lastmod>2026-05-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog Artikel: rechtsanwaltskanzlei-marketing-360-rundgang-mandantengewinnung -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/rechtsanwaltskanzlei-marketing-360-rundgang-mandantengewinnung.html</loc>
+        <lastmod>2026-05-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
