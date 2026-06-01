@@ -99,7 +99,7 @@
     <!-- Blog Übersicht -->
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
-        <lastmod>2026-05-18</lastmod>
+        <lastmod>2026-06-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -263,6 +263,14 @@
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/rechtsanwaltskanzlei-marketing-360-rundgang-mandantengewinnung.html</loc>
         <lastmod>2026-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog Artikel: apotheken-marketing-360-rundgang-vertrauen-kundenbindung -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/apotheken-marketing-360-rundgang-vertrauen-kundenbindung.html</loc>
+        <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
