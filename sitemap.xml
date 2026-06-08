@@ -99,7 +99,7 @@
     <!-- Blog Übersicht -->
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/</loc>
-        <lastmod>2026-06-01</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -271,6 +271,14 @@
     <url>
         <loc>https://firmenrundgang-karlsruhe.de/blog/apotheken-marketing-360-rundgang-vertrauen-kundenbindung.html</loc>
         <lastmod>2026-06-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog Artikel: versicherungsagentur-marketing-360-rundgang-vertrauen -->
+    <url>
+        <loc>https://firmenrundgang-karlsruhe.de/blog/versicherungsagentur-marketing-360-rundgang-vertrauen.html</loc>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
