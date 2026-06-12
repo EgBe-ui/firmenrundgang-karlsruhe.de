@@ -1,0 +1,6 @@
+# Local Netlify folder
+.netlify
+
+# Editor-/Backup-Dateien
+*.backup-*
+.DS_Store
